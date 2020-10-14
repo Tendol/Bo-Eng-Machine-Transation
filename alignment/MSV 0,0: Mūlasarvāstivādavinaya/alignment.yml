@@ -1,0 +1,22 @@
+text: 'MSV 0,0: Mūlasarvāstivādavinaya'
+pecha:
+- P000901
+- P000902
+segments:
+  0f3e4795f2ff42e28f61d2bd2bc11ba9:
+  - pecha_id: P000901
+    uuid: 74085df3ed2242dd8532c19c044b04e3
+    span:
+      start: 0
+      end: 22
+    lang: sn
+    edit-date: Tue Sep 29 16:56:59 2020
+    local-index: 200000
+  - pecha_id: P000902
+    uuid: 80d157950405488a957d8ec12aa86703
+    span:
+      start: 0
+      end: 6
+    lang: bo
+    edit-date: Tue Sep 29 16:56:59 2020
+    local-index: 200000
