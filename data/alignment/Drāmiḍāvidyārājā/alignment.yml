@@ -1,0 +1,566 @@
+text: Drāmiḍāvidyārājā
+pecha:
+- P000866
+- P000867
+segments:
+  5cdf1bccf5d443f286324bafcd8bf35f:
+  - pecha_id: P000866
+    uuid: e15e361cbd7b4914becdc01cf7af8616
+    span:
+      start: 0
+      end: 19
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200000
+  - pecha_id: P000867
+    uuid: 445ee434b8c54e6f9e2f1e8959612a22
+    span:
+      start: 0
+      end: 23
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200000
+  7deef7b9d5e94868878be9f92c2aaa32:
+  - pecha_id: P000866
+    uuid: 6e7aaab78a0d4cfc850f804d564a19e3
+    span:
+      start: 21
+      end: 56
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200001
+  - pecha_id: P000867
+    uuid: 0d81676d37bd4e4294b338ab8c6f4844
+    span:
+      start: 25
+      end: 25
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200001
+  9b8fe968c7ce4eb187e6b44148f0e86e:
+  - pecha_id: P000866
+    uuid: ff6825656676428f97879955a59dba5e
+    span:
+      start: 58
+      end: 171
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200002
+  - pecha_id: P000867
+    uuid: de07906032c3420dbf86e29ca89d3a79
+    span:
+      start: 27
+      end: 152
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200002
+  fe78bc4692584d73a86af808a45d62ef:
+  - pecha_id: P000866
+    uuid: db87d7e987704227b24f2f6e16a3b420
+    span:
+      start: 173
+      end: 229
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200003
+  - pecha_id: P000867
+    uuid: 95b9c3127c604bb68a07a52c8c5fd922
+    span:
+      start: 154
+      end: 192
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200003
+  70f76ebab849431dae956fefb2c29355:
+  - pecha_id: P000866
+    uuid: 4384afbfcdff4b25a2d1047fdf23e69a
+    span:
+      start: 231
+      end: 395
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200004
+  - pecha_id: P000867
+    uuid: 7214e819244a4baa9f28961f2fbb3dbc
+    span:
+      start: 194
+      end: 321
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200004
+  e71e43cfa6664c79915e011bfe773dc8:
+  - pecha_id: P000866
+    uuid: 3aa7f2db546b4fc083858e681f5dedce
+    span:
+      start: 397
+      end: 542
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200005
+  - pecha_id: P000867
+    uuid: baa331f899d340f0baba9b876a6b23ca
+    span:
+      start: 323
+      end: 483
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200005
+  484663e68c054ae18514b61e05897ad7:
+  - pecha_id: P000866
+    uuid: 6e3536fec66041e49f9241d81d20f8e5
+    span:
+      start: 544
+      end: 1008
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200006
+  - pecha_id: P000867
+    uuid: 3f192b5b95f0445ab0250aa4667b908c
+    span:
+      start: 485
+      end: 1117
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200006
+  fc4dc43d709d4f8caf456de568d451da:
+  - pecha_id: P000866
+    uuid: 4ae46224f10e4a868a382050c26a4ade
+    span:
+      start: 1010
+      end: 1094
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200007
+  - pecha_id: P000867
+    uuid: d567e47fde734ad8b556adabf786ef4a
+    span:
+      start: 1119
+      end: 1184
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200007
+  c22705c8e6ab4650a59f51dd13aeb4b4:
+  - pecha_id: P000866
+    uuid: 8044b816f90446eda676a3051596e820
+    span:
+      start: 1096
+      end: 1261
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200008
+  - pecha_id: P000867
+    uuid: cd4dc7c353f64131a64a175a48786e3c
+    span:
+      start: 1186
+      end: 1345
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200008
+  1bc2194ca21c43c7958afa22619fb6f9:
+  - pecha_id: P000866
+    uuid: edbc9cc8ad684eaab83655665a6dfc9d
+    span:
+      start: 1263
+      end: 1417
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200009
+  - pecha_id: P000867
+    uuid: ffba1220ae064c83b8a2d426c35f86c1
+    span:
+      start: 1347
+      end: 1524
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200009
+  4f9fb4b440444be6b360ffa8f6a45b90:
+  - pecha_id: P000866
+    uuid: de22d17c5db1412f9d9878c61a20be9c
+    span:
+      start: 1419
+      end: 1526
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200010
+  - pecha_id: P000867
+    uuid: 59bc4c2ca4444da49adc80f817b8b0b5
+    span:
+      start: 1526
+      end: 1641
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200010
+  94781aec27fe49f993846587a907a135:
+  - pecha_id: P000866
+    uuid: 468319d8b3eb42049b41e0aad51aa8c1
+    span:
+      start: 1528
+      end: 1893
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200011
+  - pecha_id: P000867
+    uuid: ad8569674fad49668d23e503bf7cc619
+    span:
+      start: 1643
+      end: 1993
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200011
+  e3058ddbeaae4428b1f2b833f6836568:
+  - pecha_id: P000866
+    uuid: f2cc2fb47562488aa9a19c4f482f6b3f
+    span:
+      start: 1895
+      end: 2110
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200012
+  - pecha_id: P000867
+    uuid: 8c5af067427b4b5b9754ee11956c4e16
+    span:
+      start: 1995
+      end: 2240
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200012
+  c6bbb59f42cd4a05a1b0f91d1fc2a213:
+  - pecha_id: P000866
+    uuid: b3ebb74b243841018e009385fe7b2b64
+    span:
+      start: 2112
+      end: 2288
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200013
+  - pecha_id: P000867
+    uuid: edba6699829841288ecc94331978af51
+    span:
+      start: 2242
+      end: 2414
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200013
+  0d231eebbd73407486a401c020294a22:
+  - pecha_id: P000866
+    uuid: 3345e49092684583b8902c060681b1c9
+    span:
+      start: 2290
+      end: 2488
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200014
+  - pecha_id: P000867
+    uuid: f3a4dc29bd574a18a2373625270385b8
+    span:
+      start: 2416
+      end: 2657
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200014
+  e6dac4238cf548be937cc088be392f8a:
+  - pecha_id: P000866
+    uuid: a0928523a9834b0981e428c57a2f8730
+    span:
+      start: 2490
+      end: 2714
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200015
+  - pecha_id: P000867
+    uuid: d4d485a86c8d4f43bbf07f1f44b4205d
+    span:
+      start: 2659
+      end: 2953
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200015
+  779c60eea69e400e826e0d377a59698b:
+  - pecha_id: P000866
+    uuid: 89ed1a72b70d46f6a6adc8589215f7b6
+    span:
+      start: 2716
+      end: 2821
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200016
+  - pecha_id: P000867
+    uuid: cbcfdd2c4e6c4006be41e43b8ae7fa55
+    span:
+      start: 2955
+      end: 3052
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200016
+  092a45080981454dae561d342e8c4537:
+  - pecha_id: P000866
+    uuid: 5427b20ca5004e90abf15ff328648a99
+    span:
+      start: 2823
+      end: 2980
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200017
+  - pecha_id: P000867
+    uuid: e7e8567153064e36a750e64e34b4926a
+    span:
+      start: 3054
+      end: 3190
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200017
+  4280d9a3e16d44af81bd31f8ab6aff2b:
+  - pecha_id: P000866
+    uuid: f7377c096f534dba96d86f5ce8ce6f26
+    span:
+      start: 2982
+      end: 3202
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200018
+  - pecha_id: P000867
+    uuid: 7c83bfcc7f80474599952a64b1f83738
+    span:
+      start: 3192
+      end: 3432
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200018
+  85abed2f6a05417f98a13ab257328567:
+  - pecha_id: P000866
+    uuid: f5e3dccce9bc488f840c08f7cbb54a39
+    span:
+      start: 3204
+      end: 3402
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200019
+  - pecha_id: P000867
+    uuid: df3b81f471984746b38e06993bad2531
+    span:
+      start: 3434
+      end: 3682
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200019
+  bf8930fbb9b846349b9ffec50ef7b921:
+  - pecha_id: P000866
+    uuid: 1fd09d99997148de9734f00f7c1634f6
+    span:
+      start: 3404
+      end: 3578
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200020
+  - pecha_id: P000867
+    uuid: a995bb3a1d494c488a09f369f0701add
+    span:
+      start: 3684
+      end: 3848
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200020
+  4de0dc039b054ac28e64c4f0a85b1627:
+  - pecha_id: P000866
+    uuid: 04f58be5a1374a58be88db5c719dc032
+    span:
+      start: 3580
+      end: 3785
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200021
+  - pecha_id: P000867
+    uuid: 0c7fca2c3cc14af08339b810162850b4
+    span:
+      start: 3850
+      end: 4088
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200021
+  bcb58d1f1b6341bb959187d196722876:
+  - pecha_id: P000866
+    uuid: 16a6c735b46c4d5289d4c552a1bad556
+    span:
+      start: 3787
+      end: 3973
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200022
+  - pecha_id: P000867
+    uuid: d3055120b3f64ed9b26c1459ffbf252d
+    span:
+      start: 4090
+      end: 4269
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200022
+  fa9d6aa56fd94e17bdbdc1cc6250039b:
+  - pecha_id: P000866
+    uuid: 897ad6e9da144325b8f653c2e9a3a144
+    span:
+      start: 3975
+      end: 4085
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200023
+  - pecha_id: P000867
+    uuid: 4c66317f88ce4c2791e900c4cb6c0a30
+    span:
+      start: 4271
+      end: 4411
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200023
+  f954a750fc1b4540b7ddee7618466845:
+  - pecha_id: P000866
+    uuid: 70ed7757a15e4aac97fbeb0a1f9e8463
+    span:
+      start: 4087
+      end: 4294
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200024
+  - pecha_id: P000867
+    uuid: 1b0ff777587e47acb5f265c28d8d5aaf
+    span:
+      start: 4413
+      end: 4618
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200024
+  86e71684615742c6bf0e9f81868735f1:
+  - pecha_id: P000866
+    uuid: bbfbe5c28ccc47e1a2a88eadad54d34b
+    span:
+      start: 4296
+      end: 4452
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200025
+  - pecha_id: P000867
+    uuid: 44b9ae5dca6a47e9876f17664546dbd0
+    span:
+      start: 4620
+      end: 4796
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200025
+  eaecee4aa2964a778283267ac4d2b0db:
+  - pecha_id: P000866
+    uuid: 40d16c14448b4fd085e45eba3d08d484
+    span:
+      start: 4454
+      end: 4943
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200026
+  - pecha_id: P000867
+    uuid: 77762d74132a4350b7267704935772cb
+    span:
+      start: 4798
+      end: 5281
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200026
+  0dbc7a8c419f47059f3a73f8f202400c:
+  - pecha_id: P000866
+    uuid: f636bd93e88346819c4e26f1bc61e4a4
+    span:
+      start: 4945
+      end: 5069
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200027
+  - pecha_id: P000867
+    uuid: d32b9241b1c441f68b7c1d7cb4cd8cbd
+    span:
+      start: 5283
+      end: 5402
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200027
+  5c1220d296774a48b53a41ce7b5ea99b:
+  - pecha_id: P000866
+    uuid: 77cd1ea488c747e09f8b774b0b995b0c
+    span:
+      start: 5071
+      end: 5227
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200028
+  - pecha_id: P000867
+    uuid: 77ac095f0600448982c4a3ce245829e8
+    span:
+      start: 5404
+      end: 5593
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200028
+  c61263aff4e0458fba7297cc2e33aa42:
+  - pecha_id: P000866
+    uuid: 9e5c59ee70f94e16a6d0c5d5ad9e97a6
+    span:
+      start: 5229
+      end: 5429
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200029
+  - pecha_id: P000867
+    uuid: f9fc6c0b67cb45119ac8ab150c031652
+    span:
+      start: 5595
+      end: 5749
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200029
+  3b01081b265b4c58adc008666879e84f:
+  - pecha_id: P000866
+    uuid: d6e55ffe545c49e09a41795187e9c92b
+    span:
+      start: 5431
+      end: 5826
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200030
+  - pecha_id: P000867
+    uuid: cf2c073448e74ad0884d6ea7925a3432
+    span:
+      start: 5751
+      end: 6205
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200030
+  eb1a06ac068b4cf499c9d084e6baff82:
+  - pecha_id: P000866
+    uuid: 430187cd2ea24b42ade1c46675d8f35b
+    span:
+      start: 5828
+      end: 6091
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200031
+  - pecha_id: P000867
+    uuid: 9ce48ce0aab9444c8eeed2dbb1f2f012
+    span:
+      start: 6207
+      end: 6436
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200031
+  3b797fe095c646c591a1ec2b6f4f5537:
+  - pecha_id: P000866
+    uuid: 85fc2b6fcd524248a10161b340781cc3
+    span:
+      start: 6093
+      end: 6301
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200032
+  - pecha_id: P000867
+    uuid: 0f05bdd6871f43e2892293b2ea237a45
+    span:
+      start: 6438
+      end: 6629
+    lang: en
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200032

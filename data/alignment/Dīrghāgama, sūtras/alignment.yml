@@ -1,0 +1,90 @@
+text: Dīrghāgama, sūtras
+pecha:
+- P000868
+- P000869
+- P000870
+- P000871
+- P000872
+segments:
+  94d9cda8cc8741199c83f21b16051230:
+  - pecha_id: P000868
+    uuid: 70229332b7dd436e83d895ffced5086f
+    span:
+      start: 0
+      end: 292
+    lang: sn
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200000
+  - pecha_id: P000869
+    uuid: 6303ec3776be4070864d0d0a204a3300
+    span:
+      start: 0
+      end: 158
+    lang: de
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200000
+  - pecha_id: P000870
+    uuid: 6f22f1fdb7d6475399c0348d5325ce58
+    span:
+      start: 0
+      end: 93
+    lang: sn
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200000
+  - pecha_id: P000871
+    uuid: 6080b049477249aeb28adac7ced09b87
+    span:
+      start: 0
+      end: 143
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200000
+  - pecha_id: P000872
+    uuid: a558c9b088554bd78b292f17f1cfeff7
+    span:
+      start: 0
+      end: 144
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200000
+  88dd8113af2742df8f958b58757d5f7d:
+  - pecha_id: P000868
+    uuid: 5b7ece4635124f28a7d05ac23adf9abf
+    span:
+      start: 294
+      end: 2607
+    lang: sn
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200001
+  - pecha_id: P000869
+    uuid: 498a1e54e8524723bd3e29ca6941d363
+    span:
+      start: 160
+      end: 395
+    lang: de
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200001
+  - pecha_id: P000870
+    uuid: e1f8dcba5a4b4d13a152a9ef40a91360
+    span:
+      start: 95
+      end: 208
+    lang: sn
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200001
+  - pecha_id: P000871
+    uuid: c8a4ba4297cb4539afabdf97a4daf1d7
+    span:
+      start: 145
+      end: 333
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200001
+  - pecha_id: P000872
+    uuid: 492939cdaffd4d3e94c8fff4615d0d24
+    span:
+      start: 146
+      end: 334
+    lang: bo
+    edit-date: Tue Sep 29 16:56:35 2020
+    local-index: 200001

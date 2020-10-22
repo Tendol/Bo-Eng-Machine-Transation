@@ -1,0 +1,22 @@
+text: 'MSV 6,00: Uttaragrantha 2'
+pecha:
+- P001173
+- P001174
+segments:
+  f8a45df1103046e4a9aa57ca66fd2219:
+  - pecha_id: P001173
+    uuid: ea92875f77b74174adebaa071df2a2ab
+    span:
+      start: 0
+      end: 144
+    lang: bo
+    edit-date: Tue Sep 29 17:10:01 2020
+    local-index: 200000
+  - pecha_id: P001174
+    uuid: ad81dfd06208480ca83052f90984bfd4
+    span:
+      start: 0
+      end: 1
+    lang: bo
+    edit-date: Tue Sep 29 17:10:01 2020
+    local-index: 200000

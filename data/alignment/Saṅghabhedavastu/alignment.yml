@@ -1,0 +1,81 @@
+text: Saṅghabhedavastu
+pecha:
+- P001846
+- P001847
+- P001848
+segments:
+  580a2a21bc334242979d59b5e6505923:
+  - pecha_id: P001846
+    uuid: df7caca1cfed4f0aacfc7d41175f4208
+    span:
+      start: 0
+      end: 16
+    lang: sn
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200000
+  - pecha_id: P001847
+    uuid: 6fa58eede09047f7a200e706afff4714
+    span:
+      start: 0
+      end: 27
+    lang: zh
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200000
+  - pecha_id: P001848
+    uuid: db83e693018f44b6ae9cdec7bdf5c3a0
+    span:
+      start: 0
+      end: 71
+    lang: bo
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200000
+  95412286d5f14eb69adf31bac0eee4d1:
+  - pecha_id: P001846
+    uuid: 938165f49b1143ef9da0122f3581cdfe
+    span:
+      start: 18
+      end: 45
+    lang: sn
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200001
+  - pecha_id: P001847
+    uuid: 9c43097ea12248e48c76296509f8fe6d
+    span:
+      start: 29
+      end: 29
+    lang: zh
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200001
+  - pecha_id: P001848
+    uuid: 6b50b5e1f4fa4d9eb4c41bad5eb35235
+    span:
+      start: 73
+      end: 109
+    lang: bo
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200001
+  7889a96f0661461db7e26ed9d2c4ee1d:
+  - pecha_id: P001846
+    uuid: 0b187d96bb7f4a5587a6e97e486901e2
+    span:
+      start: 47
+      end: 376991
+    lang: sn
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200002
+  - pecha_id: P001847
+    uuid: 0bbac0595645469fa4f354548a6b3f1f
+    span:
+      start: 31
+      end: 85128
+    lang: zh
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200002
+  - pecha_id: P001848
+    uuid: 9e04e76642f14ed082469722a3abe460
+    span:
+      start: 111
+      end: 38965
+    lang: bo
+    edit-date: Tue Sep 29 17:15:45 2020
+    local-index: 200002
