@@ -344,16 +344,6 @@ sp.get_piece_size()
 
 # *Tibetan*
 
-# In[17]:
-
-
-sp = spm.SentencePieceProcessor(model_file='bo.model')
-doc = load_doc("../data/dummy.txt")
-sentences = to_sentences(doc)
-print(sentences)
-sp.encode(sentences, out_type=str)
-
-
 # In[16]:
 
 
@@ -383,7 +373,6 @@ for i in range(5):
 
 
 # In[ ]:
-
 
 
 
