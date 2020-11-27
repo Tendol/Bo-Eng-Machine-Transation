@@ -105,7 +105,7 @@ def clean_lines(lines):
 
         # remove tokens with numbers in them
         line = [word for word in line if isalpha(word)]
-
+        
         line = '་'.join(line)
 
         # remove any empty line or white spaces at the end of the line

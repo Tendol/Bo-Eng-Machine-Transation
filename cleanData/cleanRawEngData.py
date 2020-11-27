@@ -54,13 +54,14 @@ def clean_lines(lines):
         line = [word for word in line if word.isalpha()]
     
         # # store as string
-        cleaned.append(' '.join(line))
+        if not line == []:    
+            cleaned.append(' '.join(line))
 
     return cleaned
 
 # save a list of clean sentences to file
 def save_clean_sentences(sentences, filename):
-    with open(filename, 'a') as filehandle:
+    with open(filename, 'w') as filehandle:
         filehandle.writelines("%s\n" % sentence for sentence in sentences)
     print('Saved: %s' % filename)
 
