@@ -1,0 +1,8 @@
+__01_t5simple_bo_en_2020-12-07--15=37=10.ckpt
+-- First try on Tibetan data. 
+-- No fancy trick. 
+-- Predicted outputs are nearly identical :( 
+
+__01_t5simple_bo_en_2020-12-08--15=14=53.ckpt
+-- Introduced linear-decay scheduler 
+-- Learning curve is nearly identical to the 2020-12-07
