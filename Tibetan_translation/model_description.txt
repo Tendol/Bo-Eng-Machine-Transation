@@ -4,5 +4,11 @@ __01_t5simple_bo_en_2020-12-07--15=37=10.ckpt
 -- Predicted outputs are nearly identical :( 
 
 __01_t5simple_bo_en_2020-12-08--15=14=53.ckpt
--- Introduced linear-decay scheduler 
+-- Introduced linear-decay scheduler (linear decay all the way)
 -- Learning curve is nearly identical to the 2020-12-07
+
+__02_t5simple_bo_en2020-12-10--06=13=29.ckpt
+-- 10 epochs instead of 2 epochs 
+-- Linear decay all the way 
+-- Learning curve still oscillates badly 
+-- Some predictions are different, but mostly the same 
