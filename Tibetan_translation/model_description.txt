@@ -12,3 +12,14 @@ __02_t5simple_bo_en2020-12-10--06=13=29.ckpt
 -- Linear decay all the way 
 -- Learning curve still oscillates badly 
 -- Some predictions are different, but mostly the same 
+
+__03_t5simple_bo_en_2020-12-11--04=12=49
+-- 10 epochs
+-- Smaller learning rate 1e-4 instead of 3e-4, keep constant 
+-- Learning curve still oscillates badly, looks identical to previous
+-- Most predictions are the same 
+
+
+__03_t5simple_bo_en_2020-12-12--13=44=54
+-- 15 epochs
+-- 1e-5 constant learning rate 
