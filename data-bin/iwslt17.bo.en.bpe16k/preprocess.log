@@ -1,0 +1,10 @@
+Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='data-bin/iwslt17.bo.en.bpe16k', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=False, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, reset_logging=True, scoring='bleu', seed=1, source_lang='bo', srcdict=None, target_lang='en', task='translation', tensorboard_logdir=None, testpref=None, tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='examples/translation/iwslt17.bo.en.bpe16k/train.bpe.bo-en', user_dir=None, validpref='examples/translation/iwslt17.bo.en.bpe16k/valid.bpe.bo-en', wandb_project=None, workers=10)
+[bo] Dictionary: 9544 types
+[bo] examples/translation/iwslt17.bo.en.bpe16k/train.bpe.bo-en.bo: 106851 sents, 1415301 tokens, 0.0% replaced by <unk>
+[bo] Dictionary: 9544 types
+[bo] examples/translation/iwslt17.bo.en.bpe16k/valid.bpe.bo-en.bo: 1933 sents, 24933 tokens, 0.0% replaced by <unk>
+[en] Dictionary: 6608 types
+[en] examples/translation/iwslt17.bo.en.bpe16k/train.bpe.bo-en.en: 106851 sents, 1869676 tokens, 0.0% replaced by <unk>
+[en] Dictionary: 6608 types
+[en] examples/translation/iwslt17.bo.en.bpe16k/valid.bpe.bo-en.en: 1933 sents, 29957 tokens, 0.0% replaced by <unk>
+Wrote preprocessed data to data-bin/iwslt17.bo.en.bpe16k
