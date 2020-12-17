@@ -63,8 +63,8 @@ df
 # In[4]:
 
 
-srcTextsAll = df['src'].tolist()# [:5000]
-tgtTextsAll = df['tgt'].tolist()# [:5000]
+srcTextsAll = df['src'].tolist()
+tgtTextsAll = df['tgt'].tolist()
 
 
 # ## Tokenizers for Tibetan and English
@@ -204,27 +204,6 @@ trim([100, 200, 300, 400, 500], maxlen = 9, pad_id = tgt_pad_id, enable_bos_eos 
 # In[14]:
 
 
-class MyDataset(Dataset): 
-    def __init__(self, srcTexts, tgtTexts): 
-        super().__init__()
-        self.srcTexts = srcTexts
-        self.tgtTexts = tgtTexts
-        
-    ''' Return the size of dataset '''
-    def __len__(self): 
-        return len(self.srcTexts)
-    
-    
-    def __getitem__(self, idx): 
-        return {
-            'src': self.srcTexts[idx], 
-            'tgt': self.tgtTexts[idx]
-        }
-
-
-# In[15]:
-
-
 class MyBatchIterator: 
     def __init__(self, srcTexts, tgtTexts, 
                  srcTokenizer, tgtTokenizer,
@@ -246,7 +225,6 @@ class MyBatchIterator:
         self.tgt_bos_id = tgt_bos_id 
         self.src_eos_id = src_eos_id
         self.tgt_eos_id = tgt_eos_id 
-        self.it = []
         
         
     def get_dataloader(self): 
@@ -279,14 +257,27 @@ class MyBatchIterator:
 
     
     def __iter__(self):
-        dl = self.get_dataloader()
-        self.it = iter(dl)
+        self.curr_idx = self.start_idx
         return self
     
     
     def __next__(self): 
+        if self.curr_idx >= self.end_idx: 
+            raise StopIteration  
+        
         # Get text batch
-        text_batch_dict = next(self.it)
+        if self.curr_idx + self.batch_size < self.end_idx: 
+            text_batch_dict = {
+                'src': self.srcTexts[self.curr_idx : self.curr_idx + self.batch_size],
+                'tgt': self.tgtTexts[self.curr_idx : self.curr_idx + self.batch_size], 
+            }
+            self.curr_idx += self.batch_size
+        else:
+            text_batch_dict = {
+                'src': self.srcTexts[self.curr_idx : self.end_idx], 
+                'tgt': self.tgtTexts[self.curr_idx : self.end_idx],
+            }
+            self.curr_idx = self.end_idx
         
         # Tokenize text batch
         return {
@@ -297,25 +288,27 @@ class MyBatchIterator:
         }
     
     def __len__(self):
-        return len(self.it)
+        return math.ceil((self.end_idx - self.start_idx) / self.batch_size)
         
 
 
 # Here is an example of how our batch iterator works. 
 
-# In[16]:
+# In[15]:
 
 
 mbi = MyBatchIterator(
     srcTextsAll, tgtTextsAll, 
     srcTokenizer, tgtTokenizer,
-    start_idx = 16, end_idx = 30, batch_size = 8, 
+    start_idx = 475, end_idx = 485, batch_size = 8, 
     src_pad_id = src_pad_id, tgt_pad_id = tgt_pad_id, 
     src_bos_id = src_bos_id, tgt_bos_id = tgt_bos_id, 
     src_eos_id = src_eos_id, tgt_eos_id = tgt_eos_id
 )
 
 mbi = iter(mbi)
+
+print('length of iterator:', len(mbi))
 
 for idx, batch in enumerate(mbi): 
     print(f"batch index: {idx}, src size: {batch['src'].size()}; tgt size: {batch['tgt'].size()}")
@@ -326,7 +319,7 @@ for idx, batch in enumerate(mbi):
 
 # ## Define model class and hyperparameters
 
-# In[17]:
+# In[16]:
 
 
 class PositionalEncoding(nn.Module):    # What PositionalEncoding for? 
@@ -352,7 +345,7 @@ class PositionalEncoding(nn.Module):    # What PositionalEncoding for?
         return self.dropout(x)
 
 
-# In[18]:
+# In[17]:
 
 
 class MyTransformer(nn.Module): 
@@ -429,7 +422,7 @@ class MyTransformer(nn.Module):
                 torch.nn.init.xavier_uniform_(p)
 
 
-# In[19]:
+# In[18]:
 
 
 hparams = dict(
@@ -458,7 +451,7 @@ hparams = dict(
 # 
 # We define a `Timer` class for estimating remaining time for an epoch. 
 
-# In[20]:
+# In[19]:
 
 
 class Timer:
@@ -481,7 +474,7 @@ class Timer:
 # 
 # The training loop and eval loop for each epoch is defined below. 
 
-# In[21]:
+# In[20]:
 
 
 def train(train_iter, val_iter, model, optim, hparams): 
@@ -617,8 +610,8 @@ def train(train_iter, val_iter, model, optim, hparams):
                 
             # Val epoch end 
             msg_writer.seek(msg_offset)
-            msg_writer.write(f'Val batches {len(train_iter)}/{len(train_iter)} completed. ')
-            msg_writer.write(myTimer.remains(num_done_units = len(train_iter)))
+            msg_writer.write(f'Val batches {len(val_iter)}/{len(val_iter)} completed. ')
+            msg_writer.write(myTimer.remains(num_done_units = len(val_iter)))
             msg_writer.write('\n')
             msg_writer.flush() 
             
@@ -676,7 +669,7 @@ def train(train_iter, val_iter, model, optim, hparams):
 # 
 # * and so on, until the model predicts the end token `</s>` or we generate some maximum number of tokens(something we can define) so the translation doesn’t run for an infinite duration in the case it breaks.
 
-# In[22]:
+# In[21]:
 
 
 def greedy_decode_sentence(model, sentence, max_len = 100): # Restrict translation up to 100 words 
@@ -708,7 +701,7 @@ def greedy_decode_sentence(model, sentence, max_len = 100): # Restrict translati
 
 # ## Start training
 
-# In[23]:
+# In[22]:
 
 
 model = MyTransformer(hparams).to(device)
@@ -726,8 +719,8 @@ train_mbi = MyBatchIterator(
 val_mbi = MyBatchIterator(
     srcTextsAll, tgtTextsAll, srcTokenizer, tgtTokenizer,
     start_idx = int(hparams['train_percentage'] * len(srcTextsAll)),
-    end_idx = int((hparams['train_percentage'] + hparams['train_percentage']) * len(srcTextsAll)), 
-    batch_size = hparams['train_batch_size'], 
+    end_idx = int((hparams['train_percentage'] + hparams['val_percentage']) * len(srcTextsAll)), 
+    batch_size = hparams['val_batch_size'], 
     src_pad_id = src_pad_id, tgt_pad_id = tgt_pad_id, 
     tgt_bos_id = tgt_bos_id, tgt_eos_id = tgt_eos_id)
 
