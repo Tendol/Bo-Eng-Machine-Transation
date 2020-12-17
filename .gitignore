@@ -1,3 +1,4 @@
+*.pt
 *.ckpt
 *.tar.gz
 *.tar.gz.00

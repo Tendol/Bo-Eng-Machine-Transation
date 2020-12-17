@@ -1,0 +1,42 @@
+__01_t5simple_bo_en_2020-12-07--15=37=10.ckpt
+-- First try on Tibetan data. 
+-- No fancy trick. 
+-- Predicted outputs are nearly identical :( 
+
+
+__01_t5simple_bo_en_2020-12-08--15=14=53.ckpt
+-- Introduced linear-decay scheduler (linear decay all the way)
+-- Learning curve is nearly identical to the 2020-12-07
+
+
+__02_t5simple_bo_en2020-12-10--06=13=29.ckpt
+-- 10 epochs instead of 2 epochs 
+-- Linear decay all the way 
+-- Learning curve still oscillates badly 
+-- Some predictions are different, but mostly the same 
+
+
+__03_t5simple_bo_en_2020-12-11--04=12=49
+-- 10 epochs
+-- Smaller learning rate 1e-4 instead of 3e-4, keep constant 
+-- Learning curve still oscillates badly, looks identical to previous
+-- Most predictions are the same 
+
+
+__03_t5simple_bo_en_2020-12-12--13=44=54
+-- 15 epochs
+-- 1e-5 constant learning rate 
+
+
+__04_t5simple_bo_en_2020-12-15--07=12=57.ckpt
+-- 10 epochs
+-- 1e-4 constant learning rate 
+-- Train the tokenizer on more data
+-- Most predictions are the same 
+
+
+05_rework_special_token.ipynb
+-- 10 epochs
+-- 1e-4 constant learning rate 
+-- Used Tenzin's tokenizer. No special <s></s> for Tibetan. Appended <s></s> for English
+-- All results are [0, 1]

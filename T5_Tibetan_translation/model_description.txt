@@ -40,6 +40,3 @@ __04_t5simple_bo_en_2020-12-15--07=12=57.ckpt
 -- 1e-4 constant learning rate 
 -- Used Tenzin's tokenizer. No special <s></s> for Tibetan. Appended <s></s> for English
 -- All results are [0, 1]
-
-
-prepend by <pad> token, no -100
