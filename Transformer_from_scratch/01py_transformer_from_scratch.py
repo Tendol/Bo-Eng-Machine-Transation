@@ -79,17 +79,17 @@ srcTokenizer = spm.SentencePieceProcessor(model_file=srcTokenizerPath)
 tgtTokenizer = spm.SentencePieceProcessor(model_file=tgtTokenizerPath)
 
 # Verify for Tibetan
-print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་'], out_type=str))
-print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་', 'བཀ྄ྲ་ཤིས་བདེ་ལེགས།'], out_type=int))
-print(srcTokenizer.decode([4149, 306, 6, 245, 4660, 748]))
-print(srcTokenizer.decode(['▁ངའི་', 'མིང་', 'ལ་', 'བསྟན་', 'སྒྲོལ་མ་', 'ཟེར་']))
-print('Vocab size of Tibetan Tokenizer:', srcTokenizer.get_piece_size())
+# print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་'], out_type=str))
+# print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་', 'བཀ྄ྲ་ཤིས་བདེ་ལེགས།'], out_type=int))
+# print(srcTokenizer.decode([4149, 306, 6, 245, 4660, 748]))
+# print(srcTokenizer.decode(['▁ངའི་', 'མིང་', 'ལ་', 'བསྟན་', 'སྒྲོལ་མ་', 'ཟེར་']))
+# print('Vocab size of Tibetan Tokenizer:', srcTokenizer.get_piece_size())
 
 # Verify for English
-print(tgtTokenizer.encode(["My name isn't Tenzin Dolma Gyalpo"], out_type=str))
-print(tgtTokenizer.encode(['My name is Tenzin Dolma Gyalpo', 'Hello'], out_type=int))
-print(tgtTokenizer.decode([[8804, 181, 13, 5520, 15172, 17895], [888, 21492]]))
-print('Vocab size of English Tokenizer:', tgtTokenizer.get_piece_size())
+# print(tgtTokenizer.encode(["My name isn't Tenzin Dolma Gyalpo"], out_type=str))
+# print(tgtTokenizer.encode(['My name is Tenzin Dolma Gyalpo', 'Hello'], out_type=int))
+# print(tgtTokenizer.decode([[8804, 181, 13, 5520, 15172, 17895], [888, 21492]]))
+# print('Vocab size of English Tokenizer:', tgtTokenizer.get_piece_size())
 
 
 # We need to get the ids for our special tokens `<s>`, `</s>`, `<pad>`. 
@@ -225,15 +225,6 @@ class MyBatchIterator:
         self.tgt_bos_id = tgt_bos_id 
         self.src_eos_id = src_eos_id
         self.tgt_eos_id = tgt_eos_id 
-        
-        
-    def get_dataloader(self): 
-    # Inclusive, exclusive 
-        dataset = MyDataset(
-            srcTexts = self.srcTexts[self.start_idx:self.end_idx], 
-            tgtTexts = self.tgtTexts[self.start_idx:self.end_idx], 
-        )
-        return DataLoader(dataset, batch_size =self.batch_size)
     
     
     # Tokenize a batch of texts and trim with special tokens
@@ -253,6 +244,7 @@ class MyBatchIterator:
     
         # Pad the the current maxlen in the batch 
         padded_ids_batch = [pad(ids, maxlen, pad_id) for ids in ids_batch]
+        # !!! Cause segfault on kona server !!!
         return torch.tensor(padded_ids_batch).to(device)
 
     
@@ -437,7 +429,7 @@ hparams = dict(
     source_vocab_length = srcTokenizer.get_piece_size(),    # Consider increase
     target_vocab_length = tgtTokenizer.get_piece_size(),    # Consider increase 
     num_epochs = 50, 
-    train_batch_size = 32, 
+    train_batch_size = 8, 
     val_batch_size = 1,     # For minimal padding or avoiding padding 
     lr = 1e-4, 
     adam_betas = (0.9, 0.98), 
@@ -490,7 +482,8 @@ def train(train_iter, val_iter, model, optim, hparams):
     tb_writer = SummaryWriter(flush_secs=tb_refresh_rate)    # Tensorboard writer 
     sample_writer = open('sample.log', 'w', encoding = 'utf-8')    # For logging example sentences
     
-    for epoch in range(hparams['num_epochs']):         
+    for epoch in range(hparams['num_epochs']):      
+        torch.cuda.empty_cache()   
         msg_writer.write(f'Epoch {epoch}/{hparams["num_epochs"]}\n')
         sample_writer.write(f'Epoch {epoch}/{hparams["num_epochs"]}\n')
         msg_writer.flush() 
