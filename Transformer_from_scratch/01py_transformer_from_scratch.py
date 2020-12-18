@@ -609,7 +609,8 @@ def train(train_iter, val_iter, model, optim, hparams):
             msg_writer.flush() 
             
             ## Epoch end 
-            
+            print(f'Epoch {epoch}/{hparams["num_epochs"]} completed. Train_loss: {train_loss / len(train_iter):.3f}. Val_loss: {val_loss / len(val_iter):.3f}')
+
             # Extra logs
             msg_writer.write(f'Epoch {epoch}/{hparams["num_epochs"]} completed. Train_loss: {train_loss / len(train_iter):.3f}. Val_loss: {val_loss / len(val_iter):.3f}')
             tb_writer.add_scalar('Loss(epoch)/train', train_loss / len(train_iter), epoch)
@@ -618,7 +619,7 @@ def train(train_iter, val_iter, model, optim, hparams):
             # Save best model till now 
             if val_loss / len(val_iter) < min(val_losses, default = 1e9): 
                 best_epoch = epoch
-                print(f'Saving state_dict...')
+                msg_writer.write(f'Saving state_dict...\n')
                 torch.save(model.state_dict(), 'checkpoint_best_epoch.pt')
                 
             train_losses.append(train_loss / len(train_iter))
@@ -719,8 +720,9 @@ val_mbi = MyBatchIterator(
 
 train(iter(train_mbi), iter(val_mbi), model, optim, hparams)
 
-
-# In[ ]:
+# For MistGPU only
+import os 
+os.system('sh ~/shutdown.sh')
 
 
 
