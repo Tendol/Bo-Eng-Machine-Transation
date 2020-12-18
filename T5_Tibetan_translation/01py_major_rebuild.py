@@ -84,10 +84,10 @@ tgtTokenizer = spm.SentencePieceProcessor(model_file=tgtTokenizerPath)
 # print('Vocab size of Tibetan Tokenizer:', srcTokenizer.get_piece_size())
 
 # Verify for English
-print(tgtTokenizer.encode(["My name isn't Tenzin Dolma Gyalpo"], out_type=str))
-print(tgtTokenizer.encode(['My name is Tenzin Dolma Gyalpo', 'Hello'], out_type=int))
-print(tgtTokenizer.decode([[8804, 181, 13, 5520, 15172, 17895], [888, 21492]]))
-print('Vocab size of English Tokenizer:', tgtTokenizer.get_piece_size())
+# print(tgtTokenizer.encode(["My name isn't Tenzin Dolma Gyalpo"], out_type=str))
+# print(tgtTokenizer.encode(['My name is Tenzin Dolma Gyalpo', 'Hello'], out_type=int))
+# print(tgtTokenizer.decode([[8804, 181, 13, 5520, 15172, 17895], [888, 21492]]))
+# print('Vocab size of English Tokenizer:', tgtTokenizer.get_piece_size())
 
 
 # In[6]:
