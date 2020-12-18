@@ -13,12 +13,14 @@ from torch import nn, Tensor
 from torch.nn import functional as F
 from torch.utils.data import Dataset, DataLoader
 from torch.utils.tensorboard import SummaryWriter
+from transformers import get_cosine_with_hard_restarts_schedule_with_warmup
 import sentencepiece as spm
 import pandas as pd
 from typing import Optional
 import math
 import time
 import datetime
+
 
 device = torch.device(
     'cuda:0' if torch.cuda.is_available() else 'cpu'
@@ -63,8 +65,8 @@ df
 # In[4]:
 
 
-srcTextsAll = df['src'].tolist()
-tgtTextsAll = df['tgt'].tolist()
+srcTextsAll = df['src'].tolist()[:500]
+tgtTextsAll = df['tgt'].tolist()[:500]
 
 
 # ## Tokenizers for Tibetan and English
@@ -419,7 +421,7 @@ class MyTransformer(nn.Module):
 
 hparams = dict(
     d_model = 512, 
-    dropout = 0.1, 
+    dropout = 0.3, 
     max_len = 5000,    # I don't know what this maxlen is for 
     nhead = 8,    # Little understand what for 
     num_encoder_layers = 6, 
@@ -428,14 +430,17 @@ hparams = dict(
     activation = 'relu', 
     source_vocab_length = srcTokenizer.get_piece_size(),    # Consider increase
     target_vocab_length = tgtTokenizer.get_piece_size(),    # Consider increase 
-    num_epochs = 50, 
+    num_epochs = 2, 
     train_batch_size = 8, 
     val_batch_size = 1,     # For minimal padding or avoiding padding 
     lr = 1e-4, 
     adam_betas = (0.9, 0.98), 
-    adam_eps = 1e-9, 
+    # adam_eps = 1e-9, 
+    weight_decay = 1e-4, 
+    warmup_steps = 4000, 
     train_percentage = 0.95, 
-    val_percentage = 0.02
+    val_percentage = 0.02, 
+    checkpoint_at = [9, 19, 29, 39], 
 )
 
 
@@ -469,7 +474,7 @@ class Timer:
 # In[20]:
 
 
-def train(train_iter, val_iter, model, optim, hparams): 
+def train(train_iter, val_iter, model, optim, scheduler, hparams): 
     train_losses = []
     val_losses = []
     train_step_counter = 0
@@ -525,6 +530,7 @@ def train(train_iter, val_iter, model, optim, hparams):
             loss = F.cross_entropy(preds, targets, ignore_index = 0, reduction = 'sum')
             loss.backward()
             optim.step()
+            scheduler.step()
             train_loss += loss.item() / src.size(0)    # Tutorial uses the constant BATCH_SIZE as denominator, but since the final batch may have a smaller size, I decided to use current batch size 
             
             # Tensorboard logging 
@@ -621,6 +627,11 @@ def train(train_iter, val_iter, model, optim, hparams):
                 best_epoch = epoch
                 msg_writer.write(f'Saving state_dict...\n')
                 torch.save(model.state_dict(), 'checkpoint_best_epoch.pt')
+
+            # Save checkpoint model 
+            if epoch in hparams['checkpoint_at']: 
+                print(f'Saving checkpoint state_dict...')
+                torch.save(model.state_dict(), f'checkpoint_epoch={epoch}.pt')
                 
             train_losses.append(train_loss / len(train_iter))
             val_losses.append(val_loss / len(val_iter))
@@ -700,7 +711,14 @@ def greedy_decode_sentence(model, sentence, max_len = 100): # Restrict translati
 
 model = MyTransformer(hparams).to(device)
 
-optim = torch.optim.Adam(model.parameters(), lr = hparams['lr'], betas = hparams['adam_betas'], eps = hparams['adam_eps'])
+optim = torch.optim.Adam(model.parameters(), lr = hparams['lr'], betas = hparams['adam_betas'], weight_decay = hparams['weight_decay'])
+scheduler = get_cosine_with_hard_restarts_schedule_with_warmup(
+    optim, 
+    num_warmup_steps = hparams['warmup_steps'], 
+    num_training_steps = hparams['num_epochs'] * math.ceil(len(srcTextsAll) / hparams['train_batch_size']), 
+    num_cycles = 3
+)
+
 
 train_mbi = MyBatchIterator(
     srcTextsAll, tgtTextsAll, srcTokenizer, tgtTokenizer,
@@ -718,12 +736,9 @@ val_mbi = MyBatchIterator(
     src_pad_id = src_pad_id, tgt_pad_id = tgt_pad_id, 
     tgt_bos_id = tgt_bos_id, tgt_eos_id = tgt_eos_id)
 
-train(iter(train_mbi), iter(val_mbi), model, optim, hparams)
+train(iter(train_mbi), iter(val_mbi), model, optim, scheduler, hparams)
 
 # For MistGPU only
 import os 
 os.system('sh ~/shutdown.sh')
-
-
-
 
