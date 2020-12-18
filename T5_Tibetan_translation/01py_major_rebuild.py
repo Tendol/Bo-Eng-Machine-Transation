@@ -16,7 +16,6 @@ from transformers import (
     AdamW,
     get_cosine_with_hard_restarts_schedule_with_warmup
 )
-import pytorch_lightning as pl
 import time
 from datetime import datetime
 import math
@@ -78,11 +77,11 @@ srcTokenizer = spm.SentencePieceProcessor(model_file=srcTokenizerPath)
 tgtTokenizer = spm.SentencePieceProcessor(model_file=tgtTokenizerPath)
 
 # Verify for Tibetan
-print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་'], out_type=str))
-print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་', 'བཀ྄ྲ་ཤིས་བདེ་ལེགས།'], out_type=int))
-print(srcTokenizer.decode([4149, 306, 6, 245, 4660, 748]))
-print(srcTokenizer.decode(['▁ངའི་', 'མིང་', 'ལ་', 'བསྟན་', 'སྒྲོལ་མ་', 'ཟེར་']))
-print('Vocab size of Tibetan Tokenizer:', srcTokenizer.get_piece_size())
+# print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་'], out_type=str))
+# print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་', 'བཀ྄ྲ་ཤིས་བདེ་ལེགས།'], out_type=int))
+# print(srcTokenizer.decode([4149, 306, 6, 245, 4660, 748]))
+# print(srcTokenizer.decode(['▁ངའི་', 'མིང་', 'ལ་', 'བསྟན་', 'སྒྲོལ་མ་', 'ཟེར་']))
+# print('Vocab size of Tibetan Tokenizer:', srcTokenizer.get_piece_size())
 
 # Verify for English
 print(tgtTokenizer.encode(["My name isn't Tenzin Dolma Gyalpo"], out_type=str))
