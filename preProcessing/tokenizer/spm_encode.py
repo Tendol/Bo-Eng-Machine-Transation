@@ -13,7 +13,6 @@ import sys
 
 import sentencepiece as spm
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
