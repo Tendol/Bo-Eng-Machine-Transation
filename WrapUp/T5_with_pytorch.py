@@ -279,7 +279,7 @@ def train(train_iter, val_iter, model, optimizer, scheduler, hparams):
     val_step_counter = 0
     tb_refresh_rate = 60    # Flush tensorboard log every ~ seconds
     msg_refresh_rate = 10    # Flush message log every ~ seconds 
-    save_model_every = 10    # Save model every ? epoch 
+    best_epoch = 0
     
     msg_writer = open('message.log', 'w')    # For logging training progress 
     tb_writer = SummaryWriter(flush_secs = tb_refresh_rate)    # Tensorboard writer 

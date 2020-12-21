@@ -1,12 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
+# =======================================
+##### Build a transformer from scratch
+# =======================================
 
-# # Build a transformer from scratch
-# 
-# Link for tutorial: https://lionbridge.ai/articles/transformers-in-nlp-creating-a-translator-model-from-scratch/
 
-# In[1]:
-
+# Import models and set path of data 
 
 import torch
 from torch import nn, Tensor
@@ -28,10 +25,6 @@ device = torch.device(
 
 print(f'device = {device}')
 
-
-# In[2]:
-
-
 srcDataPath = '../data/train.bo'
 tgtDataPath = '../data/train.en'
 
@@ -39,11 +32,10 @@ srcTokenizerPath = '../preProcessing/bo.model'
 tgtTokenizerPath = '../preProcessing/en.model'
 
 
-# ## Load data 
-# 
 
-# In[3]:
-
+# --------------------------
+#### Section 1: Load data
+# --------------------------
 
 srcFile = open(srcDataPath, 'r', encoding = 'utf-8')
 tgtFile = open(tgtDataPath, 'r', encoding = 'utf-8')
@@ -57,48 +49,31 @@ while True:
         break 
     dataMatrix.append([srcLine, tgtLine])
   
-# Create pandas dataframe 
+# Create pandas dataframe for showing examples in jupyter notebook
 df = pd.DataFrame(dataMatrix, columns = ['src', 'tgt'])
-df
 
-
-# In[4]:
-
-
+# Store source and target texts as lists 
 srcTextsAll = df['src'].tolist()
 tgtTextsAll = df['tgt'].tolist()
 
 
-# ## Tokenizers for Tibetan and English
-# 
-# The code cell below uses Google SentencePiece tokenizer. 
 
-# In[5]:
-
+# --------------------------
+#### Section 2: Prepare for tokenization of text data
+# --------------------------
+''' 
+# Turn a string into a list of numerical token ids 
+# In section 2, we only import the tokenizer and define the necessary helper functions. The actual tokenization will happen in MyBatchIterator, a class that grabs text data by batch and tokenize the texts. 
+'''
 
 # Load tokenizers that are already trained
 srcTokenizer = spm.SentencePieceProcessor(model_file=srcTokenizerPath)
 tgtTokenizer = spm.SentencePieceProcessor(model_file=tgtTokenizerPath)
 
-# Verify for Tibetan
-# print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་'], out_type=str))
-# print(srcTokenizer.encode(['ངའི་མིང་ལ་བསྟན་སྒྲོལ་མ་ཟེར་', 'བཀ྄ྲ་ཤིས་བདེ་ལེགས།'], out_type=int))
-# print(srcTokenizer.decode([4149, 306, 6, 245, 4660, 748]))
-# print(srcTokenizer.decode(['▁ངའི་', 'མིང་', 'ལ་', 'བསྟན་', 'སྒྲོལ་མ་', 'ཟེར་']))
-# print('Vocab size of Tibetan Tokenizer:', srcTokenizer.get_piece_size())
-
-# Verify for English
-# print(tgtTokenizer.encode(["My name isn't Tenzin Dolma Gyalpo"], out_type=str))
-# print(tgtTokenizer.encode(['My name is Tenzin Dolma Gyalpo', 'Hello'], out_type=int))
-# print(tgtTokenizer.decode([[8804, 181, 13, 5520, 15172, 17895], [888, 21492]]))
-# print('Vocab size of English Tokenizer:', tgtTokenizer.get_piece_size())
-
-
-# We need to get the ids for our special tokens `<s>`, `</s>`, `<pad>`. 
-
-# In[6]:
-
-
+# Get the ids for special tokens 
+# <s> -- begin of sentence (bos)
+# </s> -- end of sentence (eos)
+# <pad> -- pad token that fill a token vector to s specific length 
 src_bos_id = srcTokenizer.piece_to_id('<s>')
 src_eos_id = srcTokenizer.piece_to_id('</s>')
 src_pad_id = srcTokenizer.piece_to_id('<pad>')
@@ -106,12 +81,11 @@ tgt_bos_id = tgtTokenizer.piece_to_id('<s>')
 tgt_eos_id = tgtTokenizer.piece_to_id('</s>')
 tgt_pad_id = tgtTokenizer.piece_to_id('<pad>')
 
-print(src_bos_id, src_eos_id, src_pad_id, tgt_bos_id, tgt_eos_id, tgt_pad_id)
-
-
-# The vectors of tokenization must have the same length. We thus define several helper functions for truncation and padding
-
-# In[7]:
+'''
+# For a transformer to work, target token ids must be wrapping by <s></s>
+# The token vectors in the same training batch must have the same length. 
+# We thus define helper functions for truncation, padding, and adding special tokens
+'''
 
 
 def truncate(sentvec, maxlen, enable_bos_eos, **kwargs): 
@@ -127,32 +101,29 @@ def truncate(sentvec, maxlen, enable_bos_eos, **kwargs):
     '''
     
     # No error checking for now
-    ## For a transformer model, the target sentences have to be wrapped by <s> and </s>, but the source sentences don't have to 
-    
+
+    # Reserve two places for <s></s> if enable_bos_eos is set to True 
     if enable_bos_eos: 
         maxlen = maxlen - 2    # Need to reserve two positions for <s></s>
         bos_id = kwargs['bos_id']
         eos_id = kwargs['eos_id']
         
-    # Truncate the sentence if needed 
+    # Remove trailing token ids if needed 
     if len(sentvec) > maxlen: 
         newvec = sentvec[:maxlen].copy()
     else: 
         newvec = sentvec.copy()
         
-    # Return the new vector
+    # Return the new token vector
     if enable_bos_eos: 
         return [bos_id] + newvec + [eos_id]
     else: 
         return newvec
 
 
-# In[8]:
-
-
 def pad(sentvec, maxlen, pad_id): 
     ''' 
-    Pad a sentence to maxlen 
+    # If a token list is shorter than tolen, then add <pad> until `tolen` and get the attention mask where 0--><pad> and 1-->non-pad characters 
     '''
     sentlen = len(sentvec)
     
@@ -164,47 +135,23 @@ def pad(sentvec, maxlen, pad_id):
         return sentvec + [pad_id] * (maxlen - sentlen)
 
 
-# In[9]:
-
-
 def trim(sentvec, maxlen, pad_id, enable_bos_eos, **kwargs): 
-    '''truncate and then pad a sentence. Return a tuple with ids and attention mask'''
+    '''truncate and then pad a sentence. '''
     
     ids = truncate(sentvec, maxlen, enable_bos_eos, **kwargs)
     ids= pad(ids, maxlen, pad_id)
     return ids
 
 
-# Show some examples to verify that our `trim()` function works. 
 
-# In[10]:
+# --------------------------
+#### Section 3: Helper classes: MyBatchIterator and Timer
+# --------------------------
 
-
-trim([100, 200, 300, 400, 500], maxlen = 4, pad_id = tgt_pad_id, enable_bos_eos = False)
-
-
-# In[11]:
-
-
-trim([100, 200, 300, 400, 500], maxlen = 9, pad_id = tgt_pad_id, enable_bos_eos = False)
-
-
-# In[12]:
-
-
-trim([100, 200, 300, 400, 500], maxlen = 4, pad_id = tgt_pad_id, enable_bos_eos = True, bos_id = tgt_bos_id, eos_id = tgt_eos_id)
-
-
-# In[13]:
-
-
-trim([100, 200, 300, 400, 500], maxlen = 9, pad_id = tgt_pad_id, enable_bos_eos = True, bos_id = tgt_bos_id, eos_id = tgt_eos_id)
-
-
-# ## Create an iterator that returns batches of processed tokenization
-
-# In[14]:
-
+'''
+# Deep learning models usually process a large piece of data by small batches. 
+# The class `MyBatchIterator` is an iterator for grabbing text data by specified batch size, and then tokenize the text into numerical token ids. 
+'''
 
 class MyBatchIterator: 
     def __init__(self, srcTexts, tgtTexts, 
@@ -234,7 +181,8 @@ class MyBatchIterator:
         ids_batch = []
         maxlen = 0
 
-        # Iterator each text in the batch 
+        # Add <s></s> if needed 
+        # Get the maximum vector length in the current batch 
         for text in text_batch: 
             ids = tokenizer.encode(text)
             # Add <s></s> if needed
@@ -244,9 +192,8 @@ class MyBatchIterator:
             if len(ids) > maxlen: 
                 maxlen = len(ids)
     
-        # Pad the the current maxlen in the batch 
+        # Pad all vectors to the maximum length
         padded_ids_batch = [pad(ids, maxlen, pad_id) for ids in ids_batch]
-        # !!! Cause segfault on kona server !!!
         return torch.tensor(padded_ids_batch).to(device)
 
     
@@ -255,6 +202,8 @@ class MyBatchIterator:
         return self
     
     
+    # Defines what happends when next() is called on the iterator 
+    # When next() is called, grab the next batch of texts, tokenize them, and return token ids
     def __next__(self): 
         if self.curr_idx >= self.end_idx: 
             raise StopIteration  
@@ -281,47 +230,43 @@ class MyBatchIterator:
             'tgt': self.tokenize_batch_and_trim(text_batch_dict['tgt'], self.tgtTokenizer, self.tgt_pad_id, enable_bos_eos = True, bos_id = self.tgt_bos_id, eos_id = self.tgt_eos_id)
         }
     
+
+    # The length of iterator
+    # i.e. The total number of batches 
     def __len__(self):
         return math.ceil((self.end_idx - self.start_idx) / self.batch_size)
         
 
+'''
+# The `Timer` class is for estimating the remaining time for processing a batch 
+'''
+class Timer:
+    def __init__(self, num_total_units):
+        # num_total_units: How many units of tasks need to be done
+        self.start = datetime.datetime.now()
+        self.num_total_units = num_total_units
 
-# Here is an example of how our batch iterator works. 
-
-# In[15]:
-
-
-mbi = MyBatchIterator(
-    srcTextsAll, tgtTextsAll, 
-    srcTokenizer, tgtTokenizer,
-    start_idx = 475, end_idx = 485, batch_size = 8, 
-    src_pad_id = src_pad_id, tgt_pad_id = tgt_pad_id, 
-    src_bos_id = src_bos_id, tgt_bos_id = tgt_bos_id, 
-    src_eos_id = src_eos_id, tgt_eos_id = tgt_eos_id
-)
-
-mbi = iter(mbi)
-
-print('length of iterator:', len(mbi))
-
-for idx, batch in enumerate(mbi): 
-    print(f"batch index: {idx}, src size: {batch['src'].size()}; tgt size: {batch['tgt'].size()}")
-    print(f"sample src ids: {batch['src'][0]}")
-    print(f"sample tgt ids: {batch['tgt'][0]}")
-    print('='*50)
+    def remains(self, num_done_units):
+        # num_done_units: How many units of tasks are done
+        now  = datetime.datetime.now()
+        time_taken = now - self.start
+        sec_taken = int(time_taken.total_seconds())
+        time_left = (self.num_total_units - num_done_units) * (now - self.start) / num_done_units
+        sec_left = int(time_left.total_seconds())
+        return f"Time taken {sec_taken // 60:02d}:{sec_taken % 60:02d}, Estimated time left {sec_left // 60:02d}:{sec_left % 60:02d}"
 
 
-# ## Define model class and hyperparameters
 
-# In[16]:
+# --------------------------
+#### Section 4: Encoder and Model class
+# --------------------------
 
-
-class PositionalEncoding(nn.Module):    # What PositionalEncoding for? 
+class PositionalEncoding(nn.Module):   
     def __init__(self, hparams): 
         super(PositionalEncoding, self).__init__()
         self.dropout = nn.Dropout(p = hparams['dropout'])
         self.d_model = hparams['d_model']
-        pe = torch.zeros(hparams['max_len'], self.d_model)    # What pe mean? 
+        pe = torch.zeros(hparams['max_len'], self.d_model)    # positional encoding 
         position = torch.arange(0, hparams['max_len']).unsqueeze(1)
         div_term = torch.exp(
             torch.arange(0, self.d_model, 2).float() * (
@@ -338,8 +283,6 @@ class PositionalEncoding(nn.Module):    # What PositionalEncoding for?
         x = x + self.pe[:x.size(0), :]
         return self.dropout(x)
 
-
-# In[17]:
 
 
 class MyTransformer(nn.Module): 
@@ -416,71 +359,18 @@ class MyTransformer(nn.Module):
                 torch.nn.init.xavier_uniform_(p)
 
 
-# In[18]:
 
-
-hparams = dict(
-    d_model = 512, 
-    dropout = 0.3, 
-    max_len = 5000,    # I don't know what this maxlen is for 
-    nhead = 8,    # Little understand what for 
-    num_encoder_layers = 6, 
-    num_decoder_layers = 6, 
-    dim_feedforward = 2048, 
-    activation = 'relu', 
-    source_vocab_length = srcTokenizer.get_piece_size(),    # Consider increase
-    target_vocab_length = tgtTokenizer.get_piece_size(),    # Consider increase 
-    num_epochs = 50, 
-    train_batch_size = 8, 
-    val_batch_size = 1,     # For minimal padding or avoiding padding 
-    lr = 1e-4, 
-    adam_betas = (0.9, 0.98), 
-    # adam_eps = 1e-9, 
-    weight_decay = 1e-4, 
-    warmup_steps = 4000, 
-    train_percentage = 0.95, 
-    val_percentage = 0.02, 
-    checkpoint_at = [9, 19, 29, 39], 
-)
-
-
-# ## Helper classes and functions for training
-# 
-# We define a `Timer` class for estimating remaining time for an epoch. 
-
-# In[19]:
-
-
-class Timer:
-    def __init__(self, num_total_units):
-        # num_total_units: How many units of tasks need to be done
-        self.start = datetime.datetime.now()
-        self.num_total_units = num_total_units
-
-    def remains(self, num_done_units):
-        # num_done_units: How many units of tasks are done
-        now  = datetime.datetime.now()
-        time_taken = now - self.start
-        sec_taken = int(time_taken.total_seconds())
-        time_left = (self.num_total_units - num_done_units) * (now - self.start) / num_done_units
-        sec_left = int(time_left.total_seconds())
-        return f"Time taken {sec_taken // 60:02d}:{sec_taken % 60:02d}, Estimated time left {sec_left // 60:02d}:{sec_left % 60:02d}"
-
-
-# ## Define the training routine
-# 
-# The training loop and eval loop for each epoch is defined below. 
-
-# In[20]:
-
+# --------------------------
+#### Section 5: Training routine
+# --------------------------
 
 def train(train_iter, val_iter, model, optim, scheduler, hparams): 
-    train_losses = []
-    val_losses = []
+    train_losses = []    # For storing averages losses durinig each train epoch
+    val_losses = []      # For storing averages losses during each val epoch
     train_step_counter = 0
     val_step_counter = 0
-    tb_refresh_rate = 60    # Flush tensorboard log every ? sec
-    msg_refresh_rate = 10    # Flush message log every ? sec 
+    tb_refresh_rate = 60    # Flush tensorboard log every ~ seconds
+    msg_refresh_rate = 10    # Flush message log every ~ seconds
     best_epoch = 0
     
     msg_writer = open('message.log', 'w')    # For logging training progress
@@ -497,16 +387,19 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
         model.train()    # Flip to train mode 
         train_loss = 0
         
-        msg_offset = msg_writer.tell()    # Overwrite progress info at this offset 
-        refresh_timer_start = time.time()    # Start counting until refreshing the message log (refresh rate = 10s)
-        myTimer = Timer(len(train_iter))    # For estimating remaining time for training
+        msg_offset = msg_writer.tell()    # Will overwrite progress info at this offset 
+        refresh_timer_start = time.time()    # Count time until refreshing the message log (refresh rate = `msg_refresh_rate`)
+        myTimer = Timer(len(train_iter))    # For estimating remaining time for training each epoch
         
         for idx, batch in enumerate(train_iter): 
+            # Get token ids 
             src = batch['src'].to(device)    # batch_size * maxlen(src)
             tgt = batch['tgt'].to(device)    # batch_size * maxlen(tgt)
-            tgt_input = tgt[:, :-1]    # Rid last token. What for?  
-            targets = tgt[:, 1:].contiguous().view(-1)    # Rid first <s> token, then view as a 1D vector. What for? 
             
+            tgt_input = tgt[:, :-1]    # Remove the last column, intended EOS 
+            targets = tgt[:, 1:].contiguous().view(-1)    # Remove the first column (BOS should not be used for computing loss)
+            
+            # Create attention masks 
             src_mask = (src != 0).float().to(device)
             src_mask = src_mask.masked_fill(src_mask == 0, float('-inf')).masked_fill(src_mask == 1, float(0))    # map 0-->(-inf), 1-->0. What for? 
             tgt_mask = (tgt_input != 0).float().to(device)
@@ -534,11 +427,15 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
             train_loss += loss.item() / src.size(0)    # Tutorial uses the constant BATCH_SIZE as denominator, but since the final batch may have a smaller size, I decided to use current batch size 
             
             # Tensorboard logging 
+                # Which epoch are we at 
+                # Loss of current training batch 
             tb_writer.add_scalar('Epoch/train', epoch, train_step_counter)
             tb_writer.add_scalar('Loss(step)/train', loss, train_step_counter)
             train_step_counter += 1
             
             # Message logging 
+                # Show how many batches are completed
+                # Show time elapsed and expected remaining time 
             refresh_timer_end = time.time()
             if (refresh_timer_end - refresh_timer_start > msg_refresh_rate): 
                 refresh_timer_start = time.time()    # reset refresh_time
@@ -548,7 +445,7 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
                 msg_writer.flush()
                 
         # Training epoch end 
-        msg_writer.seek(msg_offset)
+        msg_writer.seek(msg_offset)    # Will overwrite previous progress log
         msg_writer.write(f'Train batches {len(train_iter)}/{len(train_iter)} completed. ')
         msg_writer.write(myTimer.remains(num_done_units = len(train_iter)))
         msg_writer.write('\n')
@@ -556,21 +453,23 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
        
     
         ''' Part II: Eval loop '''
-        # Flip to eval mode 
-        model.eval()
+        model.eval()    # Flip to eval mode 
         val_loss = 0
         
         msg_offset = msg_writer.tell()    # Overwrite progress info at this offset 
         refresh_timer_start = time.time()    # Start counting until refreshing the message log (refresh rate = 10s)
-        myTimer = Timer(len(train_iter))    # For estimating remaining time for training
+        myTimer = Timer(len(val_iter))    # For estimating remaining time for cross-validating each epoch 
         
         with torch.no_grad(): 
             for idx, batch in enumerate(val_iter): 
+                # Get token ids
                 src = batch['src'].to(device)    # batch_size * maxlen(src)
                 tgt = batch['tgt'].to(device)    # batch_size * maxlen(tgt)
-                tgt_input = tgt[:, :-1]    # Rid last token. What for?  
-                targets = tgt[:, 1:].contiguous().view(-1)    # Rid first <s> token, then view as a 1D vector. What for? 
+               
+                tgt_input = tgt[:, :-1]    # Remove the last column, intended EOS  
+                targets = tgt[:, 1:].contiguous().view(-1)    # Remove the first column (BOS should not be used for computing loss)
                 
+                # Create attention masks 
                 src_mask = (src != 0).float().to(device)
                 src_mask = src_mask.masked_fill(src_mask == 0, float('-inf')).masked_fill(src_mask == 1, float(0))    # map 0-->(-inf), 1-->0. What for? 
                 tgt_mask = (tgt_input != 0).float().to(device)
@@ -594,16 +493,20 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
                 val_loss += loss.item() / src.size(0)
                 
                 # Tensorboard logging 
+                    # Which epoch are we at 
+                    # Loss of current validation batch 
                 tb_writer.add_scalar('Epoch/val', epoch, val_step_counter)
                 tb_writer.add_scalar('Loss(step)/val', loss, val_step_counter)
                 val_step_counter += 1
                 
                 # Message logging 
+                    # Show how many batches are completed
+                    # Show time elapsed and expected remaining time 
                 refresh_timer_end = time.time()
                 if (refresh_timer_end - refresh_timer_start > msg_refresh_rate): 
                     refresh_timer_start = time.time()    # reset refresh_time
                     msg_writer.seek(msg_offset)
-                    msg_writer.write(f'Val batches {idx}/{len(train_iter)} completed. ')
+                    msg_writer.write(f'Val batches {idx}/{len(val_iter)} completed. ')
                     msg_writer.write(myTimer.remains(num_done_units = idx))
                     msg_writer.flush()
                 
@@ -614,10 +517,12 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
             msg_writer.write('\n')
             msg_writer.flush() 
             
-            ## Epoch end 
-            print(f'Epoch {epoch}/{hparams["num_epochs"]} completed. Train_loss: {train_loss / len(train_iter):.3f}. Val_loss: {val_loss / len(val_iter):.3f}')
 
+            ## Epoch end 
+            
             # Extra logs
+            # Average train loss and val loss during this epoch
+            print(f'Epoch {epoch}/{hparams["num_epochs"]} completed. Train_loss: {train_loss / len(train_iter):.3f}. Val_loss: {val_loss / len(val_iter):.3f}')
             msg_writer.write(f'Epoch {epoch}/{hparams["num_epochs"]} completed. Train_loss: {train_loss / len(train_iter):.3f}. Val_loss: {val_loss / len(val_iter):.3f}')
             tb_writer.add_scalar('Loss(epoch)/train', train_loss / len(train_iter), epoch)
             tb_writer.add_scalar('Loss(epoch)/val', val_loss / len(val_iter), epoch)
@@ -648,7 +553,7 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
             msg_writer.write('\n' + '=' * 50 + '\n\n')
             sample_writer.write('=' * 50 + '\n\n')
             
-    # Wrap up
+    # Wrap up the training routine 
     msg_writer.write(f'Best epoch idx = {best_epoch}')
     torch.save(model.state_dict(), 'checkpoint_final_epoch.pt')
     msg_writer.close()
@@ -656,30 +561,15 @@ def train(train_iter, val_iter, model, optim, scheduler, hparams):
     sample_writer.close()
 
 
-# ## Greedy decoding for target sentence generation
-# 
-# A better solution will be beam search, but we will consider it later. 
-# 
-# (Copied from tutorial) Greedy decoding does piecewise predictions. The greedy search would start with:
-# 
-# * Passing the whole English sentence as encoder input and just the start token `<s>` as shifted output (input to the decoder) to the model and doing the forward pass.
-# 
-# * The model will predict the next word — der
-# 
-# * Then, we pass the whole English sentence as encoder input and add the last predicted word to the shifted output(input to the decoder = `<s>` der) and do the forward pass.
-# 
-# * The model will predict the next word — schnelle
-# 
-# * Passing the whole English sentence as encoder input and `<s>` der schnelle as shifted output (input to the decoder) to the model and doing the forward pass.
-# 
-# * and so on, until the model predicts the end token `</s>` or we generate some maximum number of tokens(something we can define) so the translation doesn’t run for an infinite duration in the case it breaks.
 
-# In[21]:
-
+'''
+# Define the helper function for generating translation for a source text
+# Use "greedy-decoding" algorithm 
+'''
 
 def greedy_decode_sentence(model, sentence, max_len = 100): # Restrict translation up to 100 words 
     model.eval()
-    src = torch.LongTensor([srcTokenizer.encode(sentence)]).to(device)    #  !! Caution! Datatype for autograd 
+    src = torch.LongTensor([srcTokenizer.encode(sentence)]).to(device) 
     tgt_init_tok = tgt_bos_id
     tgt = torch.LongTensor([[tgt_init_tok]]).to(device)    # For forward() purpose, stored as a column vector
     translated_sentence = ''
@@ -689,6 +579,7 @@ def greedy_decode_sentence(model, sentence, max_len = 100): # Restrict translati
         np_mask = torch.triu(torch.ones(size, size) == 1).transpose(0, 1).to(device).float()
         np_mask = np_mask.masked_fill(np_mask == 0, float('-inf')).masked_fill(np_mask == 1, float(0))
         
+        # Predict the next word based on previous words 
         pred = model(src.transpose(0, 1), tgt, tgt_mask = np_mask)
         generated_id = pred.argmax(dim = 2)[-1]    # Not sure the mechanism behind
         generated_word = tgtTokenizer.decode([generated_id.item()])
@@ -704,21 +595,56 @@ def greedy_decode_sentence(model, sentence, max_len = 100): # Restrict translati
     return translated_sentence
 
 
-# ## Start training
 
-# In[22]:
+# --------------------------
+#### Section 6: Instantiate and train! 
+# --------------------------
+
+'''
+# In this final section, we
+    # Specify hyperparameters
+    # Instantiate model 
+    # Instantiate optimizer and scheduler 
+    # Instantiate the batch iterator 
+    # Start training 
+'''
+
+hparams = dict(
+    d_model = 512, 
+    dropout = 0.3, 
+    max_len = 5000,    
+    nhead = 8,    # Little understand what for 
+    num_encoder_layers = 6, 
+    num_decoder_layers = 6, 
+    dim_feedforward = 2048, 
+    activation = 'relu', 
+    source_vocab_length = srcTokenizer.get_piece_size(),    # Consider increase
+    target_vocab_length = tgtTokenizer.get_piece_size(),    # Consider increase 
+    num_epochs = 50, 
+    train_batch_size = 8, 
+    val_batch_size = 1,     # For minimal padding or avoiding padding 
+    lr = 1e-4, 
+    adam_betas = (0.9, 0.98), 
+    # adam_eps = 1e-9, 
+    weight_decay = 1e-4, 
+    warmup_steps = 4000, 
+    train_percentage = 0.95, 
+    val_percentage = 0.02, 
+    checkpoint_at = [9, 19, 29, 39], 
+)
 
 
 model = MyTransformer(hparams).to(device)
 
 optim = torch.optim.Adam(model.parameters(), lr = hparams['lr'], betas = hparams['adam_betas'], weight_decay = hparams['weight_decay'])
+
+# The scheduler first warm up to the target learning rate and then decay according to a cosine function
 scheduler = get_cosine_with_hard_restarts_schedule_with_warmup(
     optim, 
     num_warmup_steps = hparams['warmup_steps'], 
     num_training_steps = hparams['num_epochs'] * math.ceil(len(srcTextsAll) / hparams['train_batch_size']), 
     num_cycles = 3
 )
-
 
 train_mbi = MyBatchIterator(
     srcTextsAll, tgtTextsAll, srcTokenizer, tgtTokenizer,
@@ -738,7 +664,4 @@ val_mbi = MyBatchIterator(
 
 train(iter(train_mbi), iter(val_mbi), model, optim, scheduler, hparams)
 
-# For MistGPU only
-import os 
-os.system('sh ~/shutdown.sh')
 
