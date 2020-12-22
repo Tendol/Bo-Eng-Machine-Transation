@@ -1,0 +1,48 @@
+Origianl source text: རྒྱལ་པོ་ཞེས་བྱ་བས་རྒྱལ་སྲིད་འབྱོར་པ་རྒྱས་པ་བདེ་བ་ལོ་ལེགས་པ་སྐྱེ་བོ་དང་མི་མང་པོས་གང་བ་བྱེད་དུ་བཅུག་གོ་
+
+Original target text: under his rule the kingdom prospered and thrived crops were bountiful and the land teemed with animals and people
+
+Predicted target text:  the one who was that sage then is none other than this world 
+
+--------------------------------------------------
+
+Origianl source text: དེས་དཔུང་གི་ཚོགས་ཡན་ལག་བཞི་པ་གླང་པོ་ཆེ་པའི་ཚོགས་དང་རྟ་པའི་ཚོགས་དང་ཤིང་རྟ་པའི་ཚོགས་དང་དཔུང་བུ་ཆུང་གི་ཚོགས་གོ་བསྐོན་ཏེ་ཡུལ་མ་ག་དཧའི་རྒྱལ་པོའི་ཁ་བ་མ་གཏོགས་པ་བཅོམ་ནས་ཕྱིར་ལྡོག་པར་བྱེད་དོ་
+
+Original target text: he called up the four branches of his armed forcesthe elephant corps the cavalry the charioteer corps and the infantryand laid waste to all of magadha save rajagrha before returning
+
+Predicted target text:  the bless ed one was in the same way the  very same way the bodhisattva great being who was in the world of the world the heaven of form and the world the world the unsurpassed one who was in the teacher of humans the world 
+
+--------------------------------------------------
+
+Origianl source text: སུམ་ཅུ་རྩ་གསུམ་པའི་ལྷ་རྣམས་ཀྱི་ཁ་དོག་གི་མཐུ་བས་ལྷག་པའི་སྣང་བ་རྒྱ་ཆེན་པོས་ཁྱབ་པར་གྱུར་འཇིག་རྟེན་གྱི་འཇིག་རྟེན་གྱི་བར་གང་ན་ཉི་མ་དང་ཟླ་བ་འདི་ལྟར་རྫུ་འཕྲུལ་ཆེ་བ་འདི་ལྟར་མཐུ་ཆེ་བ་འདི་གཉིས་ཀྱི་འོད་དག་ཉམས་སུ་མི་མྱོང་བའི་མུན་པ་མུན་ནག་མུན་པར་བྱེད་པས་གནག་པར་གྱུར་པ་གང་དག་ཡིན་པ་དེ་དག་ཀྱང་དེའི་ཚེ་ན་སྣང་བ་རྒྱ་ཆེན་པོས་ཁྱབ་པར་གྱུར་ནས་སེམས་ཅན་གང་དག་དེར་སྐྱེས་པ་དག་གིས་རང་གི་ལག་པ་བརྐྱང་བ་ཡང་མི་མཐོང་བ་དེ་དག་གིས་ཀྱང་འོད་དེས་སེམས་ཅན་གཅིག་གིས་གཅིག་མཐོང་ནསཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་་ཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་ཞེས་ཤེས་པར་གྱུར་ཏོ་
+
+Original target text: bathed in a vast light more luminous than the glow of the gods of the thirtythree so great was this miraculous manifestation it was as if the sun and moon shone in the gulf between worlds so great was its strength that darkness everywhere even the pitchblack darkness of dark places dark from never knowing the light of the sun and moon was filled with a vast light beings born in those places had never even seen so far as their outstretched hands yet by this light these beings saw one another and exclaimed you there there are others who have been born here there are others who have been born here
+
+Predicted target text:  the bless ed one the thusgone one the  worthy one the perfect buddha known as the perfect buddha known as the world the teacher of the world the charioteer the world the charioteer the charioteer the charioteer the unsurpassed one the teacher of humans the teacher of humans the teacher of humans the bless ed buddha known as kasyapa was in the world the world the world the world the world the world the world the unsurpassed one the teacher of humans the teacher of humans the bless ed buddha known as kasyapa was in the world 
+
+--------------------------------------------------
+
+Origianl source text: དཀོན་མཆོག་གསུམ་ལ་ཕྱག་འཚལ་ལོ་་
+
+Original target text: homage to the three jewels
+
+Predicted target text:  the one who was that was that was that 
+
+--------------------------------------------------
+
+Origianl source text: ཤ་རིའི་བུ་དང་མུ་སྟེགས་ཅན་་
+
+Original target text: sariputra tirthikas
+
+Predicted target text:  the one who was that was that 
+
+--------------------------------------------------
+
+Origianl source text: དེས་བློན་པོ་རྣམས་ལ་སྨྲས་པ་
+
+Original target text: then he said to his ministers
+
+Predicted target text:  the one who was that was that was that 
+
+--------------------------------------------------
+

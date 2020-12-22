@@ -96,7 +96,7 @@ def generate_translation(model, src_text):
     return pred_text
 
 
-# Pick selected examples, generate translation, and compare 
+## Pick selected examples, generate translation, and compare 
 selected = [0, 1, 2, 13, 24, 41]
 sample_writer = open(sampleOutPath, 'w', encoding='utf-8')
 print('Generating translations for selected sentences...')
