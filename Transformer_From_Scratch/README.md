@@ -1,0 +1,3 @@
+* `Scratch.py` -- A script for building and training a transformer from scratch for Tibetan-English-translation. 
+* `Scratch_get_results.py` -- A script for loading the saved state dictionary of transformer from scratch and show several examples of predicted translations. **The code will not run right now because we did not submit the model due to size limit.  
+* `Scratch_sample_results.txt` -- The file for outputting example translations by transformer from scratch.**This is the output from running Scratch_get_results.py

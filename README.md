@@ -1,19 +1,8 @@
-# Bo-Eng-Machine-Transation
-Tibetan to English Machine Translation
+We simultaneously ran three different approaches to train our data: 
+ 
+ * We imported a transformer model from FairSeq, an open-source sequence modeling toolkit, and fed it with our own data and hyperparameters for training. 
 
-## Dependencies:
+ * We fine-tuned a pre-trained T5 transformer model provided by `Huggingface Transformers` library with our data. 
 
-pip install transformers
-pip install pytorch
-pip install tensorflow
-
-## files: 
-fairseq.sh - bash script to run the Machine Training pipeline using fairseq 
-
-## Instructions:
-
-cd preProcessing
-bash prepare-bo-en.sh
-cd ..
-bash fairseq.sh 
+ * We built a transformer from scratch with Pytorch. Tutorial link: https://lionbridge.ai/articles/transformers-in-nlp-creating-a-translator-model-from-scratch/ 
 

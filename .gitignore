@@ -1,2 +1,13 @@
+<<<<<<< HEAD
 
 
+=======
+*.pt
+*.ckpt
+*.tar.gz
+*.tar.gz.00
+warm_up_Chinese_English_02/en-zh/*
+upload/*
+Transformer_from_scratch_MistGPU/*
+T5_MistGPU/*
+>>>>>>> 50822015edb4d81cf1375ac0accce7eaa2fb00c8
