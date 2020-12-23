@@ -8,13 +8,13 @@ SCRIPTS=$ROOT/tokenizer
 SPM_TRAIN=$SCRIPTS/spm_train.py
 SPM_ENCODE=$SCRIPTS/spm_encode.py
 
-BPESIZE=16384
+BPESIZE=32000
 ORIG=$ROOT/data_orig
 DATA=$ROOT/data.bo.en.bpe16k
 mkdir -p "$DATA"
 
 TRAIN_MINLEN=1  # remove sentences with <1 BPE token
-TRAIN_MAXLEN=250  # remove sentences with >500 BPE tokens
+TRAIN_MAXLEN=250  # remove sentences with >250 BPE tokens
 
 # prepare train, valid and test data 
 echo "prepare train, valid, and test data"

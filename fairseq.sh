@@ -12,18 +12,18 @@ fairseq-preprocess --source-lang bo --target-lang en \
     --trainpref $PATH_TO_DATA/train.bpe.bo-en \
     --validpref $PATH_TO_DATA/valid.bpe.bo-en \
     --testpref  $PATH_TO_DATA/test.bpe.bo-en \
-    --destdir data-bin/tokenized.bo.en.bpe16k \
+    --destdir data-bin/tokenized.bo.en.bpe32k \
     --workers 10 \
     --scoring bleu
 
 echo "Training the data for ${lang} ... "
-fairseq-train data-bin/tokenized.bo.en.bpe16k/ \
+fairseq-train data-bin/tokenized.bo.en.bpe32k/ \
 --max-epoch 50 \
 --arch transformer \
 --share-decoder-input-output-embed \
 --optimizer adam --adam-betas '(0.9, 0.98)' \
---lr 0.0005 --lr-scheduler inverse_sqrt \
---warmup-updates 4000 --warmup-init-lr '1e-07' \
+--lr 5e-1 --lr-scheduler inverse_sqrt \
+--warmup-updates 4000 --warmup-init-lr '5e-07' \
 --label-smoothing 0.1 --criterion label_smoothed_cross_entropy \
 --dropout 0.3 --weight-decay 0.0001 \
 --save-dir checkpoints \

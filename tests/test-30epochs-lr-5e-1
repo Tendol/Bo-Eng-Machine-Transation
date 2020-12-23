@@ -1,0 +1,516 @@
+2020-12-20 15:31:30 | INFO | fairseq.tasks.translation | [bo] dictionary: 9528 types
+2020-12-20 15:31:30 | INFO | fairseq.tasks.translation | [en] dictionary: 6600 types
+2020-12-20 15:31:30 | INFO | fairseq_cli.generate | loading model(s) from checkpoints/checkpoint_best.pt
+2020-12-20 15:31:30 | INFO | fairseq.data.data_utils | loaded 100 examples from: data-bin/tokenized.bo.en.bpe16k/test.bo-en.bo
+2020-12-20 15:31:30 | INFO | fairseq.data.data_utils | loaded 100 examples from: data-bin/tokenized.bo.en.bpe16k/test.bo-en.en
+2020-12-20 15:31:30 | INFO | fairseq.tasks.translation | data-bin/tokenized.bo.en.bpe16k/ test bo-en 100 examples
+
+*****
+
+2020-12-20 15:31:36 | INFO | fairseq_cli.generate | NOTE: hypothesis and token scores are output in base 2
+2020-12-20 15:31:36 | INFO | fairseq_cli.generate | Translated 100 sentences (1842 tokens) in 4.2s (23.66 sentences/s, 435.77 tokens/s)
+Generate test with beam=5: BLEU4 = 4.79, 26.4/6.2/2.7/1.2 (BP=1.000, ratio=1.091, syslen=1622, reflen=1487)
+
+*****
+
+
+S-24	ཤ་རིའི་བུ་དང་མུ་སྟེགས་ཅན་་
+T-24	sariputra tirthikas
+H-24	-1.561583161354065	sariputra this is the scope of the tathagatas
+D-24	-1.561583161354065	sariputra this is the scope of the tathagatas
+P-24	-0.0409 -3.5922 -1.4266 -0.4327 -4.2521 -0.1029 -0.7348 -2.7833 -0.6889
+S-85	རྒྱལ་པོ་པད་མ་ཆེན་པོས་བསམས་པ་
+T-85	king mahapadma thought
+H-85	-1.0058555603027344	the king thought
+D-85	-1.0058555603027344	the king thought
+P-85	-0.6612 -1.7464 -1.1941 -0.4217
+S-75	ཕ་རོལ་གནོན་པ་
+T-75	ruthless
+H-75	-1.3745954036712646	who has conquered all demons
+D-75	-1.3745954036712646	who has conquered all demons
+P-75	-0.8096 -1.6344 -2.0904 -0.4886 -3.0124 -0.2123
+S-55	དེ་དག་གིས་ཚིགས་སུ་བཅད་པ་སྨྲས་པ་
+T-55	they spoke in verse
+H-55	-1.2372618913650513	they then spoke these verses
+D-55	-1.2372618913650513	they then spoke these verses
+P-55	-1.5919 -2.4349 -1.5736 -1.3090 -0.0560 -0.4582
+S-13	དཀོན་མཆོག་གསུམ་ལ་ཕྱག་འཚལ་ལོ་་
+T-13	homage to the three jewels
+H-13	-0.13114453852176666	homage to the three jewels
+D-13	-0.13114453852176666	homage to the three jewels
+P-13	-0.0963 -0.0801 -0.3595 -0.0421 -0.0180 -0.1909
+S-11	རྒྱ་གར་སྐད་དུ་
+T-11	in the language of india
+H-11	-1.553571343421936	wherever you are born
+D-11	-1.553571343421936	wherever you are born
+P-11	-2.1628 -3.5623 -0.7472 -0.8896 -0.4060
+S-41	དེས་བློན་པོ་རྣམས་ལ་སྨྲས་པ་
+T-41	then he said to his ministers
+H-41	-0.8700209259986877	he said to the ministers
+D-41	-0.8700209259986877	he said to the ministers
+P-41	-1.2962 -2.1525 -0.3768 -1.0856 -0.1302 -0.1789
+S-12	བོད་སྐད་དུ་
+T-12	in the language of tibet
+H-12	-2.1146178245544434	you should say
+D-12	-2.1146178245544434	you should say
+P-12	-4.3385 -0.6413 -3.0634 -0.4152
+S-36	བསྙེན་པར་རྫོགས་པར་གནང་བ་དང་་་
+T-36	granting ordination
+H-36	-1.034143328666687	conferred on her full ordination
+D-36	-1.034143328666687	conferred on her full ordination
+P-36	-2.2174 -0.3682 -3.1707 -0.2930 -0.0147 -0.1408
+S-94	རྒྱལ་པོ་དམག་བརྒྱ་པས་བསམས་པ་
+T-94	king satanika thought
+H-94	-1.6006397008895874	the king had a thousand sons thought
+D-94	-1.6006397008895874	the king had a thousand sons thought
+P-94	-2.2317 -0.1222 -2.0187 -0.5243 -4.6800 -0.7142 -2.0965 -0.4173
+S-47	གལ་ཏེ་ཕྱིར་འབྱུང་ན་དེ་ལྟ་ན་ལེགས་་
+T-47	it would be good were you to come out
+H-47	-1.2848340272903442	if you ask why it would be excellent
+D-47	-1.2848340272903442	if you ask why it would be excellent
+P-47	-0.9892 -1.0774 -3.0683 -0.0531 -0.7393 -2.6017 -0.4968 -2.1132 -0.4245
+S-88	གཞོན་ནུ་འདིའི་མིང་གཟུགས་ཅན་སྙིང་པོར་གདགས་སོ་སྙམ་ནས་
+T-88	i shall name this prince bimbisara essence of gold
+H-88	-1.0949592590332031	what name should we give this child and they named him saying
+D-88	-1.0949592590332031	what name should we give this child and they named him saying
+P-88	-3.6122 -0.8248 -0.5813 -1.3173 -1.3243 -0.3860 -0.1392 -3.4021 -1.5737 -0.2659 -0.2495 -0.4490 -0.1093
+S-19	དམར་སེར་ཅན་དང་གང་ཟག་དང་་་
+T-19	a group of troublesome monks types of persons
+H-19	-1.9819837808609009	a yellow cloth
+D-19	-1.9819837808609009	a yellow cloth
+P-19	-1.7266 -1.8371 -4.1094 -0.2548
+S-79	བཅོམ་ལྡན་འདས་བྱང་ཆུབ་སེམས་དཔའ་བལྟམ་པ་ན་
+T-79	when the blessed bodhisattva was born
+H-79	-1.2313991785049438	blessed one what is the bodhisattva like
+D-79	-1.2313991785049438	blessed one what is the bodhisattva like
+P-79	-0.9984 -0.1406 -3.0313 -0.5947 -0.7698 -0.7512 -3.3974 -0.1677
+S-74	དཔུང་དང་མཐུ་ཆེ་བར་གྱུར་ལ་
+T-74	and his military might is great
+H-74	-1.3336851596832275	with great strength and great power
+D-74	-1.3336851596832275	with great strength and great power
+P-74	-5.2878 -0.3800 -1.6455 -0.3629 -0.4920 -0.8126 -0.3551
+S-29	དེས་དཔུང་གི་ཚོགས་ཡན་ལག་བཞི་པ་
+T-29	he called up the four branches of his armed forces
+H-29	-0.6074462532997131	the four divisions of his army and the four divisions of his army
+D-29	-0.6074462532997131	the four divisions of his army and the four divisions of his army
+P-29	-3.8576 -0.0433 -0.0623 -0.0672 -1.0845 -0.0038 -0.7484 -0.4720 -0.6982 -0.0727 -0.0622 -1.0209 -0.0046 -0.3068
+S-63	གླང་པོ་ཆེ་ལྟར་སྣང་བར་བསྒྱུར་ཏེ་
+T-63	assuming an elephants appearance
+H-63	-1.3117939233779907	like the shining of an elephant
+D-63	-1.3117939233779907	like the shining of an elephant
+P-63	-0.4464 -0.7392 -2.0731 -1.0838 -3.0217 -1.1297 -0.6887
+S-23	སྨན་དང་གོས་དང་སྲ་བརྐྱང་དང་་
+T-23	medicine robes turning cloth into robes
+H-23	-1.5084543228149414	he gave them clothing and clothes
+D-23	-1.5084543228149414	he gave them clothing and clothes
+P-23	-2.3493 -1.8007 -2.4258 -1.0710 -1.4936 -1.0675 -0.3512
+S-56	ཡུལ་དང་སྲོག་ལ་གནོད་གྱུར་ན་་
+T-56	when land and life are threatened
+H-56	-2.006697416305542	even if living creatures who live in a remote land
+D-56	-2.006697416305542	even if living creatures who live in a remote land
+P-56	-4.0233 -0.4415 -2.8374 -0.8706 -3.8038 -1.5224 -0.8067 -2.8998 -3.4054 -0.3775 -1.6090 -1.4830
+S-97	རྒྱལ་པོ་མུ་ཁྱུད་མཐའ་ཡས་ཀྱིས་བསམས་པ་
+T-97	king anantanemi thought
+H-97	-1.5052591562271118	king virudhaka thought
+D-97	-1.5052591562271118	king virudhaka thought
+P-97	-0.4743 -5.0078 -0.3032 -1.4671 -1.3058 -0.4733
+S-18	སྤོ་དང་གསོ་སྦྱོང་བཞག་པ་དང་་་
+T-18	demotions suspension of the purification
+H-18	-1.1558481454849243	the posadha purification ceremony
+D-18	-1.1558481454849243	the posadha purification ceremony
+P-18	-2.8372 -1.4111 -0.0651 -0.6268 -1.5194 -0.4757
+S-92	གཞོན་ནུ་འདིའི་མིང་གསལ་རྒྱལ་དུ་གདགས་སོ་སྙམ་ནས་
+T-92	so i shall name this prince prasenajit supreme light
+H-92	-1.0193867683410645	and they named him saying since this is the name of this child
+D-92	-1.0193867683410645	and they named him saying since this is the name of this child
+P-92	-2.1167 -2.2657 -0.0380 -0.1160 -0.6042 -0.5221 -0.4094 -0.7797 -2.5232 -1.4087 -0.0638 -2.2734 -0.6857 -0.4648
+S-33	བྱང་ཆུབ་སེམས་དཔའ་དགའ་ལྡན་གྱི་གནས་ན་བཞུགས་པ་ན་་
+T-33	while the bodhisattva was dwelling in the abode of tusita
+H-33	-0.8215558528900146	when the bodhisattva was dwelling in the heaven of joy
+D-33	-0.8215558528900146	when the bodhisattva was dwelling in the heaven of joy
+P-33	-3.5542 -0.3597 -0.2023 -1.8727 -0.3322 -0.3255 -0.4772 -1.0549 -0.1012 -0.0076 -0.7497
+S-38	དེས་ཀྱང་དཔུང་གི་ཚོགས་ཡན་ལག་བཞི་པ་
+T-38	he too called up the four branches of his armed forces
+H-38	-0.5983250737190247	the four divisions of his army and the four divisions of his army
+D-38	-0.5983250737190247	the four divisions of his army and the four divisions of his army
+P-38	-3.9151 -0.0422 -0.0672 -0.0737 -0.5013 -0.0065 -1.0726 -0.7728 -0.8668 -0.0701 -0.0707 -0.4804 -0.0077 -0.4294
+S-37	སྡེ་ཚན་ཡང་དག་བསྡུས་པ་ཡིན་
+T-37	is told in sections on
+H-37	-1.1633659601211548	one day he was able to quarrel
+D-37	-1.1633659601211548	one day he was able to quarrel
+P-37	-1.1157 -0.8561 -1.9334 -0.4505 -1.0488 -0.1769 -4.1982 -0.1409 -0.5498
+S-58	བློ་ཡིས་གཉིས་ཀ་དཔྱད་བྱས་ན་་
+T-58	when the wise look at both
+H-58	-1.9510573148727417	when the wise one is able to stop them
+D-58	-1.9510573148727417	when the wise one is able to stop them
+P-58	-1.8691 -1.8368 -0.2673 -3.7006 -2.0344 -1.9479 -0.2574 -4.8258 -1.5500 -1.2214
+S-25	དགེ་ཚུལ་གཉིས་དང་བྱ་རོག་སྐྲོད་་
+T-25	the two novices scaring a crow
+H-25	-1.7451826333999634	those who are established in the teaching of the sugatas
+D-25	-1.7451826333999634	those who are established in the teaching of the sugatas
+P-25	-4.4271 -0.7858 -1.5895 -3.3321 -0.0710 -1.2146 -2.8211 -0.2713 -1.0543 -1.5551 -2.0751
+S-20	ཀ་ཤམ་བི་དང་ལས་ཀྱི་གཞི་་
+T-20	the monks of kausambi formal acts of sangha
+H-20	-1.9239712953567505	where there is no support or support
+D-20	-1.9239712953567505	where there is no support or support
+P-20	-3.3713 -0.8619 -0.9842 -0.1295 -3.8745 -2.9417 -2.3153 -0.9135
+S-35	ཉེ་སྡེས་ཚོགས་ནི་བསྡུས་པ་དང་་་
+T-35	querying upasena and a summary
+H-35	-1.9235397577285767	he is surrounded by an assembly of extremists
+D-35	-1.9235397577285767	he is surrounded by an assembly of extremists
+P-35	-4.0606 -1.6287 -3.6774 -0.0908 -2.2244 -1.3236 -0.4991 -3.5002 -0.3071
+S-66	རྒྱལ་པོའི་ཁབ་ཏུ་རྒྱལ་པོ་པད་མ་ཆེན་པོའི་བུ་བཙས་སོ་་
+T-66	in rajagrha the son of king mahapadma was born
+H-66	-1.227593183517456	king prasenajit went to the great city of rajagrha
+D-66	-1.227593183517456	king prasenajit went to the great city of rajagrha
+P-66	-1.6182 -1.6043 -2.5636 -0.3211 -0.7704 -1.8987 -1.1880 -0.7591 -1.3894 -0.1631
+S-87	འདི་བཙུན་མོ་གཟུགས་ཅན་གྱི་བུ་ཡིན་པས་
+T-87	and as he is the son of queen bimbi goldie
+H-87	-1.9159420728683472	this child is born to be conceived
+D-87	-1.9159420728683472	this child is born to be conceived
+P-87	-2.9127 -1.8213 -0.8298 -2.2807 -2.8364 -2.6566 -1.7410 -0.2491
+S-59	དེ་རལ་གྲི་མགུལ་དུ་ཐོགས་ཏེ་ཕྱིར་བྱུང་བ་དང་་
+T-59	king mahapadma hung his sword from his neck in surrender and went out
+H-59	-1.6309635639190674	holding a sword and throw it into pieces
+D-59	-1.6309635639190674	holding a sword and throw it into pieces
+P-59	-3.6884 -0.6919 -0.3336 -1.4858 -2.9376 -0.5714 -0.7563 -3.9540 -0.2595
+S-90	རྒྱལ་པོ་རྩིབས་ཀྱིས་འཕུར་ཚངས་བྱིན་གྱིས་བསམས་པ་
+T-90	king arada brahmadatta thought
+H-90	-1.334840178489685	the king appointed to the magistrate thought
+D-90	-1.334840178489685	the king appointed to the magistrate thought
+P-90	-1.8065 -0.1163 -1.6834 -1.0655 -0.4193 -4.9679 -0.0941 -0.2751 -2.1618 -0.7585
+S-89	བུ་དེའི་མིང་གཟུགས་ཅན་སྙིང་པོ་ཞེས་བྱ་བར་བཏགས་སོ་་
+T-89	and so the boy was named bimbisara
+H-89	-1.5145959854125977	that name is called nameandform
+D-89	-1.5145959854125977	that name is called nameandform
+P-89	-3.5220 -0.5289 -1.2022 -1.1309 -1.8167 -1.5618 -2.2039 -0.1503
+S-96	བུ་དེའི་མིང་ཤར་བ་ཞེས་བྱ་བར་བཏགས་སོ་་
+T-96	and so the boy was named udayana
+H-96	-1.6439169645309448	by the name of this mantra the person named suchandsuch will be named suchandsuch
+D-96	-1.6439169645309448	by the name of this mantra the person named suchandsuch will be named suchandsuch
+P-96	-3.5551 -2.5231 -0.0161 -0.4240 -2.3212 -1.0978 -2.5661 -1.8369 -0.7116 -2.3825 -1.8197 -0.3333 -1.3256 -3.6658 -0.0800
+S-57	སྐྱེས་བུས་ཀུན་དུ་སྲོག་བསྲུང་བྱ་་
+T-57	seek always to protect life
+H-57	-1.7541451454162598	one should grind the mantra with the penis
+D-57	-1.7541451454162598	one should grind the mantra with the penis
+P-57	-2.3437 -0.6545 -4.4948 -0.3673 -1.3079 -0.6484 -1.8727 -1.7297 -4.4177 -0.0644 -1.3944
+S-93	བུ་དེའི་མིང་གསལ་རྒྱལ་ཞེས་བྱ་བར་བཏགས་སོ་་
+T-93	and so the boy was named prasenajit
+H-93	-1.4415467977523804	this was the name of king prasenajit
+D-93	-1.4415467977523804	this was the name of king prasenajit
+P-93	-3.5476 -0.9314 -1.8559 -0.1763 -1.3670 -2.7393 -0.1388 -0.7761
+S-26	དགྲ་བཅོམ་བསད་དང་ལག་རྡུམ་གྱི་་
+T-26	killing an arhat and missing hands
+H-26	-1.7549560070037842	i am an arhat i am an arhat and i am an arhat
+D-26	-1.7549560070037842	i am an arhat i am an arhat and i am an arhat
+P-26	-1.8069 -2.0773 -3.5208 -0.2294 -2.2441 -1.5866 -3.3850 -0.2664 -2.9777 -0.8577 -0.9321 -3.7883 -0.6969 -0.2002
+S-68	གང་གི་ཚེ་བཅོམ་ལྡན་འདས་བྱང་ཆུབ་སེམས་དཔའ་བལྟམ་པ་དེའི་ཚེ་ན་
+T-68	at the same time as the blessed bodhisattva was born
+H-68	-1.064317226409912	at that time when the bodhisattva saw the blessed one
+D-68	-1.064317226409912	at that time when the bodhisattva saw the blessed one
+P-68	-1.7809 -0.4581 -0.1111 -1.0003 -0.2058 -0.2997 -3.5731 -1.5625 -0.9318 -0.6976 -1.0868
+S-53	ཨང་གའི་རྒྱལ་པོ་དང་གཡུལ་སྤྲད་པའི་ཕྱིར་འཕགས་སོ་་
+T-53	and rode out to meet the king of anga in battle
+H-53	-1.683105230331421	it is like this in the form of anavatapta
+D-53	-1.683105230331421	it is like this in the form of anavatapta
+P-53	-4.4582 -0.7662 -2.9399 -0.2914 -1.6635 -0.6850 -3.8563 -0.0548 -2.3322 -2.9318 -0.3440 -0.4601 -1.0971
+S-21	དགག་དབྱེ་དབྱར་དང་ཀོ་ལྤགས་གཞི་་
+T-21	lifting restrictions the rains leather
+H-21	-1.8357162475585938	one should grind the root of kakhorda grass and campaka
+D-21	-1.8357162475585938	one should grind the root of kakhorda grass and campaka
+P-21	-2.6795 -0.2595 -2.5113 -0.5698 -1.9123 -2.2190 -0.2729 -2.0331 -3.3932 -1.3150 -3.3420 -0.3837 -2.9587 -1.5244 -3.9614 -2.5055 -0.3302 -0.8714
+S-99	བུ་དེའི་མིང་རབ་སྣང་ཞེས་བྱ་བར་བཏགས་སོ་་
+T-99	and so the boy was named pradyota
+H-99	-1.0179212093353271	at that time there was a king named candapradyota
+D-99	-1.0179212093353271	at that time there was a king named candapradyota
+P-99	-3.0331 -0.3730 -0.4484 -1.3376 -0.2973 -0.2479 -4.0294 -0.1506 -1.9698 -0.3580 -0.1447 -0.1034 -0.7396
+S-61	གང་གི་ཚེ་བཅོམ་ལྡན་འདས་བྱང་ཆུབ་སེམས་དཔའ་དགའ་ལྡན་གྱི་གནས་ན་བཞུགས་པས་
+T-61	while the blessed bodhisattva was dwelling in the abode of tusita
+H-61	-0.9884622693061829	when the blessed one was dwelling in the abode of the bodhisattva dwelling in the heaven of joy
+D-61	-0.9884622693061829	when the blessed one was dwelling in the abode of the bodhisattva dwelling in the heaven of joy
+P-61	-3.4924 -0.1255 -1.0176 -0.1635 -0.9986 -0.1942 -0.5291 -0.5595 -2.5015 -0.0964 -0.8514 -1.0816 -2.9899 -0.6061 -0.5651 -2.0368 -0.1210 -0.0302 -0.8203
+S-5	དེ་ཡང་རྒྱལ་པོ་རྒྱལ་རིགས་སྤྱི་བོར་དབང་བསྐུར་བ་ཡིན་ལ་
+T-5	he too has been crowned and anointed a ksatriya king
+H-5	-1.0272668600082397	the king appointed to the highest rank of the ruling class
+D-5	-1.0272668600082397	the king appointed to the highest rank of the ruling class
+P-5	-3.2107 -0.0248 -1.3420 -0.4887 -0.3658 -3.5950 -0.2923 -0.4056 -0.1280 -0.1796 -0.5717 -0.0582 -2.6920
+S-17	ངུར་སྨྲིག་གོས་འཆང་མཁས་པ་ཚུལ་ལས་ཉམས་པ་དཀའ་་
+T-17	for a learned wearer of the saffron robes to fall is hard
+H-17	-1.5810719728469849	a wise person who is skilled in saffroncolored robes
+D-17	-1.5810719728469849	a wise person who is skilled in saffroncolored robes
+P-17	-2.1199 -3.0572 -1.1203 -1.8811 -0.8552 -3.1094 -0.2359 -3.5579 -0.5987 -0.4471 -0.4090
+S-27	གང་གི་ཚེ་རྒྱལ་པོ་པད་མ་ཆེན་པོ་དཔུང་དང་མཐུ་ཆེ་བ་དེའི་ཚེ་ན་་
+T-27	at a time when king mahapadma and his armies were dominant
+H-27	-1.1191458702087402	when the king was born there was a great being who was endowed with great power
+D-27	-1.1191458702087402	when the king was born there was a great being who was endowed with great power
+P-27	-0.6027 -1.3060 -0.5594 -1.9411 -0.9816 -1.7843 -1.4074 -0.2487 -0.2681 -2.9590 -0.6643 -0.6485 -2.4612 -0.0555 -0.1583 -2.3443 -0.6352
+S-28	གང་གི་ཚེ་ཨང་གའི་རྒྱལ་པོ་དཔུང་དང་མཐུ་ཆེ་བ་དེའི་ཚེ་ན་
+T-28	at a time when the king of anga and his armies were dominant
+H-28	-1.0346835851669312	when the blessed one was in sravasti there lived a mighty king
+D-28	-1.0346835851669312	when the blessed one was in sravasti there lived a mighty king
+P-28	-0.7946 -1.0756 -2.6406 -0.1533 -0.2454 -0.9262 -1.7350 -1.0537 -0.4536 -0.3382 -2.4605 -1.0433 -0.5308
+S-81	འཇིག་རྟེན་གྱི་འཇིག་རྟེན་གྱི་བར་གང་ན་ཉི་མ་དང་ཟླ་བ་འདི་ལྟར་རྫུ་འཕྲུལ་ཆེ་བ་
+T-81	so great was this miraculous manifestation it was as if the sun and moon shone in the gulf between worlds
+H-81	-0.9946835041046143	in the world of the sun the moon the sun the moon and the moon
+D-81	-0.9946835041046143	in the world of the sun the moon the sun the moon and the moon
+P-81	-3.6903 -0.6528 -0.0985 -0.8575 -0.4465 -1.0053 -1.9444 -0.3734 -0.7048 -0.9822 -1.3953 -0.2558 -0.8167 -0.0687 -0.9178 -1.7051
+S-70	ཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་ཞེས་ཤེས་པར་གྱུར་ཏོ་
+T-70	there are others who have been born here
+H-70	-1.4551202058792114	the wise ones know that they have been born here
+D-70	-1.4551202058792114	the wise ones know that they have been born here
+P-70	-4.0770 -1.5145 -0.8366 -1.4047 -1.3446 -2.4176 -1.0324 -1.1448 -0.5380 -0.8536 -0.8424
+S-84	ཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་ཞེས་ཤེས་པར་གྱུར་ཏོ་་
+T-84	there are others who have been born here
+H-84	-1.2826396226882935	at that time there was some beings who had been born here
+D-84	-1.2826396226882935	at that time there was some beings who had been born here
+P-84	-4.0376 -1.0482 -0.1409 -2.0611 -0.4185 -1.7730 -0.7664 -0.9255 -1.3089 -1.9878 -0.3507 -1.0195 -0.8361
+S-6	ལག་པ་འགྲམ་པ་ལ་བསྟད་ནས་སེམས་ཁོང་དུ་ཆུད་ཅིང་འདུག་འདུག་ནས་
+T-6	head in hands he sat and sat absorbed in thought
+H-6	-1.6318439245224	he sat crosslegged on his right hand and sat crosslegged on his seat
+D-6	-1.6318439245224	he sat crosslegged on his right hand and sat crosslegged on his seat
+P-6	-3.1099 -1.8060 -2.2326 -1.3161 -0.4822 -1.9922 -0.6559 -0.9127 -2.6976 -2.5178 -1.9859 -0.9594 -1.7996 -0.3778
+S-16	མངོན་དགའ་ཇི་བཞིན་དོན་བསྐྱེད་ཡང་དག་བྱེད་པ་དཀའ་་
+T-16	for the joyful set on perfection to act perfectly is hard
+H-16	-1.870047688484192	it is difficult to find it is difficult to believe it is difficult to find it
+D-16	-1.870047688484192	it is difficult to find it is difficult to believe it is difficult to find it
+P-16	-3.3090 -0.3152 -2.8119 -0.3142 -1.9592 -3.8142 -0.7696 -3.3508 -0.3484 -3.6876 -1.3335 -0.9269 -2.9201 -0.4029 -2.4128 -2.3303 -0.7843
+S-15	རབ་བྱུང་ཐོབ་ནས་ཡུལ་སྤྱད་དག་གིས་དགའ་ཐོབ་དཀའ་་
+T-15	for a hedonist to be happy among renunciants is hard
+H-15	-1.9850751161575317	having gone forth you have obtained a human life and you have obtained homelessness
+D-15	-1.9850751161575317	having gone forth you have obtained a human life and you have obtained homelessness
+P-15	-2.4287 -2.4786 -0.0087 -4.2617 -1.3705 -1.1537 -3.1530 -3.1103 -0.9283 -0.7451 -2.8247 -0.8056 -1.3087 -4.4476 -0.7511
+S-76	ཤེས་ལྡན་དག་ཨང་གའི་རྒྱལ་པོ་འདི་ནི་གདུག་པ་་
+T-76	gentlemen this king of anga is belligerent
+H-76	-1.3068113327026367	this king of mountains is my son
+D-76	-1.3068113327026367	this king of mountains is my son
+P-76	-0.7255 -1.5209 -0.5115 -2.3111 -0.3850 -2.8896 -1.3957 -0.7153
+S-31	རེས་འགའ་ནི་རྒྱལ་པོ་པད་མ་ཆེན་པོ་དཔུང་དང་མཐུ་ཆེ་བ་ཡིན་ནོ་་
+T-31	at other times king mahapadma and his armies were dominant
+H-31	-1.3313490152359009	some are wealthy and endowed with great miracles
+D-31	-1.3313490152359009	some are wealthy and endowed with great miracles
+P-31	-2.0224 -0.5240 -1.8480 -0.6775 -3.6965 -0.0536 -0.1863 -1.6157 -1.3581
+S-82	སེམས་ཅན་གང་དག་དེར་སྐྱེས་པ་དག་གིས་རང་གི་ལག་པ་བརྐྱང་བ་ཡང་མི་མཐོང་བ་
+T-82	beings born in those places had never even seen so far as their outstretched hands
+H-82	-1.5409791469573975	even though the beings there were unable to do so they did not see it
+D-82	-1.5409791469573975	even though the beings there were unable to do so they did not see it
+P-82	-2.7893 -1.0150 -2.4425 -0.8260 -1.6763 -1.8337 -1.9189 -0.1800 -3.6802 -0.5726 -2.3242 -2.0250 -0.2280 -0.2750 -2.0731 -0.7958
+S-42	ལག་པ་ལ་འགྲམ་པ་གཏད་ནས་སེམས་ཁོང་དུ་ཆུད་ཅིང་འདུག་འདུག་ནས་་
+T-42	head in hands he sat and sat absorbed in thought
+H-42	-1.7675248384475708	with his arms and legs he sat on the ground
+D-42	-1.7675248384475708	with his arms and legs he sat on the ground
+P-42	-2.9315 -1.4625 -1.5188 -2.7410 -1.0984 -1.2013 -1.9513 -2.6625 -1.8251 -1.2431 -0.8071
+S-43	རྒྱལ་པོ་པད་མ་ཆེན་པོས་ཕྲིན་ཡིག་བཀླགས་ནས་དེ་མི་བདེ་བར་གྱུར་ཏེ་་
+T-43	king mahapadma was unsettled by the message he heard
+H-43	-1.6059918403625488	the king was satisfied with a great rain of pearls and he was filled with happiness
+D-43	-1.6059918403625488	the king was satisfied with a great rain of pearls and he was filled with happiness
+P-43	-1.5861 -0.2672 -1.0428 -2.4338 -0.7831 -3.1860 -0.6549 -3.9071 -0.2556 -3.7144 -0.4737 -2.7805 -1.6098 -1.7444 -0.1866 -2.3024 -0.3735
+S-91	བདག་གི་བུ་བཙས་པ་ན་འཇིག་རྟེན་གསལ་བ་གསལ་བ་ལྟར་སྣང་བས་
+T-91	when my son was born the world was lit as if by the light of lights
+H-91	-1.7479050159454346	in this world my beautiful light shone forth like the sun
+D-91	-1.7479050159454346	in this world my beautiful light shone forth like the sun
+P-91	-4.7358 -1.7910 -0.1081 -1.9384 -2.4251 -2.2776 -2.6767 -1.2449 -1.4463 -0.3090 -1.5487 -0.4733
+S-14	ཁྱིམ་དོན་ཆེ་ཆུང་སྤངས་ཏེ་དང་པོར་རབ་འབྱུང་དཀའ་་
+T-14	at first to renounce a householders concerns and go forth is hard
+H-14	-1.8443406820297241	it is very difficult to obtain the home of the house it is difficult to obtain
+D-14	-1.8443406820297241	it is very difficult to obtain the home of the house it is difficult to obtain
+P-14	-2.6681 -0.4149 -3.9322 -0.7481 -0.4188 -3.0438 -1.6911 -3.6845 -0.1376 -2.2461 -2.4652 -0.7912 -0.2447 -3.2421 -0.2805 -3.8461 -1.4987
+S-32	རེས་འགའ་ནི་ཨང་གའི་རྒྱལ་པོ་དཔུང་དང་མཐུ་ཆེ་བ་ཡིན་ལ་་
+T-32	at times the king of anga and his armies were dominant
+H-32	-1.5255722999572754	he is a yaksa a garuda a garuda a yaksa a garuda a garuda
+D-32	-1.5255722999572754	he is a yaksa a garuda a garuda a yaksa a garuda a garuda
+P-32	-3.7469 -0.5015 -0.3582 -4.0918 -0.5525 -3.0325 -0.0205 -0.4290 -3.0795 -0.0288 -0.4734 -2.9297 -0.4350 -2.8296 -0.0465 -0.5767 -3.1803 -0.0557 -2.6177
+S-69	གྲོང་ཁྱེར་ཆེན་པོ་བཞི་པོ་དག་ཏུ་རྒྱལ་པོ་ཆེན་པོ་བཞི་དག་གི་བུ་ཡང་བཙས་པར་གྱུར་ཏེ་་
+T-69	sons were also born to four great kings in four great citystates
+H-69	-1.395272135734558	the four great kings in the four directions each of them had four sons
+D-69	-1.395272135734558	the four great kings in the four directions each of them had four sons
+P-69	-3.0631 -0.0121 -0.7880 -0.1056 -3.6812 -0.8594 -0.3303 -0.9455 -3.3224 -1.0942 -1.1580 -2.0024 -0.3715 -2.6041 -0.5912
+S-40	དེ་ནས་དུས་གཞན་ཞིག་ན་ཨང་གའི་རྒྱལ་པོ་དཔུང་དང་མཐུ་ཆེ་བར་གྱུར་ནས་
+T-40	at yet another time when the king of anga and his armies were dominant
+H-40	-1.2653772830963135	at that time there was a certain man who had great strength and great power
+D-40	-1.2653772830963135	at that time there was a certain man who had great strength and great power
+P-40	-3.8180 -0.4826 -1.2087 -0.7600 -0.4116 -0.9793 -2.1919 -1.7850 -0.8027 -1.2287 -3.1338 -1.4231 -0.2980 -0.7669 -0.3847 -0.5711
+S-48	ཨང་གའི་རྒྱལ་པོས་རྒྱལ་པོ་པད་མ་ཆེན་པོ་ལ་ཕོ་ཉ་བཏང་སྟེ་
+T-48	the king of anga sent an envoy to king mahapadma with the message
+H-48	-1.075427770614624	king renu then sent a message to the king of kasi
+D-48	-1.075427770614624	king renu then sent a message to the king of kasi
+P-48	-1.7457 -2.6113 -0.4367 -2.4315 -0.4404 -0.8866 -0.5085 -0.2897 -0.5295 -1.6694 -0.8409 -0.9681 -0.6222
+S-22	གཞི་རྣམས་ཀྱི་སྤྱི་སྡོམ་ལ་རབ་འབྱུང་གསོ་སྦྱོང་གཞི་དང་ནི་་
+T-22	the chapters on monastic discipline includes chapters on going forth purification
+H-22	-1.4627422094345093	the support for the support and the support for the support and the support of the sangha
+D-22	-1.4627422094345093	the support for the support and the support for the support and the support of the sangha
+P-22	-1.1606 -1.3629 -2.1965 -0.7833 -1.3122 -1.6265 -0.6636 -0.7433 -2.4398 -0.6659 -2.0279 -2.3181 -0.6257 -1.2759 -2.3938 -0.4982 -3.5992 -0.6360
+S-51	དེ་ནས་ཨང་གའི་རྒྱལ་པོས་རྒྱལ་པོ་པད་མ་ཆེན་པོའི་གླང་པོ་ཆེ་པའི་ཚོགས་ཐམས་ཅད་ཕྲོགས་ཤིང་་
+T-51	the king of anga captured king mahapadmas entire elephant corps
+H-51	-1.342341423034668	then the king of kasi was endowed with the thirtytwo signs of a great king virudhaka
+D-51	-1.342341423034668	then the king of kasi was endowed with the thirtytwo signs of a great king virudhaka
+P-51	-1.1605 -1.4048 -0.5141 -0.5373 -2.5889 -2.0051 -2.8109 -0.0231 -2.4456 -2.1120 -2.1181 -0.0985 -0.4757 -0.6044 -1.1458 -4.4877 -0.0724 -0.4586 -0.4409
+S-45	ཇི་སྟེ་སའི་འོག་ཏུ་འགྲོ་ན་ནི་མཆིལ་པ་དང་དྲང་བའི་ཚུལ་གྱིས་དྲང་བར་བྱའོ་
+T-45	tunnel beneath the earth and i will yank you up as if with a hook
+H-45	-2.0047922134399414	if you dont stay in the direction of the earth i will stop him
+D-45	-2.0047922134399414	if you dont stay in the direction of the earth i will stop him
+P-45	-1.4492 -1.6829 -2.7087 -2.7971 -2.4409 -1.1719 -3.0217 -0.2068 -1.8149 -1.7400 -2.6058 -1.3552 -4.5923 -1.5676 -0.9170
+S-34	ཡུལ་མ་ག་དྷ་དག་ན་ཡང་རྒྱལ་པོ་པད་མ་ཆེན་པོ་ཞེས་བྱ་བས་རྒྱལ་སྲིད་འབྱོར་པ་རྒྱས་པ་བདེ་བ་ལོ་ལེགས་པ་
+T-34	meanwhile king mahapadma ruled over the lands of magadha under his rule the kingdom prospered and thrived crops were bountiful
+H-34	-0.9796209335327148	king renu was prosperous flourishing happy and well populated the harvest was good
+D-34	-0.9796209335327148	king renu was prosperous flourishing happy and well populated the harvest was good
+P-34	-1.5906 -1.4193 -0.5256 -1.4260 -0.8072 -0.9791 -0.1174 -0.1505 -1.7354 -2.3081 -0.1957 -0.0351 -0.9854 -2.4125 -0.4452 -0.2481 -1.2725
+S-78	ཀ་ཤམ་བིར་ནི་རྒྱལ་པོ་དམག་བརྒྱ་པའི་བུ་བཙས་སོ་་
+T-78	in kausambi the son of king satanika was born
+H-78	-1.189496636390686	king suradatta had a hundred thousand sons
+D-78	-1.189496636390686	king suradatta had a hundred thousand sons
+P-78	-1.7621 -2.5765 -0.0817 -0.0456 -0.9079 -1.3703 -1.9118 -1.0425 -1.1200 -1.0764
+S-77	འཕགས་རྒྱལ་དུ་ནི་རྒྱལ་པོ་མུ་ཁྱུད་མཐའ་ཡས་ཀྱི་བུ་བཙས་སོ་་
+T-77	in ujjayini the son of king anantanemi was born
+H-77	-1.826698899269104	noble son you have appeared in the middle of the king of kasi
+D-77	-1.826698899269104	noble son you have appeared in the middle of the king of kasi
+P-77	-2.9564 -0.9243 -2.5322 -1.2606 -3.2328 -2.4559 -1.4010 -3.2350 -0.1354 -1.4135 -1.4498 -0.2565 -3.3692 -0.9511
+S-86	བདག་གི་བུ་བཙས་པ་ན་འཇིག་རྟེན་ཉི་མའི་གཟུགས་ཤར་བ་ལྟར་སྣང་ཞིང་
+T-86	when my son was born the world was lit as if by the gold of the rising sun
+H-86	-1.4963570833206177	my body is like this in the world it is like the sun
+D-86	-1.4963570833206177	my body is like this in the world it is like the sun
+P-86	-1.9047 -2.9961 -1.1181 -2.7489 -1.7152 -0.8958 -0.7777 -0.5282 -2.5194 -1.2141 -1.6999 -0.4949 -0.6210 -1.7148
+S-72	གནག་པར་གྱུར་པ་གང་དག་ཡིན་པ་དེ་དག་ཀྱང་དེའི་ཚེ་ན་སྣང་བ་རྒྱ་ཆེན་པོས་ཁྱབ་པར་གྱུར་ནས་
+T-72	even the pitchblack darkness of dark places dark from never knowing the light of the sun and moon was filled with a vast light
+H-72	-1.348655343055725	at that time the great light shone forth pervaded the entire great trichiliocosm
+D-72	-1.348655343055725	at that time the great light shone forth pervaded the entire great trichiliocosm
+P-72	-3.6752 -0.1827 -0.6309 -0.9737 -1.9785 -1.0383 -1.1399 -0.2575 -3.9580 -0.1467 -1.4931 -1.1801 -0.4892 -2.4804 -0.6055
+S-67	མཉན་ཡོད་དུ་ནི་རྒྱལ་པོ་རྩིབས་ཀྱིས་འཕུར་ཚངས་བྱིན་གྱི་བུ་བཙས་སོ་་
+T-67	in sravasti the son of king arada brahmadatta was born
+H-67	-1.5426439046859741	king dipa reigned in the city of varanasi
+D-67	-1.5426439046859741	king dipa reigned in the city of varanasi
+P-67	-0.3220 -2.6431 -0.9680 -3.8496 -0.5180 -1.0778 -1.4784 -0.4494 -2.5075 -1.6126
+S-50	རྒྱལ་པོ་པད་མ་ཆེན་པོ་ཡང་ཕམ་པ་དང་་སྐྲག་པ་དང་་བཅོམ་པ་དང་་གཞན་རྒྱལ་བ་དང་་རྒྱབ་ཀྱིས་ཕྱོགས་པར་བྱས་ཏེ་་
+T-50	defeated and frightened destroyed and conquered king mahapadma retreated
+H-50	-1.5478277206420898	king renu and his ministers all went forth and offered them to the victorious ones
+D-50	-1.5478277206420898	king renu and his ministers all went forth and offered them to the victorious ones
+P-50	-2.3904 -2.1371 -0.1035 -1.4813 -1.0309 -2.7683 -1.4452 -2.1283 -1.0377 -1.4238 -4.6042 -1.4749 -1.4165 -1.2002 -1.0749 -0.3279 -0.2680
+S-44	ཇི་སྟེ་རིའི་རྩེ་མོར་འཛེག་ན་ནི་དེར་ཡང་ཁྱོད་ཐར་པ་མེད་དོ་ཞེས་སྤྲིང་ངོ་་་
+T-44	flee to the mountaintops and even there you shall find no escape
+H-44	-1.7671010494232178	if you dont stay here you will be able to attack you with your strength and liberation
+D-44	-1.7671010494232178	if you dont stay here you will be able to attack you with your strength and liberation
+P-44	-2.5725 -0.1037 -2.4674 -4.6198 -0.7642 -2.2323 -1.6950 -2.3521 -0.8853 -0.1369 -4.6479 -0.0835 -1.8929 -2.0231 -1.7448 -3.1707 -0.7982 -0.9423 -0.4423
+S-64	ཡུམ་གྱི་ལྷུམས་སུ་ཞུགས་པ་དེའི་ཚེ་ན་ས་ཆེན་པོ་ཤིན་ཏུ་གཡོས་པར་གྱུར་ཅིང་འཇིག་རྟེན་འདི་
+T-64	he entered his mothers womb as the earth shook and this world
+H-64	-1.7084388732910156	at this time the child was born in this world of sukhavati
+D-64	-1.7084388732910156	at this time the child was born in this world of sukhavati
+P-64	-3.9017 -0.7491 -0.7029 -1.5950 -2.3945 -3.1629 -1.3488 -1.0015 -0.8416 -1.0416 -2.5774 -1.9638 -0.9289
+S-49	རྒྱལ་པོའི་ཁབ་ཏུ་ཞུགས་ནས་སྒོ་བཅད་དེ་ར་བ་དག་གི་ཁར་སྦྲེངས་ནས་འདུག་གོ་་
+T-49	entering rajagrha he closed the gates and shut himself up within the walls of his fortress
+H-49	-1.4361436367034912	he set out for rajagrha and went to rajagrha where he stayed
+D-49	-1.4361436367034912	he set out for rajagrha and went to rajagrha where he stayed
+P-49	-1.8862 -3.1578 -0.3816 -1.1447 -0.5411 -0.7761 -2.7417 -0.7181 -2.4348 -1.7457 -0.2836 -2.3102 -0.5483
+S-60	ཨང་གའི་རྒྱལ་པོས་དེ་ལ་ལོ་ཐང་དང་དཔྱ་ཕབ་སྟེ་དེ་ཉིད་དུ་བཞག་གོ་་
+T-60	where the king of anga imposed an annual tribute and tax upon him
+H-60	-2.0129916667938232	king vasava and his servants then went to the blessed one
+D-60	-2.0129916667938232	king vasava and his servants then went to the blessed one
+P-60	-1.8188 -3.7023 -0.2240 -2.2969 -2.0512 -1.8072 -3.1482 -4.1806 -0.9253 -1.7435 -2.6496 -0.2163 -1.4050
+S-8	དེས་རིགས་མཉམ་པ་ལས་ཆུང་མ་བླངས་ནས་དེ་དེ་དང་ལྷན་ཅིག་རྩེ་བར་བྱེད་དགའ་བར་བྱེད་དགའ་མགུར་སྤྱོད་པར་བྱེད་དོ་་
+T-8	took a wife of equal caste and together they sported made love and indulged all of their desires
+H-8	-0.5706492066383362	when the time came for him to marry he took a wife and they enjoyed themselves and coupled
+D-8	-0.5706492066383362	when the time came for him to marry he took a wife and they enjoyed themselves and coupled
+P-8	-1.5986 -0.9303 -0.3848 -0.1696 -0.2811 -0.1430 -0.1239 -0.4790 -0.0394 -0.5653 -0.2210 -0.7070 -0.5234 -1.4162 -2.4271 -0.0268 -0.1827 -0.3567 -0.2664
+S-62	གཟིགས་པ་ལྔ་པོ་དག་ལ་གཟིགས་ནས་འདོད་པ་ན་སྤྱོད་པའི་ལྷ་དྲུག་པོ་དག་ལ་ལན་གསུམ་བསྒོ་བ་མཛད་དེ་
+T-62	he saw five sights and thrice gave notice to the six classes of gods who revel in the desire realm
+H-62	-1.1902072429656982	then the gods of the world system of desire and the world system of desire called out to the sixfold universe
+D-62	-1.1902072429656982	then the gods of the world system of desire and the world system of desire called out to the sixfold universe
+P-62	-1.6055 -1.6411 -3.8654 -0.7045 -0.1345 -2.9056 -1.2300 -0.0665 -0.0708 -2.2070 -1.1527 -1.5605 -0.1418 -0.0695 -0.7053 -4.5491 -0.8533 -0.3006 -0.8410 -0.1477 -2.1830 -0.2431 -0.1963
+S-52	རྟ་པའི་ཚོགས་དང་་ཤིང་རྟ་པའི་ཚོགས་དང་་དཔུང་བུ་ཆུང་གི་ཚོགས་ཐམས་ཅད་ཀྱང་ཕྲོགས་སོ་
+T-52	and proceeded to capture the whole of his cavalry charioteer corps and infantry
+H-52	-1.9984009265899658	all of them had an abundance of great stores of merit such as the grains of sand in the ganges
+D-52	-1.9984009265899658	all of them had an abundance of great stores of merit such as the grains of sand in the ganges
+P-52	-1.8511 -2.3797 -1.6174 -2.6747 -2.4514 -1.9086 -0.0190 -0.2065 -4.5409 -2.4500 -0.0389 -1.4090 -3.4057 -4.7099 -0.2176 -2.5131 -3.0148 -0.1064 -3.8086 -0.7591 -2.9930 -2.4406 -0.4473
+S-80	འཇིག་རྟེན་ཐམས་ཅད་སུམ་བཅུ་རྩ་གསུམ་པའི་ལྷ་རྣམས་ཀྱི་ཁ་དོག་གི་མཐུ་བས་ལྷག་པའི་སྣང་བ་རྒྱ་ཆེན་པོས་ཁྱབ་པར་གྱུར་ཅིང་
+T-80	the entire universe was bathed in a vast light more luminous than the glow of the gods of the thirtythree
+H-80	-1.280855417251587	the light of the great trichiliocosm pervaded the entire great trichiliocosm with its gods and humans
+D-80	-1.280855417251587	the light of the great trichiliocosm pervaded the entire great trichiliocosm with its gods and humans
+P-80	-1.8097 -1.8098 -1.8427 -0.4380 -0.6266 -1.6421 -1.3970 -0.2560 -3.0747 -0.4815 -1.6510 -1.1256 -1.5559 -0.8515 -2.6863 -0.9726 -0.2062 -0.6282
+S-65	ཐམས་ཅད་ཀྱང་སུམ་བཅུ་རྩ་གསུམ་པའི་ལྷ་རྣམས་ཀྱི་ཁ་དོག་གི་མཐུ་བས་ལྷག་པའི་སྣང་བ་རྒྱ་ཆེན་པོས་ཁྱབ་པར་གྱུར་ཅིང་་
+T-65	and all others too were bathed in a vast light more luminous than the glow of the gods of the thirtythree
+H-65	-1.2176934480667114	all the gods of the heaven of the thirtythree and the heaven of the thirtythree were bathed in light
+D-65	-1.2176934480667114	all the gods of the heaven of the thirtythree and the heaven of the thirtythree were bathed in light
+P-65	-2.2078 -0.5726 -2.7108 -1.1985 -0.0856 -0.8576 -0.1167 -0.5667 -0.1311 -3.5191 -1.1883 -3.0976 -0.1088 -0.9794 -0.3631 -1.5378 -2.5382 -0.4803 -1.3376 -0.7560
+S-95	བདག་གི་བུ་བཙས་པ་ན་འཇིག་རྟེན་ཉི་མ་ཤར་བ་ལྟར་སྣང་བར་གྱུར་པས་གཞོན་ནུ་འདིའི་མིང་ཤར་བར་གདགས་སོ་སྙམ་ནས་
+T-95	when my son was born the world was lit as if by the rising sun so i shall name this prince udayana rising
+H-95	-0.9459419846534729	and they named him saying since this child is born his name will be golden color
+D-95	-0.9459419846534729	and they named him saying since this child is born his name will be golden color
+P-95	-2.3623 -2.9927 -0.0782 -0.8338 -0.0720 -0.1811 -0.9153 -0.2281 -0.9732 -2.3257 -0.5500 -0.1288 -0.1644 -0.1472 -1.4744 -2.2418 -0.4119
+S-98	བདག་གི་བུ་བཙས་པ་ན་འཇིག་རྟེན་རབ་ཏུ་སྣང་བས་སྣང་བར་གྱུར་པས་གཞོན་ནུ་འདིའི་མིང་རབ་སྣང་ཞེས་བྱ་བར་གདགས་སོ་སྙམ་ནས་
+T-98	when my son was born the world was lit by a brilliant light so i shall name this prince pradyota brilliant light
+H-98	-1.522598385810852	since my child his name will be golden light and his name will be golden light
+D-98	-1.522598385810852	since my child his name will be golden light and his name will be golden light
+P-98	-4.0249 -1.3859 -0.3188 -2.6107 -1.0817 -1.3663 -0.0935 -2.7533 -1.8052 -2.4658 -1.1505 -0.8402 -0.0560 -0.0714 -3.1776 -1.6153 -1.0671
+S-83	དེ་དག་གིས་ཀྱང་འོད་དེས་སེམས་ཅན་གཅིག་གིས་གཅིག་མཐོང་ནས་ཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་་
+T-83	yet by this light these beings saw one another and exclaimed you there there are others who have been born here
+H-83	-1.6870486736297607	when the light saw the light of the light of the beings who had come to see each other
+D-83	-1.6870486736297607	when the light saw the light of the light of the beings who had come to see each other
+P-83	-2.5838 -1.0300 -1.4252 -1.9341 -1.8397 -1.8482 -1.1976 -1.5672 -2.4559 -1.8662 -1.8934 -1.2538 -2.0714 -1.9428 -2.1828 -0.9795 -2.7246 -2.1614 -0.1000 -0.6835
+S-0	རྒྱལ་པོ་ཞེས་བྱ་བས་རྒྱལ་སྲིད་འབྱོར་པ་རྒྱས་པ་བདེ་བ་ལོ་ལེགས་པ་སྐྱེ་བོ་དང་མི་མང་པོས་གང་བ་བྱེད་དུ་བཅུག་གོ་
+T-0	under his rule the kingdom prospered and thrived crops were bountiful and the land teemed with animals and people
+H-0	-0.7016556262969971	king suddhodanas kingdom was prosperous flourishing happy and happy
+D-0	-0.7016556262969971	king suddhodanas kingdom was prosperous flourishing happy and happy
+P-0	-0.1256 -3.9557 -0.0538 -0.2397 -0.1854 -0.2894 -0.4309 -0.0343 -0.0230 -1.5890 -1.0972 -0.3958
+S-46	གལ་ཏེ་ཕྱིར་མི་འབྱུང་ན་ཇི་སྟེ་སྟེང་གི་ནམ་མཁའ་ལ་འགྲོ་ན་ནི་མདའ་བརྒྱུད་པས་ཁྱོད་ལྟུང་བར་བྱའོ་
+T-46	if you do not surrender and instead take flight into the sky above i will fell you with a volley of arrows
+H-46	-1.0598450899124146	if you dont fall into the sky you will fall into the sky and fall into the sky
+D-46	-1.0598450899124146	if you dont fall into the sky you will fall into the sky and fall into the sky
+P-46	-0.2086 -0.2319 -2.5620 -2.4869 -0.2781 -0.5319 -0.3018 -2.4647 -0.8263 -1.8142 -0.2316 -0.6713 -0.6332 -1.0062 -3.1430 -0.2303 -0.7721 -0.8501 -0.8929
+S-3	མ་མ་བརྒྱད་པོ་པང་ན་འཚོ་བའི་མ་མ་གཉིས་དང་ནུ་མ་སྣུན་པའི་མ་མ་གཉིས་དང་དྲི་མ་འཕྱི་བའི་མ་མ་གཉིས་དང་རྩེ་འགྲོགས་ཀྱི་མ་མ་གཉིས་ལ་རྗེས་སུ་གཏད་དོ་་དེ་མ་མ་བརྒྱད་པོ་དག་གིས་འོ་མ་དང་ཞོ་དང་མར་དང་ཞུན་མར་དང་མར་གྱི་སྙིང་ཁུ་དང་གཞན་ཡང་ཡོ་བྱད་ཀྱི་བྱེ་བྲག་གཙོ་བོ་གཙོ་བོ་དག་གིས་བསྲིངས་པར་བྱེད་སྐྱེད་པར་བྱེད་ཅིང་རྫིང་ན་གནས་པའི་པདྨ་བཞིན་དུ་སྐྱེད་པར་བྱེད་དོ་
+T-3	was entrusted to eight nursemaids two to cuddle him two to breastfeed him two to change his diapers and two to play with him fortified with milk curd butter ghee cream and other nourishing foods he grew quickly shooting up like a lotus in a pond
+H-3	-1.3668135404586792	they reared him on milk yogurt butter ghee and eight nurses to bathe him in front of him and eight nurses to bathe him and two wet nurses to play him and two nurses to bathe him
+D-3	-1.3668135404586792	they reared him on milk yogurt butter ghee and eight nurses to bathe him in front of him and eight nurses to bathe him and two wet nurses to play him and two nurses to bathe him
+P-3	-3.0821 -2.8581 -1.1629 -1.3164 -0.8584 -0.0793 -0.0278 -0.2859 -0.1437 -2.6589 -1.4751 -0.4583 -1.1763 -1.7927 -0.3303 -2.9459 -2.4337 -0.0621 -0.7605 -2.1490 -2.2127 -1.1876 -0.1394 -0.6354 -2.6831 -0.1439 -3.5042 -2.4190 -2.3826 -0.9374 -0.0660 -0.4690 -1.2937 -1.5695 -3.2403 -2.2615 -1.1964 -0.1988 -0.4676 -2.2237 -0.1350 -1.9820
+S-1	དེས་དཔུང་གི་ཚོགས་ཡན་ལག་བཞི་པ་གླང་པོ་ཆེ་པའི་ཚོགས་དང་རྟ་པའི་ཚོགས་དང་ཤིང་རྟ་པའི་ཚོགས་དང་དཔུང་བུ་ཆུང་གི་ཚོགས་གོ་བསྐོན་ཏེ་ཡུལ་མ་ག་དཧའི་རྒྱལ་པོའི་ཁ་བ་མ་གཏོགས་པ་བཅོམ་ནས་ཕྱིར་ལྡོག་པར་བྱེད་དོ་
+T-1	he called up the four branches of his armed forcesthe elephant corps the cavalry the charioteer corps and the infantryand laid waste to all of magadha save rajagrha before returning
+H-1	-1.54750657081604	so he arrayed the four divisions of his army the four divisions of his army the army of his army the army of his army and the army of his army and his army and his army and his army and his army and his army and his army and his army and his army and his army and his army were all divisions
+D-1	-1.54750657081604	so he arrayed the four divisions of his army the four divisions of his army the army of his army the army of his army and the army of his army and his army and his army and his army and his army and his army and his army and his army and his army and his army and his army were all divisions
+P-1	-3.2843 -1.1996 -3.6330 -0.6577 -0.0158 -0.0797 -0.1051 -0.1789 -0.0119 -4.1430 -1.5623 -0.0640 -0.1278 -0.0977 -0.0175 -2.0581 -1.0596 -1.3483 -0.6792 -0.0514 -1.7317 -1.9661 -1.0108 -2.1907 -0.1019 -1.1848 -0.8343 -2.9900 -0.8989 -2.5076 -0.1628 -0.9264 -2.9219 -0.3107 -1.0715 -2.3755 -0.5716 -1.2147 -2.2343 -0.8990 -1.6048 -2.1194 -1.1252 -1.9138 -2.0677 -1.2982 -2.1241 -2.1774 -1.3885 -2.5131 -2.1008 -1.5270 -2.4005 -2.0222 -1.6521 -2.6640 -2.0657 -1.6513 -2.8486 -2.0412 -1.7307 -1.9698 -3.4536 -3.2003 -2.4476
+S-39	གླང་པོ་ཆེ་པའི་ཚོགས་དང་་རྟ་པའི་ཚོགས་དང་་ཤིང་རྟ་པའི་ཚོགས་དང་་དཔུང་བུ་ཆུང་གི་ཚོགས་གོ་བསྐོན་ཏེ་ཡུལ་ཨང་ག་ཙམ་པ་མ་གཏོགས་པ་བཅོམ་ནས་ཕྱིར་ལྡོག་པར་བྱེད་དོ་་
+T-39	the elephant corps the cavalry the charioteer corps and the infantryand laid waste to all of anga save campa before returning
+H-39	-2.0270135402679443	they will be able to bring an end to an unfathomable number of people such as the grains of sand in the caves of caves and mount meru
+D-39	-2.0270135402679443	they will be able to bring an end to an unfathomable number of people such as the grains of sand in the caves of caves and mount meru
+P-39	-4.7022 -0.9829 -2.4052 -1.1923 -0.1366 -4.7001 -2.5172 -2.0132 -0.1474 -2.6481 -2.8998 -1.2020 -0.1894 -2.1818 -2.7791 -0.0503 -3.4466 -2.6424 -0.1715 -1.9017 -0.3270 -1.9310 -3.0206 -2.4372 -0.6711 -2.8446 -2.0128 -3.0283 -3.2939 -2.3310 -2.0300
+S-30	གླང་པོ་ཆེ་པའི་ཚོགས་དང་་རྟ་པའི་ཚོགས་དང་་ཤིང་རྟ་པའི་ཚོགས་དང་་དཔུང་བུ་ཆུང་གི་ཚོགས་གོ་བསྐོན་ཏེ་ཡུལ་མ་ག་དྷ་རྒྱལ་པོའི་ཁབ་མ་གཏོགས་པ་བཅོམ་ནས་ཕྱིར་ལྡོག་པར་བྱེད་དོ་
+T-30	the elephant corps the cavalry the charioteer corps and the infantryand laid waste to all of magadha save rajagrha before returning
+H-30	-2.173550844192505	he is endowed with the great stores of merit and stores of merit he is able to travel from town to town to town city to town town to town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town and infantry and infantry
+D-30	-2.173550844192505	he is endowed with the great stores of merit and stores of merit he is able to travel from town to town to town city to town town to town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town town and infantry and infantry
+P-30	-2.5324 -2.9369 -2.0684 -0.0392 -1.5345 -1.7466 -2.5902 -0.9967 -0.2791 -1.1267 -2.2939 -3.9610 -0.8455 -0.6826 -3.5919 -2.6224 -2.2305 -1.8620 -0.0910 -4.4741 -1.9369 -1.6188 -0.5682 -0.9306 -2.2079 -0.9043 -2.4830 -1.1994 -0.9606 -1.8019 -2.7116 -1.1251 -1.5707 -1.6520 -1.6847 -1.6920 -1.6847 -1.6329 -1.6034 -1.6055 -1.6794 -1.8682 -2.0881 -2.2730 -2.3598 -2.3514 -2.3022 -2.2772 -2.3154 -2.4231 -2.5737 -2.6886 -2.7402 -2.7243 -2.6880 -2.6249 -2.5579 -2.5002 -2.5298 -2.6304 -2.7801 -2.9135 -2.9991 -3.0590 -3.0850 -3.0689 -3.0627 -3.0522 -3.0350 -3.0137 -3.0209 -3.0695 -3.1746 -3.3122 -3.4612 -3.4391 -4.3146 -0.6922 -0.5534 -2.2317 -4.2942 -0.7371 -0.3283 -1.6041
+S-7	ཡུལ་དང་སྲོག་ལ་གནོད་གྱུར་ན་་སྐྱེས་བུས་ཀུན་ཏུ་སྲོག་བསྲུང་བྱ་་བློ་ཡིས་གཉིས་ཀ་དཔྱད་བྱས་ན་་ཡུལ་ནི་ཡང་རྙེད་སྲོག་རྣམས་མིན་
+T-7	when land and life are threatened seek always to protect life when the wise look at both they see land but not life can be found again
+H-7	-2.1057331562042236	even if there is no one who can kill the people who live in the forest and who live in a life force and who can kill them
+D-7	-2.1057331562042236	even if there is no one who can kill the people who live in the forest and who live in a life force and who can kill them
+P-7	-3.8267 -0.4738 -2.5652 -1.6333 -0.8886 -2.4967 -0.3602 -1.0587 -1.5358 -4.0579 -2.4079 -0.9466 -2.0086 -1.4101 -2.9931 -1.5708 -2.2962 -2.8711 -2.4734 -2.0882 -2.7902 -1.8805 -2.0752 -3.1579 -2.2478 -2.5466 -2.7279 -1.9343 -1.7430
+S-54	རྒྱལ་པོ་པད་མ་ཆེན་པོས་ཀྱང་ཐོས་ནས་དཔུང་གི་ཚོགས་ཡན་ལག་བཞི་པ་གླང་པོ་ཆེ་པའི་ཚོགས་དང་་རྟ་པའི་ཚོགས་དང་་ཤིང་རྟ་པའི་ཚོགས་དང་་དཔུང་བུ་ཆུང་གི་ཚོགས་གོ་བསྐོན་ཏེ་
+T-54	when king mahapadma heard this he too called up the four branches of his armed forcesthe elephant corps the cavalry the charioteer corps and the infantry
+H-54	-1.2858575582504272	when the king had heard the four divisions of his army and his army he set out to the four divisions of his army and his army
+D-54	-1.2858575582504272	when the king had heard the four divisions of his army and his army he set out to the four divisions of his army and his army
+P-54	-2.7771 -0.9458 -0.5120 -2.3259 -0.5326 -1.5784 -0.8052 -0.3735 -0.1741 -0.1448 -0.1011 -3.6636 -0.9387 -0.7082 -1.1740 -3.4051 -0.8877 -1.3068 -2.6347 -3.8713 -0.3742 -0.1533 -0.1429 -0.1143 -1.5168 -1.6326 -0.2857 -2.9238
+S-73	སེམས་ཅན་གང་དག་དེར་སྐྱེས་པ་དག་གིས་རང་གི་ལག་པ་བརྐྱང་བ་ཡང་མི་མཐོང་བ་དེ་དག་གིས་ཀྱང་འོད་དེས་སེམས་ཅན་གཅིག་གིས་གཅིག་མཐོང་ནས་ཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་
+T-73	beings born in those places had never even seen so far as their outstretched hands yet by this light these beings saw one another and exclaimed you there there are others who have been born here
+H-73	-1.668199062347412	in the same way the beings who see the beings in this world were unable to see their own bodies and even though they were unable to see them
+D-73	-1.668199062347412	in the same way the beings who see the beings in this world were unable to see their own bodies and even though they were unable to see them
+P-73	-3.7123 -2.0600 -1.0296 -0.1956 -1.6585 -0.6534 -1.8728 -1.3429 -2.3943 -2.9885 -1.7451 -2.8252 -1.9404 -3.3235 -0.5539 -0.1586 -0.3818 -2.1840 -1.5492 -4.4453 -1.7955 -2.3914 -1.5526 -0.4187 -1.0333 -1.9301 -0.1406 -0.7243 -1.5190 -1.5256
+S-71	འཇིག་རྟེན་གྱི་འཇིག་རྟེན་གྱི་བར་གང་ན་ཉི་མ་དང་ཟླ་བ་འདི་ལྟར་རྫུ་འཕྲུལ་ཆེ་བ་འདི་ལྟར་མཐུ་ཆེ་བ་འདི་གཉིས་ཀྱི་འོད་དག་ཉམས་སུ་མི་མྱོང་བའི་མུན་པ་མུན་གནག་མུན་པར་བྱེད་པས་
+T-71	so great was this miraculous manifestation it was as if the sun and moon shone in the gulf between worlds so great was its strength that darkness everywhere
+H-71	-1.3018641471862793	the light of the sun and the moon and the light of the sun and the light of the world are eclipsed and eclipsed with great light
+D-71	-1.3018641471862793	the light of the sun and the moon and the light of the sun and the light of the world are eclipsed and eclipsed with great light
+P-71	-3.0494 -1.4604 -1.2319 -0.4207 -0.8194 -0.7930 -1.5112 -0.9737 -2.6848 -1.1630 -1.6998 -0.7698 -0.4618 -1.3294 -0.9435 -0.9162 -2.3163 -1.5974 -0.4500 -1.5952 -2.3339 -1.5702 -0.1234 -0.0380 -1.6042 -3.0888 -0.1123 -0.1173 -2.9193 -1.8919 -0.5054 -1.1682
+S-4	རྒྱལ་པོ་རྒྱལ་རིགས་སྤྱི་བོར་དབང་བསྐུར་བ་ལྗོངས་ཀྱི་དབང་ཕྱུག་མཐུ་དང་བརྩོན་འགྲུས་ཐོབ་པ་ས་ཆེན་པོའི་དཀྱིལ་འཁོར་མངོན་པར་རྒྱས་པར་བྱས་ཏེ་གནས་པ་རྣམས་ཀྱི་བཟོའི་གནས་དང་ལས་ཀྱི་གནས་ཐ་དད་པར་གྱུར་པ་གང་དག་ཡིན་པ་འདི་ལྟ་སྟེ་གླང་པོ་ཆེའི་གཉར་ཞོན་པ་དང་རྟ་ལ་ཞོན་པ་དང་ཤིང་རྟའི་ཐབས་དང་རལ་གྲིའི་ཐབས་དང་འཕོང་དང་ཕྱིར་བསྣུར་བ་དང་མདུན་དུ་བསྣུར་བ་དང་ལྕགས་ཀྱུས་སྒྱུར་ཐབས་དང་ཞགས་པ་གདབ་པ་དང་མདའ་བོ་ཆེ་འཕེན་ཐབས་དང་འཛིན་སྟངས་དང་གོམ་སྟངས་དང་ཐོར་ཚུགས་དང་གཅད་པ་དང་དྲལ་བ་དང་དབུག་པ་དང་གནས་ལྔ་པོ་འདི་ལྟ་སྟེ་རྒྱང་ནས་ཕོག་པ་དང་སྒྲ་གྲག་པར་ཕོག་པ་དང་གནད་དུ་ཕོག་པ་དང་མི་འཆོར་བར་ཕོག་པ་དང་ཚབས་ཆེ་བ་དེ་དག་ལ་ཡང་ཞུགས་ཤིང་བྱང་བར་གྱུར་ཏོ་
+T-4	he trained in and mastered those arts and skills needed to be crowned and anointed a ksatriya king to attain the might and dedication of a field marshal and to conquer and occupy the world riding on the neck of an elephant riding horseback charioteering swordsmanship archery advancing yielding wielding a hook throwing a lasso casting a spear and how to hold a weapon march tie a topknot slash quarter pierce and strike in five waysstriking from a distance striking a target using acoustic location striking a fatal blow striking without hesitation and striking forcefully
+H-4	-1.5059220790863037	as the king appointed to the elephant how to ride an elephant how to ride horseback how to shoot an arrow advance retreat wage war grasp with an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lump of iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lump of iron hook wield a lump of iron hook wield a lasso shoot an iron hook wield a lump of iron hook wield a lasso shoot a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron dung and throw
+D-4	-1.5059220790863037	as the king appointed to the elephant how to ride an elephant how to ride horseback how to shoot an arrow advance retreat wage war grasp with an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lump of iron hook wield a lasso shoot an iron hook wield a lasso shoot an iron hook wield a lump of iron hook wield a lump of iron hook wield a lasso shoot an iron hook wield a lump of iron hook wield a lasso shoot a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron hook wield a lump of iron dung and throw
+P-4	-2.8374 -1.3356 -0.0271 -1.6199 -0.6834 -1.3041 -2.8012 -2.4961 -0.4098 -0.9315 -2.1070 -0.3544 -1.3496 -0.2605 -1.6086 -0.9544 -0.8239 -0.3497 -0.3336 -0.1594 -1.2036 -1.6339 -2.3723 -0.7346 -0.1041 -1.0441 -0.2702 -0.0406 -1.1407 -0.6107 -2.8608 -0.2242 -0.4203 -0.1590 -0.3172 -1.0740 -1.8840 -1.1066 -0.1460 -2.1825 -0.2953 -0.4945 -0.1468 -1.2515 -1.1449 -2.0504 -1.2396 -0.1220 -2.1706 -0.3851 -0.4570 -0.1307 -1.8589 -0.8094 -2.0821 -1.4171 -0.2226 -2.2425 -0.4473 -0.6184 -0.1148 -2.0434 -0.9647 -2.1097 -1.9017 -0.3038 -2.9027 -0.4416 -0.6301 -0.1264 -2.0874 -0.9537 -2.1648 -1.8772 -0.4002 -3.2156 -0.4174 -0.6774 -0.1629 -2.4860 -0.5363 -2.2222 -1.7657 -0.1458 -2.4760 -1.2692 -0.1819 -2.9252 -0.7544 -2.2129 -1.9218 -0.4979 -3.1387 -0.4485 -1.2232 -0.1977 -2.7162 -1.3395 -2.2524 -1.8556 -0.6330 -3.4577 -0.4221 -1.3086 -0.1972 -2.8531 -1.4822 -2.2275 -1.8051 -0.1596 -2.3486 -1.5356 -0.2649 -3.1229 -1.1550 -2.3042 -2.0061 -0.1944 -2.3205 -2.0122 -0.2458 -2.6932 -0.9904 -2.4375 -2.1067 -0.6090 -3.4420 -0.4153 -2.0826 -0.2536 -2.9705 -1.3366 -2.5045 -2.2568 -0.2435 -2.2221 -2.5388 -0.2549 -2.9165 -1.2676 -2.4823 -2.1826 -0.8690 -2.8272 -2.4951 -1.9572 -0.1858 -2.1606 -1.9641 -0.1443 -2.4621 -1.3093 -2.7208 -2.0346 -0.2188 -2.1769 -2.2185 -0.1974 -2.6841 -1.4732 -2.7424 -2.0378 -0.1998 -2.0608 -2.0734 -0.2190 -3.4355 -1.9021 -2.7537 -2.1695 -0.2071 -2.1062 -2.4046 -0.1936 -2.8521 -1.5387 -2.6735 -2.5021 -0.2807 -2.1319 -3.1321 -0.2194 -2.9668 -1.4911 -2.6730 -2.6791 -0.2455 -2.2022 -2.3405 -0.1576 -2.4184 -1.7717 -2.7875 -2.8452 -0.3007 -2.2389 -2.9520 -0.6751 -3.2524 -1.3545 -9.2143
+S-9	ཀློག་པའི་ཕ་རོལ་ཏུ་སོན་ཅིང་་དེའི་ཚེ་ན་བྲམ་ཟེའི་སྤྱོད་ཚུལ་དང་་སྤྱོད་པ་དང་་གཙང་སྦྲ་དང་་ཀུན་དུ་སྤྱོད་པ་དང་་ཐལ་བ་བླང་བ་དང་་བྱ་མ་བུམ་བླང་བ་དང་་ས་བླང་བ་དང་་ལག་སྟངས་དང་་ཐོར་ཚུགས་དང་་རབ་བསྔགས་བྱ་བ་དང་་ཀྱེ་ཞེས་བྱ་བ་དང་་ངེས་བརྗོད་ཀྱི་རིག་བྱེད་དང་་མཆོད་སྦྱིན་གྱི་རིག་བྱེད་དང་་སྙན་ཚིག་གི་རིག་བྱེད་དང་་སྲིད་སྲུང་གི་རིག་བྱེད་དང་་བྲམ་ཟེའི་ལས་དྲུག་པོ་མཆོད་སྦྱིན་བྱེད་པ་དང་་མཆོད་སྦྱིན་བྱེད་དུ་འཇུག་པ་དང་་ཀློག་པ་དང་་ཀློག་ཏུ་འཇུག་པ་དང་་སྦྱིན་པ་དང་་ལེན་པ་ལ་མཁས་པའི་བྲམ་ཟེ་རིག་བྱེད་དང་་རིག་བྱེད་ཀྱི་ཡན་ལག་གི་ཕ་རོལ་ཏུ་སོན་པ་མེ་ལྟ་བུའི་ཤེས་པས་རང་གི་སྨྲ་བ་གསལ་བར་བྱེད་པ་གཞན་གྱི་སྨྲ་བ་ཚར་གཅོད་པར་བྱེད་ནུས་པར་གྱུར་ཏོ་་
+T-9	once he had mastered letters he was instructed in the ways of brahmins their conduct ritual purity and observances the handling of ashes the handling of ritual vases and the handling of sites hand gestures turbans offering praise and salutations the rgveda the yajurveda the samaveda and the atharvaveda and a brahmins six dutiesmaking ritual sacrifices officiating over ritual sacrifices studying teaching giving and receiving he mastered and became learned in the vedas and all branches of vedic knowledge and with his blazing intelligence he could illuminate his own assertions and vanquish those of others
+H-9	-0.3178200125694275	as he grew up he studied letters brahminical customs and conduct the syllables om and bho ritual purity ritual actions the collection of ashes holding the ritual vase the rg veda the yajur veda the atharva veda the atharva veda how to perform sacrificial rites how to perform sacrificial rites how to perform sacrificial rites how to give and receive offerings recitation instruction trained in these procedures he became a master of the six types of brahminical activities
+D-9	-0.3178200125694275	as he grew up he studied letters brahminical customs and conduct the syllables om and bho ritual purity ritual actions the collection of ashes holding the ritual vase the rg veda the yajur veda the atharva veda the atharva veda how to perform sacrificial rites how to perform sacrificial rites how to perform sacrificial rites how to give and receive offerings recitation instruction trained in these procedures he became a master of the six types of brahminical activities
+P-9	-2.1284 -0.3831 -0.2582 -0.0494 -0.1893 -0.4540 -0.0952 -0.3196 -0.1106 -0.0026 -0.1262 -0.2776 -0.2075 -0.3773 -0.3077 -0.1620 -0.1458 -0.1481 -0.0228 -0.0727 -0.0163 -0.2442 -0.2444 -1.1240 -0.0790 -0.1793 -0.0456 -0.4879 -0.0362 -0.1450 -0.2108 -0.2789 -0.2110 -0.3034 -0.0390 -1.9011 -0.3553 -0.1108 -0.1353 -0.0594 -1.0263 -0.0261 -0.1010 -0.4250 -0.5961 -0.5948 -0.0226 -0.0555 -0.5578 -0.2060 -0.0559 -0.1265 -0.0332 -0.1104 -0.0067 -0.0519 -0.5100 -0.0535 -0.0939 -0.0123 -0.0568 -1.3077 -0.0682 -0.0760 -0.0138 -0.0850 -1.2281 -0.1015 -0.2809 -0.1822 -0.2701 -0.9592 -0.0268 -0.0508 -0.6468 -1.4632 -0.0835 -0.0315 -1.8476 -0.4897 -0.0544 -0.0756 -0.0839 -0.7482 -0.0932 -0.0725 -0.3304 -0.0266 -0.8211
+S-2	སུམ་ཅུ་རྩ་གསུམ་པའི་ལྷ་རྣམས་ཀྱི་ཁ་དོག་གི་མཐུ་བས་ལྷག་པའི་སྣང་བ་རྒྱ་ཆེན་པོས་ཁྱབ་པར་གྱུར་འཇིག་རྟེན་གྱི་འཇིག་རྟེན་གྱི་བར་གང་ན་ཉི་མ་དང་ཟླ་བ་འདི་ལྟར་རྫུ་འཕྲུལ་ཆེ་བ་འདི་ལྟར་མཐུ་ཆེ་བ་འདི་གཉིས་ཀྱི་འོད་དག་ཉམས་སུ་མི་མྱོང་བའི་མུན་པ་མུན་ནག་མུན་པར་བྱེད་པས་གནག་པར་གྱུར་པ་གང་དག་ཡིན་པ་དེ་དག་ཀྱང་དེའི་ཚེ་ན་སྣང་བ་རྒྱ་ཆེན་པོས་ཁྱབ་པར་གྱུར་ནས་སེམས་ཅན་གང་དག་དེར་སྐྱེས་པ་དག་གིས་རང་གི་ལག་པ་བརྐྱང་བ་ཡང་མི་མཐོང་བ་དེ་དག་གིས་ཀྱང་འོད་དེས་སེམས་ཅན་གཅིག་གིས་གཅིག་མཐོང་ནསཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་་ཤེས་ལྡན་དག་སེམས་ཅན་གཞན་ཡང་འདིར་སྐྱེས་སོ་ཞེས་ཤེས་པར་གྱུར་ཏོ་
+T-2	bathed in a vast light more luminous than the glow of the gods of the thirtythree so great was this miraculous manifestation it was as if the sun and moon shone in the gulf between worlds so great was its strength that darkness everywhere even the pitchblack darkness of dark places dark from never knowing the light of the sun and moon was filled with a vast light beings born in those places had never even seen so far as their outstretched hands yet by this light these beings saw one another and exclaimed you there there are others who have been born here there are others who have been born here
+H-2	-1.7996196746826172	the light of the gods of the heaven of the thirtythree and the light of the beings in the great hell of the four great kings saw that the light and the light and the light of the sun and the moon and the light and the light of the great light and the great light and the great light and the great light and the light and the great light and the light of the beings in the great trichiliocosm
+D-2	-1.7996196746826172	the light of the gods of the heaven of the thirtythree and the light of the beings in the great hell of the four great kings saw that the light and the light and the light of the sun and the moon and the light and the light of the great light and the great light and the great light and the great light and the light and the great light and the light of the beings in the great trichiliocosm
+P-2	-2.7781 -1.3717 -1.8751 -0.6286 -1.6292 -1.0483 -0.3402 -1.5954 -0.1083 -1.4925 -0.2384 -2.2354 -1.0268 -1.4745 -0.9427 -1.2649 -3.4125 -2.0750 -0.6985 -1.2562 -3.2340 -0.0864 -1.8448 -2.3684 -0.7789 -1.3737 -3.3980 -1.1040 -2.1027 -1.6141 -2.5298 -1.1949 -0.6106 -3.4888 -1.3495 -0.6993 -1.7721 -1.1571 -2.3673 -1.5425 -0.9174 -0.7370 -3.5044 -1.2235 -1.5752 -3.4153 -1.3192 -1.4443 -2.0899 -1.2917 -1.3898 -0.9808 -2.7438 -1.6705 -1.8962 -0.8901 -2.9380 -1.8281 -2.2026 -0.8238 -3.1532 -1.9062 -2.6312 -0.7495 -3.3574 -2.0835 -1.6214 -3.3026 -2.0019 -2.8631 -0.7792 -3.5452 -2.0702 -1.4500 -2.6931 -1.5302 -1.5357 -3.5916 -1.1589 -2.3033 -2.0651 -4.1855
+S-10	མ་མ་བརྒྱད་པོ་པང་ན་འཚོ་བའི་མ་མ་གཉིས་དང་་ནུ་མ་སྣུན་པའི་མ་མ་གཉིས་དང་་དྲི་མ་འཕྱི་བའི་མ་མ་གཉིས་དང་་རྩེན་གྲོགས་ཀྱི་མ་མ་གཉིས་ལ་རྗེས་སུ་གཏད་དོ་་དེ་མ་མ་བརྒྱད་པོ་དག་གིས་འོ་མ་དང་་ཞོ་དང་་མར་དང་་ཞུན་མར་དང་་མར་གྱི་སྙིང་ཁུ་དང་་གཞན་ཡང་ཡོ་བྱད་ཀྱི་བྱེ་བྲག་གཙོ་བོ་གཙོ་བོ་དག་གིས་སྲིང་བར་བྱེད་སྐྱེད་པར་བྱེད་ཅིང་རྫིང་ན་གནས་པའི་པད་མ་བཞིན་མྱུར་དུ་སྐྱེད་པར་བྱེད་དོ་་
+T-10	two to cuddle him two to breastfeed him two to change his diapers and two to play with him fortified with milk curd butter ghee cream and other nourishing foods he grew quickly shooting up like a lotus in a pond
+H-10	-1.1451772451400757	they reared him on milk yogurt butter ghee and milk solids and they reared him on milk yogurt butter ghee and eight nurses to bathe him and eight nurses to bathe him
+D-10	-1.1451772451400757	they reared him on milk yogurt butter ghee and milk solids and they reared him on milk yogurt butter ghee and eight nurses to bathe him and eight nurses to bathe him
+P-10	-2.3350 -2.0765 -1.7370 -1.1740 -0.7364 -0.0716 -0.0481 -0.3529 -0.0908 -0.9111 -0.3217 -1.2329 -2.8570 -3.6727 -1.1505 -1.4703 -1.2320 -0.2654 -0.1312 -0.5538 -0.2115 -1.9050 -1.4611 -0.1698 -0.2808 -2.1332 -0.6066 -2.6789 -0.9733 -1.4567 -0.1437 -0.2247 -2.7541 -0.4957 -2.1652

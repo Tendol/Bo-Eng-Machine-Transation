@@ -1,0 +1,1 @@
+Data folder contains the uncleaned and unprocessed parallel corpus.
