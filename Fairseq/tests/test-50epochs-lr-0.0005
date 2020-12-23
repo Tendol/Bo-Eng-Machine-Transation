@@ -1,0 +1,513 @@
+2020-12-19 22:18:19 | INFO | fairseq.tasks.translation | [bo] dictionary: 9528 types
+2020-12-19 22:18:19 | INFO | fairseq.tasks.translation | [en] dictionary: 6600 types
+2020-12-19 22:18:19 | INFO | fairseq_cli.generate | loading model(s) from checkpoints/checkpoint_best.pt
+2020-12-19 22:18:20 | INFO | fairseq.data.data_utils | loaded 100 examples from: data-bin/tokenized.bo.en.bpe16k/test.bo-en.bo
+2020-12-19 22:18:20 | INFO | fairseq.data.data_utils | loaded 100 examples from: data-bin/tokenized.bo.en.bpe16k/test.bo-en.en
+2020-12-19 22:18:20 | INFO | fairseq.tasks.translation | data-bin/tokenized.bo.en.bpe16k test bo-en 100 examples
+
+*****
+2020-12-19 22:18:25 | INFO | fairseq_cli.generate | NOTE: hypothesis and token scores are output in base 2
+2020-12-19 22:18:25 | INFO | fairseq_cli.generate | Translated 100 sentences (1279 tokens) in 3.0s (33.83 sentences/s, 432.73 tokens/s)
+Generate test with beam=5: BLEU4 = 1.35, 22.5/4.1/1.0/0.3 (BP=0.566, ratio=0.637, syslen=1179, reflen=1850)
+*****
+
+S-24	▁ཤ་རིའི་བུ ་དང་ མུ་སྟེགས་ ཅན་་
+T-24	▁sariputra ▁tirth ikas
+H-24	-1.5053203105926514	▁in ▁the ▁ten ▁directions
+D-24	-1.5053203105926514	▁in ▁the ▁ten ▁directions
+P-24	-4.4947 -0.5761 -1.5494 -0.0854 -0.8210
+S-85	▁རྒྱལ་པོ ་པད་མ་ ཆེན་པོ ས་བསམས་པ་
+T-85	▁king ▁maha p ad ma ▁thought
+H-85	-1.7201721668243408	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁retinue
+D-85	-1.7201721668243408	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁retinue
+P-85	-1.9086 -1.3539 -2.0370 -3.7422 -0.1803 -0.8313 -2.0698 -1.6383
+S-75	▁ཕ་རོལ་ གན ོན་པ་
+T-75	▁ru th less
+H-75	-1.6075197458267212	▁it ▁is ▁the ▁seat ▁of ▁the ▁demons
+D-75	-1.6075197458267212	▁it ▁is ▁the ▁seat ▁of ▁the ▁demons
+P-75	-3.3424 -0.3812 -0.7765 -2.9698 -0.4445 -1.9441 -2.8677 -0.1338
+S-55	▁དེ་དག་གིས་ ཚིགས་སུ་བཅད་པ་ སྨྲས་པ་
+T-55	▁they ▁spoke ▁in ▁verse
+H-55	-1.0700186491012573	▁then ▁the ▁boy ▁spoke ▁these ▁verses
+D-55	-1.0700186491012573	▁then ▁the ▁boy ▁spoke ▁these ▁verses
+P-55	-2.4830 -0.9023 -2.7984 -0.6600 -0.0946 -0.0629 -0.4889
+S-13	▁དཀོན་མཆོག་ གསུམ་ ལ་ཕྱག་འཚལ་ལོ་་
+T-13	▁homage ▁to ▁the ▁three ▁jewels
+H-13	-0.8736230134963989	▁homage ▁to ▁the ▁three ▁jewels
+D-13	-0.8736230134963989	▁homage ▁to ▁the ▁three ▁jewels
+P-13	-0.8007 -0.1103 -0.9679 -0.8415 -1.5214 -0.9998
+S-11	▁རྒྱ་ གར་ སྐད་དུ་
+T-11	▁in ▁the ▁language ▁of ▁indi a
+H-11	-2.186032772064209	▁it ▁is ▁the ▁knowledge ▁of ▁what ▁is ▁possible
+D-11	-2.186032772064209	▁it ▁is ▁the ▁knowledge ▁of ▁what ▁is ▁possible
+P-11	-5.0066 -0.6441 -1.8572 -3.9854 -0.3545 -2.9630 -1.3902 -3.0787 -0.3945
+S-41	▁དེས་བ ློན་པོ་ རྣམས་ལ་སྨྲས་པ་
+T-41	▁then ▁he ▁said ▁to ▁his ▁ministers
+H-41	-1.7838160991668701	▁king ▁brahmadatta ▁then ▁told ▁the ▁brahmin
+D-41	-1.7838160991668701	▁king ▁brahmadatta ▁then ▁told ▁the ▁brahmin
+P-41	-2.4477 -1.7138 -1.8706 -2.0139 -1.1456 -2.3009 -0.9943
+S-12	▁བ ོད་ སྐད་དུ་
+T-12	▁in ▁the ▁language ▁of ▁t ib et
+H-12	-2.257075786590576	▁they ▁will ▁not ▁be ▁discouraged
+D-12	-2.257075786590576	▁they ▁will ▁not ▁be ▁discouraged
+P-12	-3.6091 -2.2149 -1.6988 -1.7674 -3.7939 -0.4584
+S-36	▁བ སྙེན་པར་ རྫོགས་པར་ གན ང་བ ་དང་་་
+T-36	▁grant ing ▁ordination
+H-36	-1.6260521411895752	▁and ▁go ▁forth ▁in ▁the ▁teaching ▁of ▁the ▁buddha
+D-36	-1.6260521411895752	▁and ▁go ▁forth ▁in ▁the ▁teaching ▁of ▁the ▁buddha
+P-36	-4.3499 -2.5235 -0.0195 -3.7068 -0.9928 -1.8062 -0.5635 -0.4315 -1.6040 -0.2629
+S-94	▁རྒྱལ་པོ ་ད མག ་བརྒྱ ་པ ས་བསམས་པ་
+T-94	▁king ▁sat an ika ▁thought
+H-94	-1.6154383420944214	▁at ▁that ▁time ▁the ▁king ▁was ▁filled ▁with ▁joy
+D-94	-1.6154383420944214	▁at ▁that ▁time ▁the ▁king ▁was ▁filled ▁with ▁joy
+P-94	-3.7522 -0.5913 -0.4316 -1.8002 -0.4267 -2.8879 -3.5021 -0.1456 -0.8296 -1.7871
+S-47	▁གལ་ཏེ་ ཕྱིར་ འབྱུང་ ན་དེ་ ལྟ་ན་ ལེགས་་
+T-47	▁it ▁would ▁be ▁good ▁were ▁you ▁to ▁come ▁out
+H-47	-1.9496912956237793	▁it ▁is ▁excellent
+D-47	-1.9496912956237793	▁it ▁is ▁excellent
+P-47	-5.0035 -0.3130 -1.0102 -1.4721
+S-88	▁གཞོན་ནུ་ འདིའི་མིང་ གཟུགས་ཅན་ སྙིང་པོར་ གདགས་སོ་ སྙམ་ནས་
+T-88	▁i ▁shall ▁name ▁this ▁prince ▁bimbisara ▁essence ▁of ▁gold
+H-88	-0.5683152675628662	▁what ▁name ▁should ▁we ▁give ▁this ▁child
+D-88	-0.5683152675628662	▁what ▁name ▁should ▁we ▁give ▁this ▁child
+P-88	-1.3441 -0.0341 -0.5690 -0.4742 -0.3448 -0.3152 -0.0284 -1.4367
+S-19	▁ད མར་ སེར་ ཅན་དང་ གང་ཟག ་དང་་་
+T-19	▁a ▁group ▁of ▁tr oub les ome ▁monks ▁types ▁of ▁persons
+H-19	-1.5526036024093628	▁they ▁will ▁not ▁be ▁discouraged
+D-19	-1.5526036024093628	▁they ▁will ▁not ▁be ▁discouraged
+P-19	-2.4703 -1.3039 -0.2896 -1.3983 -3.6627 -0.1908
+S-79	▁བཅོམ་ལྡན་འདས་བྱ ང་ཆུབ་སེམས་དཔའ་བ ལྟ མ་པ་ ན་
+T-79	▁when ▁the ▁blessed ▁bodhisattva ▁was ▁born
+H-79	-1.3229728937149048	▁blessed ▁one ▁what ▁do ▁you ▁think
+D-79	-1.3229728937149048	▁blessed ▁one ▁what ▁do ▁you ▁think
+P-79	-3.1859 -0.0474 -2.6047 -1.6017 -0.4480 -0.8404 -0.5327
+S-74	▁དཔ ུང་དང་ མཐུ་ ཆེ་བ ར་གྱུར་ལ་
+T-74	▁and ▁his ▁mil itary ▁might ▁is ▁great
+H-74	-2.2036187648773193	▁the ▁great ▁sage ▁who ▁has ▁great ▁power
+D-74	-2.2036187648773193	▁the ▁great ▁sage ▁who ▁has ▁great ▁power
+P-74	-2.9454 -2.0787 -2.0575 -2.9895 -2.2346 -2.2452 -2.1260 -0.9521
+S-29	▁དེས་ དཔ ུང་གི་ཚོགས་ཡན་ལག ་བཞི་པ ་
+T-29	▁he ▁called ▁up ▁the ▁four ▁branches ▁of ▁his ▁ar med ▁forces
+H-29	-0.7624725103378296	▁the ▁four ▁divisions ▁of ▁his ▁army
+D-29	-0.7624725103378296	▁the ▁four ▁divisions ▁of ▁his ▁army
+P-29	-1.5499 -0.4382 -0.1244 -1.1311 -1.2993 -0.0684 -0.7260
+S-63	▁གླང་པོ་ ཆེ་ ལྟར་ སྣང་བ ར་བ སྒྱུར་ ཏེ་
+T-63	▁assum ing ▁an ▁elephants ▁appearance
+H-63	-1.7734558582305908	▁he ▁is ▁like ▁a ▁lion
+D-63	-1.7734558582305908	▁he ▁is ▁like ▁a ▁lion
+P-63	-4.1516 -0.7046 -1.4032 -0.4602 -2.8900 -1.0312
+S-23	▁སྨ ན་དང་ གོས་དང་ སྲ ་བ རྐྱ ང་དང་་
+T-23	▁medicine ▁robes ▁turning ▁cloth ▁into ▁robes
+H-23	-2.2695395946502686	▁and ▁so ▁he ▁offered ▁it ▁to ▁him
+D-23	-2.2695395946502686	▁and ▁so ▁he ▁offered ▁it ▁to ▁him
+P-23	-3.8600 -3.5920 -1.7535 -2.7646 -3.0777 -0.3524 -2.1330 -0.6231
+S-56	▁ ཡུལ ་དང་ སྲོག་ ལ་ གནོད་ གྱུར་ན་་
+T-56	▁when ▁land ▁and ▁life ▁are ▁threat ened
+H-56	-1.719658613204956	▁they ▁will ▁not ▁be ▁reborn ▁in ▁the ▁lower ▁realms
+D-56	-1.719658613204956	▁they ▁will ▁not ▁be ▁reborn ▁in ▁the ▁lower ▁realms
+P-56	-4.2794 -1.6816 -1.1076 -2.0499 -1.7171 -1.4762 -1.6190 -1.6085 -1.2268 -0.4304
+S-97	▁རྒྱལ་པོ་ མུ་ ཁྱ ུད་ མཐའ་ཡས་ ཀྱིས་བ སམས་པ་
+T-97	▁king ▁an ant ane m i ▁thought
+H-97	-1.1661981344223022	▁at ▁that ▁time ▁the ▁king ▁thought
+D-97	-1.1661981344223022	▁at ▁that ▁time ▁the ▁king ▁thought
+P-97	-2.7411 -0.3804 -0.3190 -3.2886 -0.2472 -0.9135 -0.2737
+S-18	▁ སྤ ོ་དང་ གསོ་སྦྱོ ང་བ ཞག ་པ་དང་་་
+T-18	▁dem ot ions ▁sus p ension ▁of ▁the ▁purification
+H-18	-1.851508617401123	▁in ▁the ▁same ▁way ▁one ▁should ▁place
+D-18	-1.851508617401123	▁in ▁the ▁same ▁way ▁one ▁should ▁place
+P-18	-3.9825 -0.6754 -2.0677 -0.1620 -2.8642 -0.1888 -2.4928 -2.3787
+S-92	▁གཞོན་ནུ་ འདིའི་མིང་ གསལ་ རྒྱལ ་དུ་ གདགས་སོ་ སྙམ་ནས་
+T-92	▁so ▁i ▁shall ▁name ▁this ▁prince ▁prasenajit ▁supreme ▁light
+H-92	-0.4439012408256531	▁at ▁the ▁elaborate ▁feast ▁celebrating ▁his ▁birth ▁they ▁named ▁him ▁saying
+D-92	-0.4439012408256531	▁at ▁the ▁elaborate ▁feast ▁celebrating ▁his ▁birth ▁they ▁named ▁him ▁saying
+P-92	-1.4292 -0.9820 -0.2074 -0.0860 -0.2347 -0.1022 -0.0778 -1.1584 -0.1705 -0.3079 -0.1156 -0.4549
+S-33	▁བྱ ང་ཆུབ་སེམས་དཔའ ་དགའ་ལྡན་གྱི་ གནས་ ན་བ ཞུགས་པ་ ན་་
+T-33	▁while ▁the ▁bodhisattva ▁was ▁dwelling ▁in ▁the ▁abode ▁of ▁tusita
+H-33	-1.341923475265503	▁at ▁that ▁time ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁joy ▁was ▁born ▁in ▁the ▁heaven ▁of ▁joy
+D-33	-1.341923475265503	▁at ▁that ▁time ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁joy ▁was ▁born ▁in ▁the ▁heaven ▁of ▁joy
+P-33	-3.1000 -0.3581 -0.1083 -1.7794 -2.5285 -1.6963 -0.4580 -1.2596 -0.3349 -0.5595 -2.4747 -3.9362 -2.1174 -0.5825 -0.7372 -0.3092 -0.6990 -1.1159
+S-38	▁དེས་ ཀྱང ་དཔ ུང་གི་ཚོགས་ཡན་ལག ་བཞི་པ ་
+T-38	▁he ▁too ▁called ▁up ▁the ▁four ▁branches ▁of ▁his ▁ar med ▁forces
+H-38	-0.8128762245178223	▁the ▁four ▁divisions ▁of ▁his ▁army
+D-38	-0.8128762245178223	▁the ▁four ▁divisions ▁of ▁his ▁army
+P-38	-1.3782 -0.2640 -0.1532 -1.0976 -1.3789 -0.0602 -1.3581
+S-37	▁ སྡེ་ ཚ ན་ ཡང་དག ་བསྡུ ས་པ་ ཡིན་
+T-37	▁is ▁told ▁in ▁sect ions ▁on
+H-37	-1.0679067373275757	▁he ▁correctly ▁understands ▁the ▁knowledge ▁of ▁the ▁path
+D-37	-1.0679067373275757	▁he ▁correctly ▁understands ▁the ▁knowledge ▁of ▁the ▁path
+P-37	-2.1013 -1.5106 -0.0932 -1.1723 -0.4886 -0.2897 -0.8782 -2.3188 -0.7586
+S-58	▁བློ་ ཡིས་ གཉིས་ ཀ ་དཔྱ ད ་བྱས་ ན་་
+T-58	▁when ▁the ▁wise ▁look ▁at ▁both
+H-58	-2.673957347869873	▁one ▁should ▁make ▁a ▁following ▁aspiration
+D-58	-2.673957347869873	▁one ▁should ▁make ▁a ▁following ▁aspiration
+P-58	-4.4025 -0.5125 -3.9736 -2.1935 -3.8101 -3.2919 -0.5337
+S-25	▁དག ེ་ ཚུལ་ གཉི ས་དང་བྱ ་རོག་ སྐྲ ོད་་
+T-25	▁the ▁two ▁novices ▁sc aring ▁a ▁crow
+H-25	-2.2101073265075684	▁they ▁will ▁have ▁no ▁faith ▁in ▁the ▁buddhas
+D-25	-2.2101073265075684	▁they ▁will ▁have ▁no ▁faith ▁in ▁the ▁buddhas
+P-25	-2.5040 -1.3912 -2.7929 -1.8392 -3.3773 -3.3930 -1.3171 -2.8591 -0.4171
+S-20	▁ ཀ་ཤ མ་བ ི ་དང་ ལས་ཀྱི་ གཞི་ ་
+T-20	▁the ▁monks ▁of ▁kausambi ▁form al ▁acts ▁of ▁sangha
+H-20	-1.8006967306137085	▁i ▁will ▁teach ▁the ▁dharma ▁to ▁beings
+D-20	-1.8006967306137085	▁i ▁will ▁teach ▁the ▁dharma ▁to ▁beings
+P-20	-4.2817 -1.8638 -2.1861 -0.5611 -0.0854 -2.5108 -1.3082 -1.6085
+S-35	▁ ཉེ་ སྡ ེས་ ཚོགས་ ནི ་བསྡུ ས་པ་དང་་་
+T-35	▁qu er ying ▁up asen a ▁and ▁a ▁sum m ary
+H-35	-1.975417971611023	▁they ▁are ▁wise
+D-35	-1.975417971611023	▁they ▁are ▁wise
+P-35	-1.8357 -1.0898 -3.5918 -1.3843
+S-66	▁ རྒྱལ་པོའི་ཁབ་ཏུ་ རྒྱལ་པོ ་པད་མ་ ཆེན་པོ འི་བུ་བ ཙ ས་སོ་་
+T-66	▁in ▁rajagrha ▁the ▁son ▁of ▁king ▁maha p ad ma ▁was ▁born
+H-66	-1.7649697065353394	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁retinue
+D-66	-1.7649697065353394	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁retinue
+P-66	-3.0461 -1.1154 -2.2822 -2.6402 -0.1302 -0.9248 -1.7354 -2.2455
+S-87	▁འདི ་བཙ ུན་ མོ་ གཟུགས་ ཅ ན་གྱི་བུ་ ཡིན་པས་
+T-87	▁and ▁as ▁he ▁is ▁the ▁son ▁of ▁queen ▁bimb i ▁gold ie
+H-87	-2.3556840419769287	▁this ▁is ▁the ▁time ▁of ▁his ▁parents ▁replied
+D-87	-2.3556840419769287	▁this ▁is ▁the ▁time ▁of ▁his ▁parents ▁replied
+P-87	-3.5653 -1.0800 -3.0776 -3.0196 -1.0304 -2.7525 -2.8467 -3.0846 -0.7444
+S-59	▁དེ་ རལ་གྲི་ མག ུལ ་དུ་ ཐོགས་ཏེ་ ཕྱིར་བྱ ུང་བ་དང་་
+T-59	▁king ▁maha p ad ma ▁hung ▁his ▁sword ▁from ▁his ▁neck ▁in ▁sur re nd er ▁and ▁went ▁out
+H-59	-1.9272533655166626	▁one ▁should ▁place ▁the ▁soles ▁of ▁ones ▁feet
+D-59	-1.9272533655166626	▁one ▁should ▁place ▁the ▁soles ▁of ▁ones ▁feet
+P-59	-4.1694 -0.1996 -3.2537 -3.3448 -3.3829 -0.4405 -1.0184 -0.6511 -0.8848
+S-90	▁རྒྱལ་པོ་ རྩི བས་ ཀྱིས་ འཕ ུར་ ཚང ས་བྱི ན་གྱིས་བ སམས་པ་
+T-90	▁king ▁ara d a ▁brahmadatta ▁thought
+H-90	-1.1214457750320435	▁king ▁prasenajit ▁thought
+D-90	-1.1214457750320435	▁king ▁prasenajit ▁thought
+P-90	-0.7965 -2.2169 -1.0693 -0.4031
+S-89	▁བ ུ ་དེའི་ མིང་ གཟུགས་ཅན་ སྙིང་པོ་ ཞེས་བྱ་བ ར་བ ཏ གས་སོ་་
+T-89	▁and ▁so ▁the ▁boy ▁was ▁named ▁bimbisara
+H-89	-1.8593859672546387	▁in ▁the ▁same ▁way ▁there ▁is ▁no ▁form ▁of ▁name
+D-89	-1.8593859672546387	▁in ▁the ▁same ▁way ▁there ▁is ▁no ▁form ▁of ▁name
+P-89	-3.5297 -1.7949 -0.9310 -0.2709 -3.7107 -0.9992 -0.9396 -3.3259 -1.1936 -2.5616 -1.1961
+S-96	▁བ ུ ་དེའི་ མིང་ ཤ ར་བ་ ཞེས་བྱ་བ ར་བ ཏ གས་སོ་་
+T-96	▁and ▁so ▁the ▁boy ▁was ▁named ▁ud ayana
+H-96	-1.53836190700531	▁there ▁is ▁the ▁meditative ▁stability ▁named ▁black
+D-96	-1.53836190700531	▁there ▁is ▁the ▁meditative ▁stability ▁named ▁black
+P-96	-1.8910 -1.1155 -2.5270 -0.6338 -0.1026 -0.0591 -4.3588 -1.6192
+S-57	▁ སྐྱེ ས་བ ུས་ ཀུན་དུ་ སྲོག ་བསྲ ུང ་བྱ་་
+T-57	▁seek ▁always ▁to ▁protect ▁life
+H-57	-2.57617449760437	▁they ▁will ▁not ▁be ▁afraid
+D-57	-2.57617449760437	▁they ▁will ▁not ▁be ▁afraid
+P-57	-4.8624 -0.8224 -2.9095 -1.5559 -3.5530 -1.7539
+S-93	▁བ ུ ་དེའི་ མིང་ གསལ་རྒྱལ་ ཞེས་བྱ་བ ར་བ ཏ གས་སོ་་
+T-93	▁and ▁so ▁the ▁boy ▁was ▁named ▁prasenajit
+H-93	-1.530517578125	▁at ▁that ▁time ▁king ▁prasenajit ▁was ▁prosperous ▁and ▁wealthy ▁a ▁king ▁prasenajit
+D-93	-1.530517578125	▁at ▁that ▁time ▁king ▁prasenajit ▁was ▁prosperous ▁and ▁wealthy ▁a ▁king ▁prasenajit
+P-93	-2.9000 -1.9028 -0.3284 -0.4907 -1.6738 -1.2651 -3.0884 -1.0113 -1.8101 -0.5509 -3.1426 -1.2807 -0.4518
+S-26	▁ད གྲ་བཅོ མ ་བས ད་དང་ ལག་ རྡ ུམ་ གྱི་་
+T-26	▁killing ▁an ▁arhat ▁and ▁m iss ing ▁hands
+H-26	-1.904495120048523	▁they ▁will ▁not ▁be ▁afflicted ▁by ▁hunger ▁and ▁thirst
+D-26	-1.904495120048523	▁they ▁will ▁not ▁be ▁afflicted ▁by ▁hunger ▁and ▁thirst
+P-26	-4.1473 -1.5761 -0.9634 -1.0794 -4.6983 -0.2381 -3.6996 -1.7456 -0.4321 -0.4650
+S-68	▁གང་གི་ ཚེ་བ ཅོམ་ལྡན་འད ས་བྱ ང་ཆུབ་སེམས་དཔའ་བ ལྟ མ་པ ་དེའི་ཚེ་ ན་
+T-68	▁at ▁the ▁same ▁time ▁as ▁the ▁blessed ▁bodhisattva ▁was ▁born
+H-68	-1.4219706058502197	▁at ▁that ▁time ▁the ▁bodhisattva ▁was ▁sitting ▁at ▁one ▁side
+D-68	-1.4219706058502197	▁at ▁that ▁time ▁the ▁bodhisattva ▁was ▁sitting ▁at ▁one ▁side
+P-68	-2.6986 -0.2871 -0.2618 -0.9470 -0.4314 -1.8027 -4.0720 -2.6672 -1.5694 -0.2118 -0.6925
+S-53	▁ཨ ང་ག འི་རྒྱལ་པོ ་དང་ གཡུལ་ སྤྲ ད་པའི་ཕྱིར་ འཕ གས་སོ་་
+T-53	▁and ▁r ode ▁out ▁to ▁meet ▁the ▁king ▁of ▁ang a ▁in ▁battle
+H-53	-1.968498945236206	▁one ▁should ▁recite ▁the ▁mantra
+D-53	-1.968498945236206	▁one ▁should ▁recite ▁the ▁mantra
+P-53	-2.4297 -0.2672 -4.3101 -1.4832 -0.3043 -3.0164
+S-21	▁དག ག ་དབྱེ ་དབྱ ར་དང་ ཀོ་ ལ ྤ གས་ གཞི་ ་
+T-21	▁lif ting ▁rest ri ct ions ▁the ▁rains ▁le ather
+H-21	-2.531677722930908	▁one ▁should ▁make ▁a ▁c up
+D-21	-2.531677722930908	▁one ▁should ▁make ▁a ▁c up
+P-21	-2.6297 -0.2124 -4.4967 -1.3785 -4.0726 -1.8444 -3.0875
+S-99	▁བ ུ ་དེའི་ མིང་ རབ་སྣ ང་ ཞེས་བྱ་བ ར་བ ཏ གས་སོ་་
+T-99	▁and ▁so ▁the ▁boy ▁was ▁named ▁pra d yot a
+H-99	-1.3230335712432861	▁there ▁is ▁the ▁meditative ▁stability ▁named ▁stainless ▁light
+D-99	-1.3230335712432861	▁there ▁is ▁the ▁meditative ▁stability ▁named ▁stainless ▁light
+P-99	-1.0118 -1.0933 -2.1933 -0.2408 -0.0547 -0.0514 -4.5665 -1.9761 -0.7195
+S-61	▁གང་གི་ ཚེ་བ ཅོམ་ལྡན་འད ས་བྱ ང་ཆུབ་སེམས་དཔའ ་དགའ་ལྡན་གྱི་ གནས་ ན་བ ཞུགས་པ ས་
+T-61	▁while ▁the ▁blessed ▁bodhisattva ▁was ▁dwelling ▁in ▁the ▁abode ▁of ▁tusita
+H-61	-1.4228256940841675	▁at ▁that ▁time ▁the ▁bodhisattva ▁was ▁born ▁in ▁the ▁heaven ▁of ▁joy
+D-61	-1.4228256940841675	▁at ▁that ▁time ▁the ▁bodhisattva ▁was ▁born ▁in ▁the ▁heaven ▁of ▁joy
+P-61	-1.6295 -0.2887 -0.3543 -1.0556 -0.6224 -1.8642 -3.2115 -2.7309 -0.9953 -2.9514 -0.3320 -0.3231 -2.1380
+S-5	▁དེ་ཡང་ རྒྱལ་པོ་ རྒྱལ་རིག ས་སྤྱི ་བ ོར ་དབ ང་བསྐུར་བ ་ ཡིན་ལ་
+T-5	▁he ▁too ▁has ▁been ▁crown ed ▁and ▁anointed ▁a ▁ksatri ya ▁king
+H-5	-1.4711289405822754	▁the ▁king ▁appointed ▁to ▁the ▁royal ▁palace
+D-5	-1.4711289405822754	▁the ▁king ▁appointed ▁to ▁the ▁royal ▁palace
+P-5	-2.9960 -0.2242 -3.3010 -0.3758 -0.6615 -1.5867 -1.2857 -1.3382
+S-17	▁ང ུར་ སྨྲིག་ གོས་ འཆང་ མཁས་པ་ ཚུལ་ ལས་ ཉམས་པ ་དཀའ་་
+T-17	▁for ▁a ▁learned ▁we arer ▁of ▁the ▁saffron ▁robes ▁to ▁fall ▁is ▁hard
+H-17	-1.9363653659820557	▁the ▁wise ▁who ▁are ▁wise ▁who ▁are ▁wise
+D-17	-1.9363653659820557	▁the ▁wise ▁who ▁are ▁wise ▁who ▁are ▁wise
+P-17	-3.1776 -0.4163 -2.8974 -2.0131 -1.0897 -3.5462 -1.0891 -1.2568 -1.9411
+S-27	▁གང་གི་ཚེ་ རྒྱལ་པོ ་པད་མ་ ཆེན་པོ ་དཔ ུང་དང་ མཐུ་ ཆེ་བ ་དེའི་ཚེ་ ན་་
+T-27	▁at ▁a ▁time ▁when ▁king ▁maha p ad ma ▁and ▁his ▁armies ▁were ▁domin ant
+H-27	-1.7562838792800903	▁at ▁that ▁time ▁there ▁was ▁a ▁king ▁who ▁was ▁a ▁king ▁named ▁a ▁king ▁who ▁was ▁like ▁a ▁great ▁sal ▁tree
+D-27	-1.7562838792800903	▁at ▁that ▁time ▁there ▁was ▁a ▁king ▁who ▁was ▁a ▁king ▁named ▁a ▁king ▁who ▁was ▁like ▁a ▁great ▁sal ▁tree
+P-27	-4.5352 -0.7689 -0.5803 -2.5127 -1.2140 -0.2966 -0.5952 -4.2211 -1.0581 -1.5767 -0.9830 -1.3607 -3.8093 -1.1488 -3.3972 -1.1635 -2.6287 -0.2590 -3.0543 -2.1960 -0.6574 -0.6215
+S-28	▁གང་གི་ཚེ་ ཨ ང་ག འི་རྒྱལ་པོ ་དཔ ུང་དང་ མཐུ་ ཆེ་བ ་དེའི་ཚེ་ ན་
+T-28	▁at ▁a ▁time ▁when ▁the ▁king ▁of ▁ang a ▁and ▁his ▁armies ▁were ▁domin ant
+H-28	-1.4476102590560913	▁at ▁that ▁time ▁there ▁was ▁a ▁king ▁named ▁drdha b ala ▁who ▁was ▁a ▁king ▁of ▁mountains
+D-28	-1.4476102590560913	▁at ▁that ▁time ▁there ▁was ▁a ▁king ▁named ▁drdha b ala ▁who ▁was ▁a ▁king ▁of ▁mountains
+P-28	-3.5818 -0.5230 -0.3095 -1.7497 -0.9096 -0.6579 -0.2953 -0.4402 -5.2329 -1.5893 -0.3764 -1.9895 -1.3739 -1.9877 -0.5177 -2.9902 -0.6552 -0.8770
+S-81	▁འཇིག་རྟེན་གྱི་ འཇིག་རྟེ ན་གྱི ་བར་ གང་ན་ ཉི་མ་དང་ ཟླ་བ་ འདི་ལྟར་ རྫུ་འཕྲུལ་ ཆེ་བ་
+T-81	▁so ▁great ▁was ▁this ▁miraculous ▁manifestation ▁it ▁was ▁as ▁if ▁the ▁sun ▁and ▁moon ▁shone ▁in ▁the ▁g ulf ▁between ▁worlds
+H-81	-1.7455025911331177	▁he ▁is ▁the ▁one ▁who ▁is ▁the ▁one ▁who ▁is ▁like ▁the ▁lord ▁of ▁the ▁world
+D-81	-1.7455025911331177	▁he ▁is ▁the ▁one ▁who ▁is ▁the ▁one ▁who ▁is ▁like ▁the ▁lord ▁of ▁the ▁world
+P-81	-4.1851 -2.0695 -2.0760 -0.1912 -0.5902 -2.4912 -2.8782 -0.5940 -0.5034 -2.4000 -3.5138 -1.9588 -2.5220 -0.1997 -0.8395 -1.0763 -1.5847
+S-70	▁ ཤེས་ ལྡ ན་དག་ སེམས་ཅ ན་གཞ ན་ཡང་ འདིར་ སྐྱེ ས་སོ་ཞེས་ ཤེ ས་པར་གྱུར་ཏོ་
+T-70	▁there ▁are ▁others ▁who ▁have ▁been ▁born ▁here
+H-70	-2.0244410037994385	▁they ▁will ▁be ▁reborn ▁in ▁the ▁realm ▁of ▁the ▁gods
+D-70	-2.0244410037994385	▁they ▁will ▁be ▁reborn ▁in ▁the ▁realm ▁of ▁the ▁gods
+P-70	-4.4287 -1.6852 -2.7093 -1.6685 -1.4508 -1.5232 -3.4949 -0.3730 -1.9739 -2.5478 -0.4138
+S-84	▁ ཤེས་ ལྡ ན་དག་ སེམས་ཅ ན་གཞ ན་ཡང་ འདིར་ སྐྱེ ས་སོ་ཞེས་ ཤེ ས་པར་གྱུར་ཏོ་་
+T-84	▁there ▁are ▁others ▁who ▁have ▁been ▁born ▁here
+H-84	-1.946859359741211	▁they ▁will ▁be ▁reborn ▁in ▁the ▁realm ▁of ▁the ▁gods
+D-84	-1.946859359741211	▁they ▁will ▁be ▁reborn ▁in ▁the ▁realm ▁of ▁the ▁gods
+P-84	-4.4606 -1.7430 -2.7129 -1.8177 -1.3345 -1.4404 -3.0041 -0.3158 -1.8684 -2.3084 -0.4099
+S-6	▁ལག་པ་ འགྲ མ་པ་ ལ་བ སྟ ད་ ན ས་སེམས་ ཁོང་དུ་ཆུ ད་ཅིང་ འདུག་ འདུག་ནས་
+T-6	▁head ▁in ▁hands ▁he ▁sat ▁and ▁sat ▁absorbed ▁in ▁thought
+H-6	-2.1431643962860107	▁with ▁his ▁mind ▁and ▁mind ▁and ▁mind ▁and ▁mind ▁with ▁his ▁mind ▁and ▁mind
+D-6	-2.1431643962860107	▁with ▁his ▁mind ▁and ▁mind ▁and ▁mind ▁and ▁mind ▁with ▁his ▁mind ▁and ▁mind
+P-6	-2.8736 -1.8531 -1.6807 -1.9683 -1.7892 -2.2715 -1.4975 -2.6346 -1.2957 -4.2040 -1.9979 -1.8987 -1.9769 -1.4855 -2.7202
+S-16	▁ མངོ ན ་དགའ་ ཇི ་བཞི ན་ད ོན་བ སྐྱེད་ ཡང་དག ་བྱེད་པ ་དཀའ་་
+T-16	▁for ▁the ▁joyful ▁set ▁on ▁perfection ▁to ▁act ▁perfectly ▁is ▁hard
+H-16	-2.259140968322754	▁they ▁will ▁not ▁be ▁delighted ▁by ▁the ▁dharma
+D-16	-2.259140968322754	▁they ▁will ▁not ▁be ▁delighted ▁by ▁the ▁dharma
+P-16	-3.6600 -1.3564 -2.5054 -1.5885 -3.7179 -0.8021 -1.8064 -4.4910 -0.4045
+S-15	▁ རབ ་བྱུང་ ཐོབ་ནས་ ཡུལ་ སྤྱད ་དག་གི ས་དག འ་ ཐོབ ་དཀའ་་
+T-15	▁for ▁a ▁h ed on ist ▁to ▁be ▁happy ▁among ▁renunciants ▁is ▁hard
+H-15	-2.1688320636749268	▁they ▁will ▁be ▁victorious ▁in ▁the ▁dharma
+D-15	-2.1688320636749268	▁they ▁will ▁be ▁victorious ▁in ▁the ▁dharma
+P-15	-2.8238 -1.1570 -2.2199 -3.8571 -2.5812 -1.4948 -2.1549 -1.0618
+S-76	▁ ཤེས་ ལྡ ན་དག་ ཨ ང་ག འི་རྒྱལ་པོ་ འདི་ནི་ གད ུག་པ་ ་
+T-76	▁gentle men ▁this ▁king ▁of ▁ang a ▁is ▁be ll i ge rent
+H-76	-1.8202235698699951	▁this ▁is ▁the ▁practice ▁of ▁candamaharosana
+D-76	-1.8202235698699951	▁this ▁is ▁the ▁practice ▁of ▁candamaharosana
+P-76	-2.7334 -1.1308 -1.1925 -2.9134 -0.8131 -3.5611 -0.3972
+S-31	▁ར ེས་ འགའ་ ནི་ རྒྱལ་པོ ་པད་མ་ ཆེན་པོ ་དཔ ུང་དང་ མཐུ་ཆེ་བ་ ཡིན་ནོ་་
+T-31	▁at ▁other ▁times ▁king ▁maha p ad ma ▁and ▁his ▁armies ▁were ▁domin ant
+H-31	-2.101036548614502	▁like ▁a ▁great ▁king ▁of ▁trees
+D-31	-2.101036548614502	▁like ▁a ▁great ▁king ▁of ▁trees
+P-31	-4.0844 -0.6224 -2.1781 -1.1275 -3.6088 -1.6801 -1.4059
+S-82	▁སེམས་ཅ ན་གང་དག ་དེར་ སྐྱེས་པ ་དག་གིས་ རང་གི་ ལག་པ་བ རྐྱ ང་བ་ ཡང་མི་ མཐོང་བ་
+T-82	▁beings ▁born ▁in ▁those ▁places ▁had ▁never ▁even ▁seen ▁so ▁far ▁as ▁their ▁out st ret ched ▁hands
+H-82	-1.9141134023666382	▁when ▁they ▁saw ▁that ▁they ▁were ▁unable ▁to ▁see ▁him
+D-82	-1.9141134023666382	▁when ▁they ▁saw ▁that ▁they ▁were ▁unable ▁to ▁see ▁him
+P-82	-3.2188 -1.5539 -1.4780 -2.2363 -1.5499 -1.3884 -3.6108 -0.2277 -1.4335 -3.4592 -0.8987
+S-42	▁ལག་པ་ ལ་ འགྲ མ་པ་ གཏ ད་ ན ས་སེམས་ ཁོང་དུ་ཆུ ད་ཅིང་ འདུག་ འདུག་ ནས་་
+T-42	▁head ▁in ▁hands ▁he ▁sat ▁and ▁sat ▁absorbed ▁in ▁thought
+H-42	-1.8648475408554077	▁with ▁his ▁mind ▁and ▁mind ▁and ▁mind ▁and ▁mind
+D-42	-1.8648475408554077	▁with ▁his ▁mind ▁and ▁mind ▁and ▁mind ▁and ▁mind
+P-42	-2.9686 -2.6160 -1.0391 -2.0088 -0.7564 -2.3139 -0.5981 -2.6223 -0.5307 -3.1946
+S-43	▁རྒྱལ་པོ ་པད་མ་ ཆེན་པོས་ ཕྲིན་ ཡི ག་བ ཀླ གས་ ནས་དེ་ མི ་བདེ་བ ར་གྱུར་ ཏེ་་
+T-43	▁king ▁maha p ad ma ▁was ▁un set tled ▁by ▁the ▁message ▁he ▁heard
+H-43	-1.6957086324691772	▁the ▁king ▁was ▁filled ▁with ▁joy ▁at ▁the ▁feet ▁of ▁a ▁great ▁crowd
+D-43	-1.6957086324691772	▁the ▁king ▁was ▁filled ▁with ▁joy ▁at ▁the ▁feet ▁of ▁a ▁great ▁crowd
+P-43	-2.7856 -2.1655 -1.6987 -2.4371 -0.2985 -0.3940 -2.2534 -1.0187 -2.1957 -0.3894 -1.2950 -2.3156 -2.9012 -1.5915
+S-91	▁བདག་ གི་བ ུ་བ ཙ ས་པ་ ན་ འཇིག་རྟེ ན་གས ལ་བ་ གསལ་བ་ ལྟར་ སྣང་བ ས་
+T-91	▁when ▁my ▁son ▁was ▁born ▁the ▁world ▁was ▁lit ▁as ▁if ▁by ▁the ▁light ▁of ▁lights
+H-91	-2.3902862071990967	▁in ▁this ▁way ▁you ▁will ▁be ▁a ▁protector ▁of ▁beings
+D-91	-2.3902862071990967	▁in ▁this ▁way ▁you ▁will ▁be ▁a ▁protector ▁of ▁beings
+P-91	-4.9916 -1.5332 -0.5767 -2.5722 -2.7756 -1.5552 -3.7812 -2.5466 -1.7143 -3.1317 -1.1150
+S-14	▁ ཁྱིམ ་དོན་ ཆེ་ ཆུང་ སྤངས་ ཏེ ་དང ་པོར་ རབ་ འབྱུང ་དཀའ་་
+T-14	▁at ▁first ▁to ▁renounce ▁a ▁householders ▁concerns ▁and ▁go ▁forth ▁is ▁hard
+H-14	-2.710878849029541	▁they ▁will ▁not ▁have ▁any ▁desires
+D-14	-2.710878849029541	▁they ▁will ▁not ▁have ▁any ▁desires
+P-14	-4.5378 -1.5283 -1.6577 -3.9364 -2.8217 -3.2631 -1.2311
+S-32	▁ར ེས་ འགའ་ ནི་ ཨ ང་ག འི་རྒྱལ་པོ ་དཔ ུང་དང་ མཐུ་ཆེ་བ་ ཡིན་ ལ་་
+T-32	▁at ▁times ▁the ▁king ▁of ▁ang a ▁and ▁his ▁armies ▁were ▁domin ant
+H-32	-1.6204066276550293	▁like ▁the ▁king ▁of ▁mountains
+D-32	-1.6204066276550293	▁like ▁the ▁king ▁of ▁mountains
+P-32	-4.3289 -2.1839 -1.1881 -0.8203 -0.4161 -0.7851
+S-69	▁གྲོང་ཁྱེར་ ཆེན་པོ་བ ཞི་པོ ་དག་ཏུ་ རྒྱལ་པོ་ཆེན་པོ་བ ཞི ་དག་ གི་བུ་ ཡང་བ ཙ ས་པར་གྱུར་ ཏེ་་
+T-69	▁sons ▁were ▁also ▁born ▁to ▁four ▁great ▁kings ▁in ▁four ▁great ▁city st ates
+H-69	-1.3639764785766602	▁the ▁four ▁great ▁kings ▁the ▁four ▁great ▁kings
+D-69	-1.3639764785766602	▁the ▁four ▁great ▁kings ▁the ▁four ▁great ▁kings
+P-69	-1.9502 -1.3936 -0.3306 -0.3218 -4.3570 -0.7947 -0.3458 -0.2810 -2.5012
+S-40	▁དེ་ནས་ད ུས་ གཞན་ ཞིག་ན་ ཨ ང་ག འི་རྒྱལ་པོ ་དཔ ུང་དང་ མཐུ་ ཆེ་བ ར་གྱུར་ནས་
+T-40	▁at ▁yet ▁another ▁time ▁when ▁the ▁king ▁of ▁ang a ▁and ▁his ▁armies ▁were ▁domin ant
+H-40	-1.678935170173645	▁at ▁that ▁time ▁there ▁was ▁a ▁king ▁named ▁drdha b ala
+D-40	-1.678935170173645	▁at ▁that ▁time ▁there ▁was ▁a ▁king ▁named ▁drdha b ala
+P-40	-3.5100 -0.6075 -0.5643 -2.0865 -1.1215 -0.6430 -0.5674 -0.6443 -5.1864 -1.3302 -0.2422 -3.6440
+S-48	▁ཨ ང་ག འི་ རྒྱལ་པོས་ རྒྱལ་པོ ་པད་མ་ ཆེན་པོ་ ལ་ཕ ོ་ ཉ ་བཏང་ སྟེ་
+T-48	▁the ▁king ▁of ▁ang a ▁sent ▁an ▁env oy ▁to ▁king ▁maha p ad ma ▁with ▁the ▁message
+H-48	-2.084716320037842	▁great ▁king ▁dhrt isen a
+D-48	-2.084716320037842	▁great ▁king ▁dhrt isen a
+P-48	-3.5978 -0.0777 -4.3729 -1.3091 -0.1293 -3.0215
+S-22	▁ གཞི་ རྣམས་ཀྱི་ སྤྱ ི་ སྡ ོམ་ ལ་ རབ་ འབྱུང་ གསོ་སྦྱོ ང་ག ཞི ་དང་ ནི་་
+T-22	▁the ▁chapt ers ▁on ▁monastic ▁discipline ▁includ es ▁chapt ers ▁on ▁going ▁forth ▁purification
+H-22	-2.1038529872894287	▁it ▁is ▁the ▁wish ▁of ▁the ▁sangha
+D-22	-2.1038529872894287	▁it ▁is ▁the ▁wish ▁of ▁the ▁sangha
+P-22	-3.5251 -1.3062 -2.0502 -4.3753 -1.0674 -0.8654 -2.9322 -0.7089
+S-51	▁དེ་ནས་ ཨ ང་ག འི་ རྒྱལ་པོས་ རྒྱལ་པོ ་པད་མ་ ཆེན་པོའི་ གླང་པོ་ཆེ ་པའི་ ཚོགས་ ཐམས་ཅད་ ཕྲ ོགས་ ཤིང་་
+T-51	▁the ▁king ▁of ▁ang a ▁capt ured ▁king ▁maha p ad mas ▁entire ▁elephant ▁cor ps
+H-51	-2.074665069580078	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁retinue ▁of ▁women
+D-51	-2.074665069580078	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁retinue ▁of ▁women
+P-51	-2.5758 -1.7519 -2.4155 -3.0395 -0.0908 -1.5529 -2.2392 -1.1402 -4.4457 -1.4950
+S-45	▁ཇི་ སྟེ་ སའི་ འོག་ཏུ་ འགྲོ་ ན་ནི་ མཆི ལ་པ ་དང ་དྲ ང་བ འི་ཚུལ་གྱི ས་དྲ ང་བ ར་བྱའོ་
+T-45	▁tun nel ▁beneath ▁the ▁earth ▁and ▁i ▁will ▁y ank ▁you ▁up ▁as ▁if ▁with ▁a ▁ho ok
+H-45	-1.8589178323745728	▁in ▁the ▁same ▁way ▁one ▁should ▁recite ▁the ▁mantra
+D-45	-1.8589178323745728	▁in ▁the ▁same ▁way ▁one ▁should ▁recite ▁the ▁mantra
+P-45	-4.3641 -2.2630 -0.7322 -0.0812 -2.7580 -0.2718 -3.8025 -1.5002 -0.8582 -1.9581
+S-34	▁ཡུལ་ མ་ག་དྷ ་དག་ ན་ཡང་ རྒྱལ་པོ ་པད་མ་ ཆེན་པོ་ ཞེས་བྱ་བ ས་ རྒྱལ་སྲིད་ འབྱོར་པ་ རྒྱས་པ ་བདེ་བ་ ལོ་ ལེགས་པ་
+T-34	▁mean w hi le ▁king ▁maha p ad ma ▁ruled ▁over ▁the ▁lands ▁of ▁magadha ▁under ▁his ▁rule ▁the ▁kingdom ▁pros p ered ▁and ▁th ri ved ▁cro ps ▁were ▁b ount i ful
+H-34	-1.7407011985778809	▁the ▁king ▁was ▁prosperous ▁and ▁happy ▁and ▁happy ▁to ▁the ▁royal ▁palace
+D-34	-1.7407011985778809	▁the ▁king ▁was ▁prosperous ▁and ▁happy ▁and ▁happy ▁to ▁the ▁royal ▁palace
+P-34	-2.5240 -1.8195 -1.3427 -1.8118 -1.2624 -1.0447 -1.7094 -1.3450 -3.6147 -2.1335 -1.7428 -0.3140 -1.9646
+S-78	▁ ཀ་ཤ མ་བ ི ར་ ནི་ རྒྱལ་པོ ་ད མག ་བརྒྱ ་པ འི་བུ་བ ཙ ས་སོ་་
+T-78	▁in ▁kausambi ▁the ▁son ▁of ▁king ▁sat an ika ▁was ▁born
+H-78	-1.8247978687286377	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁group ▁of ▁monks
+D-78	-1.8247978687286377	▁the ▁king ▁was ▁surrounded ▁by ▁a ▁group ▁of ▁monks
+P-78	-2.4063 -1.0277 -3.1694 -2.6978 -0.1964 -1.7828 -2.6680 -0.8899 -2.1170 -1.2928
+S-77	▁ འཕགས་ རྒྱལ ་དུ་ ནི་ རྒྱལ་པོ་ མུ་ ཁྱ ུད་ མཐའ་ཡས་ ཀྱི་བ ུ་བ ཙ ས་སོ་་
+T-77	▁in ▁u j jay ini ▁the ▁son ▁of ▁king ▁an ant ane m i ▁was ▁born
+H-77	-1.7116992473602295	▁in ▁the ▁future ▁there ▁appeared ▁a ▁king ▁named ▁king ▁of ▁mountains
+D-77	-1.7116992473602295	▁in ▁the ▁future ▁there ▁appeared ▁a ▁king ▁named ▁king ▁of ▁mountains
+P-77	-3.8417 -1.2366 -2.1132 -1.4046 -0.9767 -2.2716 -0.3298 -0.7174 -3.6384 -2.1967 -0.8311 -0.9827
+S-86	▁བདག་ གི་བ ུ་བ ཙ ས་པ་ ན་ འཇིག་རྟེན་ ཉི་མའི་ གཟུགས་ ཤ ར་བ་ ལྟར་ སྣང་ ཞིང་
+T-86	▁when ▁my ▁son ▁was ▁born ▁the ▁world ▁was ▁lit ▁as ▁if ▁by ▁the ▁gold ▁of ▁the ▁rising ▁sun
+H-86	-2.1137773990631104	▁in ▁the ▁same ▁way ▁the ▁sun ▁and ▁the ▁moon ▁and ▁the ▁sun
+D-86	-2.1137773990631104	▁in ▁the ▁same ▁way ▁the ▁sun ▁and ▁the ▁moon ▁and ▁the ▁sun
+P-86	-3.7595 -0.9833 -2.2139 -0.2677 -2.4004 -2.2218 -2.5732 -1.6735 -1.2024 -3.8472 -1.3472 -2.2403 -2.7487
+S-72	▁ གན ག་པར་ གྱུར་པ་ གང་དག་ཡིན་པ ་དེ་དག་ ཀྱང ་དེའི་ཚེ་ ན་ སྣང་བ་ རྒྱ་ ཆེན་པོས་ ཁྱབ ་པར་གྱུར་ནས་
+T-72	▁even ▁the ▁pit ch bl ack ▁darkness ▁of ▁dark ▁places ▁dark ▁from ▁never ▁knowing ▁the ▁light ▁of ▁the ▁sun ▁and ▁moon ▁was ▁filled ▁with ▁a ▁vast ▁light
+H-72	-1.6794159412384033	▁as ▁soon ▁as ▁the ▁great ▁trichiliocosm ▁was ▁filled ▁with ▁joy
+D-72	-1.6794159412384033	▁as ▁soon ▁as ▁the ▁great ▁trichiliocosm ▁was ▁filled ▁with ▁joy
+P-72	-4.6238 -0.8728 -0.3422 -1.2373 -1.7111 -2.8328 -2.5418 -1.7214 -0.2422 -1.1926 -1.1555
+S-67	▁ མཉན་ ཡོད ་དུ་ ནི་ རྒྱལ་པོ་ རྩི བས་ ཀྱིས་ འཕ ུར་ ཚང ས་བྱི ན་གྱི་བ ུ་བ ཙ ས་སོ་་
+T-67	▁in ▁sravasti ▁the ▁son ▁of ▁king ▁ara d a ▁brahmadatta ▁was ▁born
+H-67	-2.0643694400787354	▁king ▁prasenajit ▁heard ▁that ▁the ▁king ▁had ▁come ▁to ▁see ▁king ▁suddhodana
+D-67	-2.0643694400787354	▁king ▁prasenajit ▁heard ▁that ▁the ▁king ▁had ▁come ▁to ▁see ▁king ▁suddhodana
+P-67	-1.7298 -2.5781 -3.0240 -1.9243 -1.6198 -0.7489 -3.7749 -3.4828 -1.3335 -1.7115 -1.8982 -1.9041 -1.1069
+S-50	▁རྒྱལ་པོ ་པད་མ་ ཆེན་པོ་ཡང་ ཕ མ་པ་དང་ ་སྐ ྲ ག་པ་དང་ ་བཅོ མ་པ་དང་་ གཞན་ རྒྱལ་བ ་དང་་རྒྱ བ་ཀྱིས་ ཕྱོགས་པ ར་བྱས་ ཏེ་་
+T-50	▁defeated ▁and ▁frightened ▁destroyed ▁and ▁conquered ▁king ▁maha p ad ma ▁retreat ed
+H-50	-2.045382499694824	▁the ▁king ▁was ▁prosperous ▁and ▁happy ▁and ▁happy
+D-50	-2.045382499694824	▁the ▁king ▁was ▁prosperous ▁and ▁happy ▁and ▁happy
+P-50	-3.0086 -1.9010 -1.6463 -3.8246 -0.7716 -1.3444 -2.3931 -1.8193 -1.6996
+S-44	▁ཇི་ སྟེ་ རིའི་ རྩེ་ མོར་ འཛ ེག་ ན་ནི ་དེར་ ཡང་ ཁྱོད་ ཐར་པ་ མེད་དོ་ ཞེ ས་སྤྲ ིང་ ངོ་་་
+T-44	▁flee ▁to ▁the ▁mountain t op s ▁and ▁even ▁there ▁you ▁shall ▁find ▁no ▁escape
+H-44	-1.6495652198791504	▁if ▁you ▁ask ▁why ▁it ▁is ▁because ▁it ▁is ▁not ▁the ▁case ▁that ▁you ▁will ▁not ▁be ▁liberated
+D-44	-1.6495652198791504	▁if ▁you ▁ask ▁why ▁it ▁is ▁because ▁it ▁is ▁not ▁the ▁case ▁that ▁you ▁will ▁not ▁be ▁liberated
+P-44	-3.9956 -0.2761 -2.8388 -0.1384 -0.3140 -0.5148 -0.5291 -3.0376 -0.3017 -1.6610 -3.8817 -1.1829 -0.8927 -1.6406 -2.7495 -0.4844 -1.6686 -3.7337 -1.5003
+S-64	▁ཡ ུམ་ གྱི་ ལྷུམས་ སུ་ ཞུགས་པ ་དེའི་ཚེ་ ན་ ས་ ཆེན་པོ་ ཤིན་ཏུ་ གཡོ ས་པར་གྱུར་ ཅིང་ འཇིག་རྟེན་ འདི་
+T-64	▁he ▁entered ▁his ▁mothers ▁womb ▁as ▁the ▁earth ▁shook ▁and ▁this ▁world
+H-64	-1.9894253015518188	▁this ▁is ▁the ▁time ▁of ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁joy
+D-64	-1.9894253015518188	▁this ▁is ▁the ▁time ▁of ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁joy
+P-64	-4.1267 -3.1756 -1.7264 -3.1242 -0.3402 -1.6180 -3.0566 -1.8622 -1.4514 -2.2682 -0.5074 -1.6943 -0.9112
+S-49	▁ རྒྱལ་པོའི་ཁབ་ཏུ་ ཞུགས་ ནས་ས ྒ ོ་བ ཅ ད་དེ་ ར་བ ་དག་གི་ ཁ ར་ སྦྲ ེ ངས་ནས་ འདུག་གོ་་
+T-49	▁entering ▁rajagrha ▁he ▁cl osed ▁the ▁gates ▁and ▁sh ut ▁himself ▁up ▁within ▁the ▁walls ▁of ▁his ▁fort ress
+H-49	-1.2080116271972656	▁so ▁he ▁went ▁to ▁see ▁the ▁blessed ▁one ▁and ▁took ▁a ▁seat ▁at ▁one
+D-49	-1.2080116271972656	▁so ▁he ▁went ▁to ▁see ▁the ▁blessed ▁one ▁and ▁took ▁a ▁seat ▁at ▁one
+P-49	-4.1349 -0.6873 -1.2648 -0.6005 -1.5813 -0.6310 -2.1654 -0.0734 -0.6126 -1.4924 -1.6126 -0.2378 -1.1909 -0.2233 -1.6119
+S-60	▁ཨ ང་ག འི་ རྒྱལ་པོས་ དེ་ ལ་ལོ་ ཐ ང་དང ་དཔ ྱ་ ཕ བ ་སྟེ ་དེ་ཉིད ་དུ་བ ཞག་གོ་་
+T-60	▁where ▁the ▁king ▁of ▁ang a ▁imp osed ▁an ▁ann ual ▁t rib ute ▁and ▁t ax ▁upon ▁him
+H-60	-2.2275853157043457	▁the ▁king ▁thought
+D-60	-2.2275853157043457	▁the ▁king ▁thought
+P-60	-3.5129 -0.5195 -3.2982 -1.5797
+S-8	▁དེས་ རིགས་ མཉམ་པ་ ལས་ ཆུང་མ་བླངས་ ནས་དེ ་དེ་དང་ ལྷན་ཅིག་ རྩེ་བ ར་བྱེད ་དགའ་བ ར་བྱེད ་དགའ་ མགུར་ སྤྱོད ་པར་བྱེད་དོ་་
+T-8	▁took ▁a ▁wife ▁of ▁equal ▁caste ▁and ▁together ▁they ▁sp orted ▁made ▁love ▁and ▁indul ged ▁all ▁of ▁their ▁desires
+H-8	-0.3600594699382782	▁when ▁the ▁time ▁came ▁for ▁him ▁to ▁marry ▁he ▁took ▁a ▁wife ▁and ▁they ▁enjoyed ▁themselves ▁and ▁coupled
+D-8	-0.3600594699382782	▁when ▁the ▁time ▁came ▁for ▁him ▁to ▁marry ▁he ▁took ▁a ▁wife ▁and ▁they ▁enjoyed ▁themselves ▁and ▁coupled
+P-8	-2.0978 -0.2697 -0.1291 -0.3983 -0.0097 -0.2624 -0.0672 -0.1173 -0.3110 -0.0579 -0.2241 -0.1737 -0.7778 -1.0209 -0.2263 -0.1145 -0.0876 -0.0690 -0.4269
+S-62	▁ གཟིགས་པ་ ལྔ ་པོ་དག་ལ་ གཟིགས་ ནས་ འདོད་པ་ ན་སྤྱོད་པའི་ ལྷ ་དྲུག ་པོ་དག་ ལ་ལན་གས ུམ ་བསྒ ོ་བ་ མཛད་དེ་
+T-62	▁he ▁saw ▁five ▁sights ▁and ▁th ri ce ▁gave ▁not ice ▁to ▁the ▁six ▁classes ▁of ▁gods ▁who ▁revel ▁in ▁the ▁desire ▁realm
+H-62	-1.4071494340896606	▁at ▁that ▁moment ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁thought
+D-62	-1.4071494340896606	▁at ▁that ▁moment ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁thought
+P-62	-4.2950 -0.6171 -0.6459 -1.9095 -1.1508 -1.5030 -0.1665 -2.7002 -0.1422 -0.4594 -0.3774 -3.9574 -0.3686
+S-52	▁ རྟ ་པའི་ ཚོགས་ དང་་ ཤིང་རྟ ་པའི་ ཚོགས་ དང་ ་དཔ ུང་བ ུ་ ཆུང་ གི་ ཚོགས་ ཐམས་ཅད་ཀྱང་ ཕྲ ོག ས་སོ་
+T-52	▁and ▁proceeded ▁to ▁capt ure ▁the ▁whole ▁of ▁his ▁c av al ry ▁charioteer ▁cor ps ▁and ▁inf ant ry
+H-52	-2.133903741836548	▁many ▁hundreds ▁of ▁thousands ▁of ▁sakyas
+D-52	-2.133903741836548	▁many ▁hundreds ▁of ▁thousands ▁of ▁sakyas
+P-52	-4.3089 -1.2620 -0.1802 -1.9792 -0.1903 -4.7753 -2.2414
+S-80	▁འཇིག་རྟེན་ ཐམས་ཅད་ ས ུམ་བ ཅུ་རྩ་ གསུམ་པའི་ ལྷ་རྣམས་ཀྱི་ ཁ་དོག་ གི་ མཐ ུ་བ ས་ ལྷག་པའི་ སྣང་བ་ རྒྱ་ ཆེན་པོས་ ཁྱབ ་པར་གྱུར་ ཅིང་
+T-80	▁the ▁entire ▁universe ▁was ▁bathed ▁in ▁a ▁vast ▁light ▁more ▁luminous ▁than ▁the ▁gl ow ▁of ▁the ▁gods ▁of ▁the ▁thirtythree
+H-80	-1.886214017868042	▁the ▁light ▁of ▁the ▁sun ▁and ▁the ▁light ▁of ▁the ▁sun
+D-80	-1.886214017868042	▁the ▁light ▁of ▁the ▁sun ▁and ▁the ▁light ▁of ▁the ▁sun
+P-80	-2.1950 -1.5058 -2.6832 -0.7965 -0.7061 -2.7435 -1.7859 -2.2728 -2.8219 -0.7068 -1.3080 -3.1091
+S-65	▁ ཐམས་ཅད་ཀྱང་ ས ུམ་བ ཅུ་རྩ་ གསུམ་པའི་ ལྷ་རྣམས་ཀྱི་ ཁ་དོག་ གི་ མཐ ུ་བ ས་ ལྷག་པའི་ སྣང་བ་ རྒྱ་ ཆེན་པོས་ ཁྱབ ་པར་གྱུར་ ཅིང་་
+T-65	▁and ▁all ▁others ▁too ▁were ▁bathed ▁in ▁a ▁vast ▁light ▁more ▁luminous ▁than ▁the ▁gl ow ▁of ▁the ▁gods ▁of ▁the ▁thirtythree
+H-65	-1.9526854753494263	▁the ▁light ▁of ▁the ▁sun ▁and ▁the ▁light ▁of ▁the ▁sun
+D-65	-1.9526854753494263	▁the ▁light ▁of ▁the ▁sun ▁and ▁the ▁light ▁of ▁the ▁sun
+P-65	-2.3643 -1.6707 -2.8522 -0.9239 -0.8702 -2.8405 -1.9279 -2.3075 -2.8043 -0.6868 -1.5430 -2.6410
+S-95	▁བདག་ གི་བ ུ་བ ཙ ས་པ་ ན་ འཇིག་རྟེན་ ཉི་མ་ ཤ ར་བ་ ལྟར་ སྣང་བར་ གྱུར་པས་ གཞོན་ནུ་ འདིའི་མིང་ ཤ ར་བར་ གདགས་སོ་ སྙམ་ནས་
+T-95	▁when ▁my ▁son ▁was ▁born ▁the ▁world ▁was ▁lit ▁as ▁if ▁by ▁the ▁rising ▁sun ▁so ▁i ▁shall ▁name ▁this ▁prince ▁ud ayana ▁rising
+H-95	-1.0149763822555542	▁what ▁name ▁should ▁we ▁give ▁this ▁child ▁and ▁they ▁named ▁him ▁saying
+D-95	-1.0149763822555542	▁what ▁name ▁should ▁we ▁give ▁this ▁child ▁and ▁they ▁named ▁him ▁saying
+P-95	-3.4269 -0.1064 -1.3406 -0.5425 -0.6949 -0.3763 -0.2594 -1.1670 -2.6876 -0.2500 -0.2960 -0.0906 -1.9566
+S-98	▁བདག་ གི་བ ུ་བ ཙ ས་པ་ ན་ འཇིག་རྟེན་ རབ་ཏུ་ སྣང་བ ས་སྣ ང་བར་ གྱུར་པས་ གཞོན་ནུ་ འདིའི་མིང་ རབ་སྣ ང་ ཞེས་བྱ་བར་ གདགས་སོ་ སྙམ་ནས་
+T-98	▁when ▁my ▁son ▁was ▁born ▁the ▁world ▁was ▁lit ▁by ▁a ▁brilliant ▁light ▁so ▁i ▁shall ▁name ▁this ▁prince ▁pra d yot a ▁brilliant ▁light
+H-98	-1.9630550146102905	▁at ▁the ▁same ▁moment ▁of ▁this ▁saha mpati ▁brahma ▁there ▁will ▁be ▁no ▁cessation ▁of ▁name ▁and ▁they ▁named ▁him ▁saying
+D-98	-1.9630550146102905	▁at ▁the ▁same ▁moment ▁of ▁this ▁saha mpati ▁brahma ▁there ▁will ▁be ▁no ▁cessation ▁of ▁name ▁and ▁they ▁named ▁him ▁saying
+P-98	-4.0403 -1.7458 -0.7327 -1.3558 -2.0483 -0.8406 -3.9885 -1.3695 -2.5046 -2.7401 -2.1319 -0.4108 -0.8953 -4.1291 -1.8447 -2.2417 -0.8513 -3.4874 -2.3522 -1.0468 -1.2767 -1.1530
+S-83	▁དེ་དག་གིས་ ཀྱང་ འོད ་དེ ས་སེམས་ཅ ན་གཅིག་ གིས་ གཅིག་ མཐོང་ནས་ ཤེས་ ལྡ ན་དག་ སེམས་ཅ ན་གཞ ན་ཡང་ འདིར་ སྐྱེས་སོ་་
+T-83	▁yet ▁by ▁this ▁light ▁these ▁beings ▁saw ▁one ▁another ▁and ▁exclaimed ▁you ▁there ▁there ▁are ▁others ▁who ▁have ▁been ▁born ▁here
+H-83	-2.1703314781188965	▁when ▁they ▁saw ▁that ▁they ▁were ▁reborn ▁in ▁the ▁hells
+D-83	-2.1703314781188965	▁when ▁they ▁saw ▁that ▁they ▁were ▁reborn ▁in ▁the ▁hells
+P-83	-3.5727 -1.1333 -1.9206 -2.2526 -2.0612 -1.2345 -3.6586 -2.0088 -1.6739 -2.3670 -1.9906
+S-0	▁རྒྱལ་པོ་ ཞེས་བྱ་བ ས་ རྒྱལ་སྲིད་ འབྱོར་པ་ རྒྱས་པ ་བདེ་བ་ ལོ་ ལེགས་པ ་སྐྱ ེ་བོ ་དང་མི་ མང་པོས་ གང་བ ་བྱེད ་དུ་བཅུག་ གོ་
+T-0	▁under ▁his ▁rule ▁the ▁kingdom ▁pros p ered ▁and ▁th ri ved ▁cro ps ▁were ▁b ount i ful ▁and ▁the ▁land ▁te e med ▁with ▁animals ▁and ▁people
+H-0	-1.325232982635498	▁at ▁that ▁time ▁there ▁appeared ▁in ▁the ▁city ▁of ▁varanasi
+D-0	-1.325232982635498	▁at ▁that ▁time ▁there ▁appeared ▁in ▁the ▁city ▁of ▁varanasi
+P-0	-2.8147 -0.3100 -0.0455 -1.4391 -3.1960 -1.4517 -1.1209 -0.7904 -0.7718 -0.6345 -2.0029
+S-46	▁གལ་ཏེ་ ཕྱིར་མི་ འབྱུང་ ན་ ཇི་ སྟེ་ སྟེང་གི་ ནམ་མཁའ་ལ་ འགྲོ་ ན་ནི་ མད འ་བ རྒྱུ ད་པས་ ཁྱོད་ ལྟུང་བ ར་བྱའོ་
+T-46	▁if ▁you ▁do ▁not ▁sur re nd er ▁and ▁instead ▁take ▁f light ▁into ▁the ▁sky ▁above ▁i ▁will ▁fell ▁you ▁with ▁a ▁v o ll e y ▁of ▁arrows
+H-46	-1.7562865018844604	▁in ▁the ▁future ▁you ▁will ▁not ▁come ▁to ▁an ▁end ▁to ▁the ▁sky
+D-46	-1.7562865018844604	▁in ▁the ▁future ▁you ▁will ▁not ▁come ▁to ▁an ▁end ▁to ▁the ▁sky
+P-46	-5.0367 -1.7639 -1.1719 -1.9748 -0.9315 -0.6640 -2.8932 -1.3044 -1.9277 -0.0701 -1.6128 -1.4203 -1.6435 -2.1732
+S-3	▁མ་ མ་བ རྒྱད ་པོ ་པ ང་ ན་ འཚོ་བའི་ མ་མ་ གཉིས་དང་ ན ུ་མ་ སྣ ུན་པའི་ མ་མ་ གཉི ས་དང ་དྲི་མ་ འ ཕྱི ་བའི་ མ་མ་ གཉིས་དང་ རྩེ་ འགྲོགས་ ཀྱི་ མ་མ་ གཉིས་ལ་ རྗེས་སུ་ གཏ ད་དོ་ ་དེ་ མ་ མ་བ རྒྱད ་པོ ་དག་གིས་ འོ་མ་དང་ ཞོ་དང་མར་དང་ ཞུན་མར་དང་ མར་གྱི་ སྙིང་ ཁ ུ་དང་ གཞན་ཡང་ ཡོ་བྱད་ ཀྱི ་བྱེ་བྲག་ གཙོ་བོ་ གཙ ོ་བ ོ་དག་ གིས་བ སྲི ངས་པ ར་བྱེད་ སྐྱེད ་པར་བྱེད་ཅིང་ རྫ ིང་ ན་གནས་པའི་ པ དྨ ་བཞིན་དུ་ སྐྱེད ་པར་བྱེད་དོ་
+T-3	▁was ▁entrusted ▁to ▁eight ▁nur se ma id s ▁two ▁to ▁c udd le ▁him ▁two ▁to ▁bre ast fe ed ▁him ▁two ▁to ▁change ▁his ▁di ap ers ▁and ▁two ▁to ▁play ▁with ▁him ▁fort ified ▁with ▁milk ▁cur d ▁butter ▁ghee ▁cre am ▁and ▁other ▁nour ishing ▁foods ▁he ▁grew ▁quickly ▁shoot ing ▁up ▁like ▁a ▁lotus ▁in ▁a ▁pond
+H-3	-2.347604513168335	▁they ▁should ▁not ▁be ▁attentive ▁to ▁the ▁notion ▁that ▁they ▁are ▁not ▁attached ▁to ▁them ▁and ▁they ▁will ▁not ▁be ▁attached ▁to ▁them
+D-3	-2.347604513168335	▁they ▁should ▁not ▁be ▁attentive ▁to ▁the ▁notion ▁that ▁they ▁are ▁not ▁attached ▁to ▁them ▁and ▁they ▁will ▁not ▁be ▁attached ▁to ▁them
+P-3	-3.5517 -2.0572 -2.2813 -2.1155 -3.3688 -0.3433 -2.4224 -4.0379 -0.4804 -3.2524 -1.0842 -1.4716 -4.7976 -0.4189 -4.2179 -1.7226 -2.4130 -2.0547 -1.1090 -2.3274 -5.3024 -0.4493 -3.1668 -1.8960
+S-1	▁དེས་ དཔ ུང་གི་ཚོགས་ཡན་ལག ་བཞི་པ ་ གླང་པོ་ཆེ ་པའི་ ཚོགས་ དང་ རྟ ་པའི་ ཚོགས་ དང་ ཤིང་རྟ ་པའི་ ཚོགས་ དང ་དཔ ུང་བ ུ་ ཆུང་ གི་ ཚོགས་ གོ་བསྐ ོན་ཏེ་ ཡུལ་ མ་ག ་ད ཧ འི་ རྒྱལ་པོའི་ ཁ ་བ་ མ་གཏོགས་པ ་བཅོམ་ ནས་ ཕྱིར་ལྡ ོག ་པར་བྱེད་དོ་
+T-1	▁he ▁called ▁up ▁the ▁four ▁branches ▁of ▁his ▁ar med ▁forces the ▁elephant ▁cor ps ▁the ▁c av al ry ▁the ▁charioteer ▁cor ps ▁and ▁the ▁inf ant ry and ▁laid ▁waste ▁to ▁all ▁of ▁magadha ▁save ▁rajagrha ▁before ▁return ing
+H-1	-1.42385995388031	▁the ▁four ▁divisions ▁of ▁his ▁army ▁the ▁four ▁divisions ▁of ▁his ▁army ▁the ▁four ▁divisions ▁of ▁his ▁army ▁and ▁the ▁four ▁divisions ▁of ▁his ▁army
+D-1	-1.42385995388031	▁the ▁four ▁divisions ▁of ▁his ▁army ▁the ▁four ▁divisions ▁of ▁his ▁army ▁the ▁four ▁divisions ▁of ▁his ▁army ▁and ▁the ▁four ▁divisions ▁of ▁his ▁army
+P-1	-2.1397 -2.5990 -0.5277 -0.9582 -1.6124 -1.0359 -1.6713 -2.2954 -0.2930 -0.8666 -1.9908 -0.8404 -1.9316 -2.3987 -0.2055 -0.6536 -1.8243 -0.7846 -3.7623 -1.3372 -2.3743 -0.1499 -0.4728 -1.6880 -0.8961 -1.7112
+S-39	▁གླང་པོ་ ཆེ ་པའི་ ཚོགས་ དང་་ རྟ ་པའི་ ཚོགས་ དང་་ ཤིང་རྟ ་པའི་ ཚོགས་ དང་ ་དཔ ུང་བ ུ་ ཆུང་ གི་ ཚོགས་ གོ་བསྐ ོན་ཏེ་ ཡུལ་ ཨ ང་ ག་ ཙམ་པ་ མ་གཏོགས་པ ་བཅོམ་ ནས་ ཕྱིར་ལྡ ོག ་པར་བྱེད་དོ་་
+T-39	▁the ▁elephant ▁cor ps ▁the ▁c av al ry ▁the ▁charioteer ▁cor ps ▁and ▁the ▁inf ant ry and ▁laid ▁waste ▁to ▁all ▁of ▁ang a ▁save ▁c am pa ▁before ▁return ing
+H-39	-2.023712635040283	▁some ▁were ▁made ▁of ▁the ▁seven ▁precious ▁substances ▁and ▁some ▁were ▁made ▁of ▁the ▁seven ▁precious ▁substances
+D-39	-2.023712635040283	▁some ▁were ▁made ▁of ▁the ▁seven ▁precious ▁substances ▁and ▁some ▁were ▁made ▁of ▁the ▁seven ▁precious ▁substances
+P-39	-1.6556 -2.9916 -1.5170 -0.3780 -4.1417 -0.5761 -3.5331 -0.8315 -2.5343 -3.1355 -1.8374 -1.8567 -0.4162 -4.6672 -0.7977 -2.7570 -0.7482 -2.0521
+S-30	▁གླང་པོ་ ཆེ ་པའི་ ཚོགས་ དང་་ རྟ ་པའི་ ཚོགས་ དང་་ ཤིང་རྟ ་པའི་ ཚོགས་ དང་ ་དཔ ུང་བ ུ་ ཆུང་ གི་ ཚོགས་ གོ་བསྐ ོན་ཏེ་ ཡུལ་ མ་ག ་དྷ་ རྒྱལ་པོའི་ཁབ་ མ་གཏོགས་པ ་བཅོམ་ ནས་ ཕྱིར་ལྡ ོག ་པར་བྱེད་དོ་
+T-30	▁the ▁elephant ▁cor ps ▁the ▁c av al ry ▁the ▁charioteer ▁cor ps ▁and ▁the ▁inf ant ry and ▁laid ▁waste ▁to ▁all ▁of ▁magadha ▁save ▁rajagrha ▁before ▁return ing
+H-30	-1.63711416721344	▁at ▁that ▁time ▁in ▁the ▁city ▁of ▁rajagrha ▁there ▁was ▁a ▁certain ▁group ▁of ▁five ▁hundred ▁lay ▁vow ▁holders ▁who ▁were ▁surrounded ▁by ▁the ▁four ▁divisions ▁of ▁his ▁army
+D-30	-1.63711416721344	▁at ▁that ▁time ▁in ▁the ▁city ▁of ▁rajagrha ▁there ▁was ▁a ▁certain ▁group ▁of ▁five ▁hundred ▁lay ▁vow ▁holders ▁who ▁were ▁surrounded ▁by ▁the ▁four ▁divisions ▁of ▁his ▁army
+P-30	-2.7398 -0.3846 -0.1185 -3.6192 -1.1400 -1.2396 -0.6599 -2.3557 -0.9310 -1.1318 -0.6782 -1.1917 -3.7659 -0.7233 -1.2454 -0.1343 -4.2360 -0.0886 -0.8873 -2.9870 -1.1710 -4.4465 -0.1138 -2.9061 -2.4453 -1.1787 -0.2513 -1.2915 -1.1876 -3.8638
+S-7	▁ ཡུལ ་དང་ སྲོག་ ལ་ གནོད་ གྱུར་ན་ ་སྐྱེ ས་བ ུས་ ཀུན་ཏུ་ སྲོག ་བསྲ ུང ་བྱ་ ་བློ་ ཡིས་ གཉིས་ ཀ ་དཔྱ ད ་བྱས་ ན་་ ཡུལ་ ནི་ ཡང་ རྙེད་ སྲོག་ རྣམས་ མིན་
+T-7	▁when ▁land ▁and ▁life ▁are ▁threat ened ▁seek ▁always ▁to ▁protect ▁life ▁when ▁the ▁wise ▁look ▁at ▁both ▁they ▁see ▁land ▁but ▁not ▁life ▁can ▁be ▁found ▁again
+H-7	-2.0473883152008057	▁they ▁will ▁not ▁be ▁reborn ▁in ▁the ▁forest ▁and ▁will ▁not ▁be ▁reborn ▁in ▁the ▁forest
+D-7	-2.0473883152008057	▁they ▁will ▁not ▁be ▁reborn ▁in ▁the ▁forest ▁and ▁will ▁not ▁be ▁reborn ▁in ▁the ▁forest
+P-7	-3.3152 -1.5068 -0.6944 -2.3889 -3.9463 -1.5301 -2.0619 -1.6886 -2.1306 -2.2627 -0.5674 -1.8006 -3.7358 -2.1706 -1.9691 -1.9467 -1.0899
+S-54	▁རྒྱལ་པོ ་པད་མ་ ཆེན་པོས་ ཀྱང་ ཐོས་ནས་ དཔ ུང་གི་ཚོགས་ཡན་ལག ་བཞི་པ ་ གླང་པོ་ཆེ ་པའི་ ཚོགས་ དང་་ རྟ ་པའི་ ཚོགས་ དང་་ ཤིང་རྟ ་པའི་ ཚོགས་ དང་ ་དཔ ུང་བ ུ་ ཆུང་ གི་ ཚོགས་ གོ་བསྐ ོན་ཏེ་
+T-54	▁when ▁king ▁maha p ad ma ▁heard ▁this ▁he ▁too ▁called ▁up ▁the ▁four ▁branches ▁of ▁his ▁ar med ▁forces the ▁elephant ▁cor ps ▁the ▁c av al ry ▁the ▁charioteer ▁cor ps ▁and ▁the ▁inf ant ry
+H-54	-2.161651372909546	▁as ▁soon ▁as ▁the ▁king ▁heard ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁four ▁divisions ▁of ▁his ▁army ▁and ▁the ▁royal ▁palace
+D-54	-2.161651372909546	▁as ▁soon ▁as ▁the ▁king ▁heard ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁young ▁man ▁the ▁four ▁divisions ▁of ▁his ▁army ▁and ▁the ▁royal ▁palace
+P-54	-4.4161 -1.2670 -0.1312 -1.2902 -1.0901 -0.8274 -2.3213 -2.5770 -2.2771 -2.2481 -2.6610 -2.2103 -2.3636 -2.7480 -2.1531 -2.3185 -2.9017 -2.1641 -2.2869 -3.0572 -2.2085 -2.2119 -3.1638 -2.1978 -2.1540 -4.2270 -1.4739 -0.4189 -0.7944 -2.5847 -3.7760 -1.2340 -2.2015 -1.0557 -2.6456
+S-73	▁སེམས་ཅ ན་གང་དག ་དེར་ སྐྱེས་པ ་དག་གིས་ རང་གི་ ལག་པ་བ རྐྱ ང་བ་ ཡང་མི་ མཐོང་བ ་དེ་དག་གིས་ ཀྱང་ འོད ་དེ ས་སེམས་ཅ ན་གཅིག་ གིས་ གཅིག་ མཐོང་ནས་ ཤེས་ ལྡ ན་དག་ སེམས་ཅ ན་གཞ ན་ཡང་ འདིར་ སྐྱེས་སོ་
+T-73	▁beings ▁born ▁in ▁those ▁places ▁had ▁never ▁even ▁seen ▁so ▁far ▁as ▁their ▁out st ret ched ▁hands ▁yet ▁by ▁this ▁light ▁these ▁beings ▁saw ▁one ▁another ▁and ▁exclaimed ▁you ▁there ▁there ▁are ▁others ▁who ▁have ▁been ▁born ▁here
+H-73	-2.0169410705566406	▁when ▁they ▁saw ▁that ▁they ▁were ▁unable ▁to ▁hear ▁that ▁they ▁were ▁reborn ▁in ▁the ▁hells
+D-73	-2.0169410705566406	▁when ▁they ▁saw ▁that ▁they ▁were ▁unable ▁to ▁hear ▁that ▁they ▁were ▁reborn ▁in ▁the ▁hells
+P-73	-3.2001 -1.0726 -2.6358 -2.4806 -2.1215 -0.9827 -3.8001 -0.2635 -1.0996 -3.9390 -1.6994 -1.0928 -3.4950 -1.7395 -1.5434 -1.4827 -1.6399
+S-71	▁འཇིག་རྟེན་གྱི་ འཇིག་རྟེ ན་གྱི ་བར་ གང་ན་ ཉི་མ་དང་ ཟླ་བ་ འདི་ལྟར་ རྫུ་འཕྲུལ་ ཆེ་བ་ འདི་ལྟར་ མཐུ་ཆེ་བ་ འདི་ གཉིས་ཀྱི་ འོད ་དག་ ཉམས་སུ་ མི་ མྱོ ང་བའི་ མུན་པ་ མུ ན་གན ག་ མུན་པ ར་བྱེད ་པས་
+T-71	▁so ▁great ▁was ▁this ▁miraculous ▁manifestation ▁it ▁was ▁as ▁if ▁the ▁sun ▁and ▁moon ▁shone ▁in ▁the ▁g ulf ▁between ▁worlds ▁so ▁great ▁was ▁its ▁strength ▁that ▁darkness ▁everywhere
+H-71	-1.6799509525299072	▁they ▁will ▁be ▁reborn ▁in ▁the ▁realm ▁of ▁the ▁lord ▁of ▁death ▁and ▁the ▁lord ▁of ▁death
+D-71	-1.6799509525299072	▁they ▁will ▁be ▁reborn ▁in ▁the ▁realm ▁of ▁the ▁lord ▁of ▁death ▁and ▁the ▁lord ▁of ▁death
+P-71	-4.0720 -2.2686 -1.8113 -3.7116 -0.9404 -0.6965 -2.9648 -0.1820 -1.6276 -0.7361 -0.5532 -0.5462 -1.7585 -2.1560 -3.9195 -0.3943 -0.4843 -1.4163
+S-4	▁རྒྱལ་པོ་ རྒྱལ་རིག ས་སྤྱི ་བ ོར ་དབ ང་བསྐུར་བ ་ལ ྗ ོངས་ ཀྱི་དབང་ཕྱུག་ མཐུ ་དང་བ རྩོན་འགྲུས་ ཐོབ་པ་ ས་ ཆེན་པོ འི་དཀྱིལ་འཁོར་ མངོན་པར་ རྒྱས་པ ར་བྱས་ཏེ་ གནས་པ་ རྣམས་ཀྱི་བ ཟ ོའི་ གནས་དང་ ལས་ཀྱི་ གནས་ ཐ་དད་པར་ གྱུར་པ་ གང་དག་ ཡིན་པ་ འདི་ལྟ་སྟེ་ གླང་པོ་ཆེ འི་ ག ཉ ར་ ཞ ོན་པ་དང་ རྟ་ ལ་ཞ ོན་པ་དང་ ཤིང་རྟའི་ ཐབས་དང་ རལ་གྲི འི་ ཐབས་དང་ འཕ ོང ་དང་ ཕྱིར་བ སྣ ུར་བ ་དང་ མདུན་དུ ་བསྣ ུར་བ ་དང་ ལྕགས་ཀྱ ུ ས་སྒྱ ུར་ ཐབས་དང་ ཞ གས་པ་ གད བ་པ་དང་ མདའ་བོ་ ཆེ་ འཕེ ན་ ཐབས་དང་ འཛིན་ སྟ ངས་ དང་ ག ོམ་ སྟ ངས་ དང་ ཐ ོར་ ཚུགས་ དང་ གཅ ད་པ ་དང ་དྲ ལ་བ ་དང ་དབ ུག་པ་དང་ གནས་ ལྔ ་པོ་ འདི་ལྟ་སྟེ་ རྒྱང་ ནས་ ཕ ོག་པ་དང་ སྒྲ་ གྲ ག་པར་ ཕ ོག་པ་དང་ གན ད་དུ་ ཕ ོག་པ་དང་ མི་ འཆ ོར་བ ར་ ཕ ོག་པ་དང་ ཚ བས་ ཆེ་བ ་དེ་དག་ལ་ཡང་ ཞུགས་ ཤིང ་བྱ ང་བ ར་གྱུར་ཏོ་
+T-4	▁he ▁trained ▁in ▁and ▁mastered ▁those ▁arts ▁and ▁skills ▁needed ▁to ▁be ▁crown ed ▁and ▁anointed ▁a ▁ksatri ya ▁king ▁to ▁attain ▁the ▁might ▁and ▁dedication ▁of ▁a ▁field ▁mar sh al ▁and ▁to ▁conquer ▁and ▁occ up y ▁the ▁world ▁ri ding ▁on ▁the ▁neck ▁of ▁an ▁elephant ▁ri ding ▁horse b ack ▁chariot e ering ▁swords m ans hip ▁archery ▁adv an cing ▁y ield ing ▁wield ing ▁a ▁ho ok ▁throw ing ▁a ▁l asso ▁casting ▁a ▁spear ▁and ▁how ▁to ▁hold ▁a ▁weapon ▁mar ch ▁t ie ▁a ▁top k not ▁sl ash ▁quar ter ▁p ierce ▁and ▁strike ▁in ▁five ▁ways st ri king ▁from ▁a ▁distance ▁stri king ▁a ▁target ▁using ▁ac ous t ic ▁location ▁stri king ▁a ▁fat al ▁bl ow ▁stri king ▁without ▁hesitation ▁and ▁stri king ▁force fully
+H-4	-0.8414132595062256	▁some ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁five ▁superknowledges
+D-4	-0.8414132595062256	▁some ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁peak ▁or ▁generated ▁the ▁five ▁superknowledges
+P-4	-4.0777 -2.0095 -0.2831 -0.4755 -1.8658 -0.8719 -0.4978 -1.4299 -0.7094 -0.5602 -0.8255 -1.4150 -0.4371 -0.4442 -0.6256 -1.1412 -0.4637 -0.3852 -0.6510 -1.1061 -0.3688 -0.3515 -0.6577 -1.0908 -0.3367 -0.3399 -0.5626 -1.0540 -0.3443 -0.3290 -0.5540 -1.1055 -0.4461 -0.3302 -0.5602 -1.1958 -0.2943 -0.3703 -0.6505 -1.3023 -0.3284 -0.3804 -0.6129 -1.3694 -0.3227 -0.3970 -0.6579 -1.4345 -0.3811 -0.3942 -0.6945 -1.4964 -0.3890 -0.3999 -0.6876 -1.5589 -0.4843 -0.4088 -0.7204 -1.6136 -0.4460 -0.4095 -0.7407 -1.7023 -0.4386 -0.4128 -0.8560 -2.8803 -0.8421 -2.9189
+S-9	▁ ཀླ ོག་པའི་ ཕ་རོལ་ཏུ་ ས ོན་ ཅིང་ ་དེའི་ཚེ་ ན་བ ྲམ་ཟེའི་ སྤྱོད་ ཚུལ ་དང་་སྤ ྱོད ་པ་དང་་ གཙང་ སྦྲ ་དང་་ ཀུན་དུ་ སྤྱོད་པ་དང་་ ཐལ་བ ་བླ ང་བ ་དང་་བྱ ་ མ་བ ུམ་བ ླ ང་བ་དང་་ ས་བ ླ ང་བ་དང་་ ལག་ སྟ ངས་ དང་་ ཐ ོར་ ཚུགས་ དང་ ་རབ ་བསྔ ག ས་བྱ ་བ་དང་་ ཀྱེ་ ཞེས་བྱ་བ་དང་་ ངེ ས་བ རྗ ོད་ཀྱི་ རིག་བྱེད ་དང་་ མཆོད་སྦྱིན་གྱི་ རིག་བྱེད ་དང་་སྙ ན་ ཚིག་གི་ རིག་བྱེད ་དང་་སྲི ད་ སྲ ུང་གི་ རིག་བྱེད ་དང་་བ ྲམ་ཟེའི་ ལ ས་དྲ ུག ་པོ་ མཆོད་སྦྱིན་བྱ ེད་པ་དང་་ མཆོད་སྦྱིན་བྱ ེད་དུ་ འཇུག་པ་དང་་ ཀློག་པ་དང་་ ཀློག་ ཏུ་ འཇུག་པ་དང་ ་སྦྱི ན་པ་དང་་ ལེ ན་པ་ལ་ མཁས་པ འི་བ ྲམ་ཟེ་ རིག་བྱེད ་དང་་ རིག ་བྱེད་ཀྱི་ ཡན་ལག་ གི་ ཕ་རོལ་ཏུ་ ས ོན་པ་ མེ་ ལྟ་བུའི་ ཤེས་པས་ རང་གི་ སྨྲ་བ་ གསལ་བ ར་བྱེད་པ་ གཞན་གྱི་ སྨྲ་བ་ ཚར་ གཅོད ་པར་བྱེད་ ནུ ས་པར་གྱུར་ཏོ་་
+T-9	▁once ▁he ▁had ▁mastered ▁letters ▁he ▁was ▁instructed ▁in ▁the ▁ways ▁of ▁brahmins ▁their ▁conduct ▁ritual ▁purity ▁and ▁observ ances ▁the ▁hand ling ▁of ▁ashes ▁the ▁hand ling ▁of ▁ritual ▁v ases ▁and ▁the ▁hand ling ▁of ▁s ites ▁hand ▁gest ures ▁t urb ans ▁offering ▁praise ▁and ▁sal ut ations ▁the ▁r g ved a ▁the ▁y aj ur ved a ▁the ▁sam av ed a ▁and ▁the ▁ath ar v av ed a ▁and ▁a ▁brahmins ▁six ▁dut ies m aking ▁ritual ▁sacrif ices ▁off ici ating ▁over ▁ritual ▁sacrif ices ▁stud ying ▁teaching ▁giving ▁and ▁receiving ▁he ▁mastered ▁and ▁became ▁learned ▁in ▁the ▁ved as ▁and ▁all ▁branches ▁of ▁v edic ▁knowledge ▁and ▁with ▁his ▁blazing ▁intelligence ▁he ▁could ▁illuminate ▁his ▁own ▁ass ert ions ▁and ▁vanquish ▁those ▁of ▁others
+H-9	-1.0782232284545898	▁he ▁correctly ▁understands ▁the ▁knowledge ▁of ▁the ▁origin ▁as ▁related ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁knowledge ▁of ▁the ▁transcendent ▁perfection ▁of ▁wisdom ▁and ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁cessation ▁as ▁related ▁to ▁knowledge ▁of ▁the ▁transcendent ▁perfection ▁of ▁wisdom
+D-9	-1.0782232284545898	▁he ▁correctly ▁understands ▁the ▁knowledge ▁of ▁the ▁origin ▁as ▁related ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁knowledge ▁of ▁the ▁transcendent ▁perfection ▁of ▁wisdom ▁and ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁knowledge ▁of ▁the ▁path ▁that ▁leads ▁to ▁cessation ▁as ▁related ▁to ▁knowledge ▁of ▁the ▁transcendent ▁perfection ▁of ▁wisdom
+P-9	-3.0448 -0.8276 -0.4038 -2.7686 -1.5177 -0.1733 -0.6327 -1.8570 -0.6480 -0.4824 -0.0372 -0.0447 -0.1555 -0.5212 -3.3098 -2.1374 -1.2976 -0.1024 -0.1034 -0.1935 -0.5676 -3.7975 -0.4597 -0.0950 -0.4363 -1.8041 -3.6277 -0.7600 -0.2426 -0.8554 -2.3436 -1.1908 -1.2081 -0.1151 -0.7747 -0.2465 -0.8205 -2.1990 -1.2472 -1.2316 -0.1338 -0.7978 -0.2457 -0.9078 -2.0826 -1.3590 -1.0540 -0.1579 -2.0644 -0.9544 -0.3099 -0.0454 -0.1154 -0.2155 -1.3537 -3.4715 -0.4625 -0.1103 -2.4974 -2.0725
+S-2	▁ སུམ་ཅུ་རྩ་ གསུམ་པའི་ ལྷ་རྣམས་ཀྱི་ ཁ་དོག་ གི་ མཐ ུ་བ ས་ ལྷག་པའི་ སྣང་བ་ རྒྱ་ ཆེན་པོས་ ཁྱབ ་པར་གྱུར་ འཇིག་རྟེན་གྱི་ འཇིག་རྟེ ན་གྱི ་བར་ གང་ན་ ཉི་མ་དང་ ཟླ་བ་ འདི་ལྟར་ རྫུ་འཕྲུལ་ ཆེ་བ་ འདི་ལྟར་ མཐུ་ཆེ་བ་ འདི་ གཉིས་ཀྱི་ འོད ་དག་ ཉམས་སུ་ མི་ མྱོ ང་བའི་ མུན་པ་མུན་ ནག་ མུན་པ ར་བྱེད ་པས་ གན ག་པར་ གྱུར་པ་ གང་དག་ཡིན་པ ་དེ་དག་ ཀྱང ་དེའི་ཚེ་ ན་ སྣང་བ་ རྒྱ་ ཆེན་པོས་ ཁྱབ ་པར་གྱུར་ ནས་སེམས་ཅ ན་གང་དག ་དེར་ སྐྱེས་པ ་དག་གིས་ རང་གི་ ལག་པ་བ རྐྱ ང་བ་ ཡང་མི་ མཐོང་བ ་དེ་དག་གིས་ ཀྱང་ འོད ་དེ ས་སེམས་ཅ ན་གཅིག་ གིས་ གཅིག་ མཐོང་ ནས ཤེས་ ལྡ ན་དག་ སེམས་ཅ ན་གཞ ན་ཡང་ འདིར་ སྐྱེས་སོ་་ ཤེས་ ལྡ ན་དག་ སེམས་ཅ ན་གཞ ན་ཡང་ འདིར་ སྐྱེ ས་སོ་ཞེས་ ཤེ ས་པར་གྱུར་ཏོ་
+T-2	▁bathed ▁in ▁a ▁vast ▁light ▁more ▁luminous ▁than ▁the ▁gl ow ▁of ▁the ▁gods ▁of ▁the ▁thirtythree ▁so ▁great ▁was ▁this ▁miraculous ▁manifestation ▁it ▁was ▁as ▁if ▁the ▁sun ▁and ▁moon ▁shone ▁in ▁the ▁g ulf ▁between ▁worlds ▁so ▁great ▁was ▁its ▁strength ▁that ▁darkness ▁everywhere ▁even ▁the ▁pit ch bl ack ▁darkness ▁of ▁dark ▁places ▁dark ▁from ▁never ▁knowing ▁the ▁light ▁of ▁the ▁sun ▁and ▁moon ▁was ▁filled ▁with ▁a ▁vast ▁light ▁beings ▁born ▁in ▁those ▁places ▁had ▁never ▁even ▁seen ▁so ▁far ▁as ▁their ▁out st ret ched ▁hands ▁yet ▁by ▁this ▁light ▁these ▁beings ▁saw ▁one ▁another ▁and ▁exclaimed ▁you ▁there ▁there ▁are ▁others ▁who ▁have ▁been ▁born ▁here ▁there ▁are ▁others ▁who ▁have ▁been ▁born ▁here
+H-2	-1.4920036792755127	▁at ▁that ▁moment ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁the ▁four ▁great ▁kings ▁saw ▁the ▁miraculous ▁abilities ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁and ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree
+D-2	-1.4920036792755127	▁at ▁that ▁moment ▁the ▁gods ▁of ▁the ▁heaven ▁of ▁the ▁four ▁great ▁kings ▁saw ▁the ▁miraculous ▁abilities ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree ▁and ▁the ▁heaven ▁of ▁the ▁heaven ▁of ▁the ▁thirtythree
+P-2	-5.0777 -0.4344 -0.6295 -2.2880 -1.2931 -1.6991 -0.2911 -2.5904 -0.3084 -0.8503 -3.2633 -0.1624 -0.0968 -3.4153 -1.3598 -4.1819 -2.4132 -2.5658 -1.1406 -3.3200 -0.2523 -1.0349 -0.7096 -3.8460 -0.6520 -2.2958 -0.3142 -0.7683 -0.8576 -3.6110 -1.8213 -0.2819 -0.8848 -2.0521 -0.2859 -1.0283 -2.1569 -0.2885 -1.0812 -2.1281 -0.3036 -1.0993 -2.1272 -0.2972 -1.1067 -2.2430 -0.3067 -1.1655 -2.3327 -0.3082 -1.2074 -2.5688 -0.3294 -1.2185 -2.5045 -0.3143 -1.2633 -2.6475 -0.3029 -1.2778 -2.9627 -0.3084 -1.2788 -1.1867 -2.5892 -1.7343 -2.1142 -0.2914 -1.3296 -2.2947 -0.3000 -1.3113 -1.9421 -2.1087
+S-10	▁མ་ མ་བ རྒྱད ་པོ ་པ ང་ ན་ འཚོ་བའི་ མ་མ་ གཉིས་དང་་ ན ུ་མ་ སྣ ུན་པའི་ མ་མ་ གཉིས་དང་ ་དྲི་མ་ འ ཕྱི ་བའི་ མ་མ་ གཉིས་དང་ ་རྩ ེ ན་གྲ ོགས་ ཀྱི་ མ་མ་ གཉིས་ལ་ རྗེས་སུ་ གཏ ད་དོ་ ་དེ་ མ་ མ་བ རྒྱད ་པོ ་དག་གིས་ འོ་མ་དང་་ ཞ ོ་དང་་ མར་དང་་ ཞུན་མར་དང་་ མར་གྱི་ སྙིང་ ཁ ུ་དང་་ གཞན་ཡང་ ཡོ་བྱད་ ཀྱི ་བྱེ་བྲག་ གཙོ་བོ་ གཙོ་བོ ་དག་གི ས་སྲི ང་བ ར་བྱེད་ སྐྱེད ་པར་བྱེད་ཅིང་ རྫ ིང་ ན་གནས་པའི་ པད་ མ་བ ཞིན་ མྱུར་དུ་ སྐྱེད ་པར་བྱེད་དོ་་
+T-10	▁two ▁to ▁c udd le ▁him ▁two ▁to ▁bre ast fe ed ▁him ▁two ▁to ▁change ▁his ▁di ap ers ▁and ▁two ▁to ▁play ▁with ▁him ▁fort ified ▁with ▁milk ▁cur d ▁butter ▁ghee ▁cre am ▁and ▁other ▁nour ishing ▁foods ▁he ▁grew ▁quickly ▁shoot ing ▁up ▁like ▁a ▁lotus ▁in ▁a ▁pond
+H-10	-0.5017510056495667	▁they ▁reared ▁him ▁on ▁milk ▁yogurt ▁butter ▁ghee ▁and ▁milk ▁solids ▁and ▁milk ▁solids
+D-10	-0.5017510056495667	▁they ▁reared ▁him ▁on ▁milk ▁yogurt ▁butter ▁ghee ▁and ▁milk ▁solids ▁and ▁milk ▁solids
+P-10	-2.0014 -1.0798 -0.5225 -0.2487 -0.0928 -0.0193 -0.0202 -0.2129 -0.1923 -0.0100 -0.1308 -0.7350 -1.1582 -0.0702 -1.0321
