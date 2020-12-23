@@ -1,3 +1,20 @@
+## Dependencies 
+
+* `pandas`
+* `sentencepiece`
+* `torch` with CUDA support
+* `cudatoolkit`
+* `transformers`
+* `tensorboard`
+
+To install, 
+
+```
+$ pip install pandas sentencepiece transformers tensorboard
+$ pip install torch===1.7.1 torchvision===0.8.2 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+
 ## Description of each file 
 
 * `T5.py` -- A script for fine-tuning pretrained T5 transformer model for Tibetan-English translation. 
