@@ -1,4 +1,8 @@
-We simultaneously ran three different approaches to train our data: 
+# Tibetan To Englsih Machine Translation 
+
+This project is the first step in the long-term project to create a Tibetan to English machine translation. The project aims to contribute to the preservation of Tibetan language and Tibetan Buddhism.
+
+We first used SentencePiece to tokenize the data and then simultaneously ran three different approaches to train our data: 
  
  * We imported a transformer model from FairSeq, an open-source sequence modeling toolkit, and fed it with our own data and hyperparameters for training. 
 
