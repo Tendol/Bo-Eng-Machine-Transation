@@ -6,6 +6,7 @@ Tibetan to English Machine Translation
 pip install transformers
 pip install pytorch
 pip install tensorflow
+pip install fairseq
 
 ## files: 
 fairseq.sh - bash script to run the Machine Training pipeline using fairseq 
